@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "PowerPuffs"
+  navbar:
+    left:
+      - href: project.qmd
+        text: "Project Proposal"
+#      - text: "Methodology"
+ #       menu:
+        # this is for the hamburger
+      - href: poster.qmd
+        text: "Poster"
+      - href: about.qmd
+        text: "About"
+
+format:
+  html:
+    theme: minty
+    css: styles.css
+    toc: true
+
+editor: visual

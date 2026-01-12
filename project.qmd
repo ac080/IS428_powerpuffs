@@ -1,0 +1,38 @@
+---
+title: "Project Proposal"
+editor: visual
+---
+
+## Project Motivation
+
+Libya has been facing severe urban flooding in recent years caused by climate change and political instability. This led to life threatening consequences of death and destruction in the country. For instance, the collapse of the Derna dam in 2023 caused thousands of deaths and irreversible damage to the infrastructures. This devastated the country socially and economically. As a result, the government decided to deploy some measures to prepare for future disasters and assist in recovery and relief.
+
+Through this project, we aim to enhance Derna City's preparedness and reducing its rescue time. This is done by mapping out the accessibility of residential areas to emergency centres and medical services. We hope to provide meaningful insights for minimising the impact of flood disasters on Derna City and propose recommendations for future disaster management planning.
+
+## Project Objectives
+
+Our objective is to analyse the accessibility of residential towns to emergency evacuation centres and medical services in the event of a future flood. Additionally, we aim to suggest potential sites that can be used as an emergency centre.
+
+We plan to conduct this by comparing the locations of emergency and medical centres and their accessibility to residential which are densely populated, and analysing whether there is a sufficient number of emergency and medical centres in Derna city. 
+
+**Our 2 research questions are as follows:**
+
+1.  Are there enough emergency and medical centres in the area to meet demands in Derna city?
+
+2.  Which areas have less emergency and medical centres and are less accessible which may potentially affect the efficiency of disaster relief?
+
+## Scope Of Work
+
+The project will comprise of, but not limited to the followings steps:
+
+-   Selection of project areas of flooded areas in Derna city in the years flood disasters occurred.
+
+-   Collection, extraction, integration, transformation and wrangling of data of emergency and medical centres in Derna city.
+
+-   Designing and building GIS model and database to map the accessibility of emergency and medical centres in Derna city.
+
+-   Preparing report of findings.
+
+-   Preparing site suitability analysis report including detailed discussion of the analysing method used.
+
+-   Preparing poster and project webpage.
