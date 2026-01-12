@@ -1,0 +1,10 @@
+---
+title: "IS428 - PowerPuffs"
+format: html
+---
+
+GeoMusketeer is a project brought by SMT201: Geographical Information Systems for Urban Planning module, which is supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
+
+Due to the frequent urban flooding disasters in Libya, the government is actively designing strategies to mitigate the damages and aid in disaster recovery and relief to protect its people and economy. Yet, insufficient measures are put in placed by the government to prevent it from occurring again.
+
+This project aims to find out the accessibility of emergency and medical centres to people in order to improve Derna city's level of preparedness and reduce rescue time. This is done by evaluating whether there are enough emergency facilities in populated areas and whether they are easily accessible.
