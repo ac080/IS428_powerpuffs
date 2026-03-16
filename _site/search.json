@@ -4,7 +4,42 @@
     "href": "project.html",
     "title": "Project Proposal",
     "section": "",
-    "text": "Overview\nThe project topic will be based on VAST Challenge 2025. We have chosen"
+    "text": "The project topic will be based on VAST Challenge 2025. We have chosen Mini-Challenge 1.\nVAST Challenge 2025 Mini Challenge 1 centres on the rise of Sailor Shift, a musician from the island nation of Oceanus. She’s famous for spreading the influence of the Oceanus Folk genre and frequently collaborating with lesser-known artists. Silas Reed, a local journalist, has assembled a knowledge graph encompassing artists, albums, songs, collaborations, and influence relationships spanning decades.\nThe challenge presents a rich but complex network dataset for us to uncover the structural patterns in how Sailor rose to fame, who she influenced, and how Oceanus Folk spread globally.\nOur project aims to build a suite of coordinated Tableau dashboards that can transform this knowledge graph into a cohesive, interactive visual narrative — answering all prescribed analytical questions and going beyond to surface emergent insights about genre diffusion and the making of a music star."
+  },
+  {
+    "objectID": "project.html#data-preparation",
+    "href": "project.html#data-preparation",
+    "title": "Project Proposal",
+    "section": "Data Preparation",
+    "text": "Data Preparation\nCreate a python file, parse_data.py, to extract csv files from the MC1_graph.json.\n\nLoad the graph using NetworkX’s node_link_graph() to reconstruct the directed multigraph\nimport json\nimport networkx as nx\nimport pandas as pd  \n\nwith open(\"MC1_graph.json\", \"r\") as f:\n    data = json.load(f)\n\nG = nx.node_link_graph(data)\n\nprint(f\"Nodes: {G.number_of_nodes()}\")   # expect 17,412\nprint(f\"Edges: {G.number_of_edges()}\")   # expect 37,857\nExtract and split nodes into a dataframe\n\nnodes = []\nfor node_id, attrs in G.nodes(data=True):\n    row = {\"id\": node_id}\n    row.update(attrs)\n    nodes.append(row)\n\nnodes_df = pd.DataFrame(nodes)\nprint(nodes_df[\"Node Type\"].value_counts())\n\n# Split into one table per node type\npersons       = nodes_df[nodes_df[\"Node Type\"] == \"Person\"].copy()\nsongs         = nodes_df[nodes_df[\"Node Type\"] == \"Song\"].copy()\nalbums        = nodes_df[nodes_df[\"Node Type\"] == \"Album\"].copy()\nmusical_groups= nodes_df[nodes_df[\"Node Type\"] == \"MusicalGroup\"].copy()\nrecord_labels = nodes_df[nodes_df[\"Node Type\"] == \"RecordLabel\"].copy()\nExtract edges\nedges = []\nfor source, target, attrs in G.edges(data=True):\n    row = {\"source\": source, \"target\": target}\n    row.update(attrs)\n    edges.append(row)\n\nedges_df = pd.DataFrame(edges)\nprint(edges_df[\"Edge Type\"].value_counts())\n\n# Split into one table per edge type\nperformer_of       = edges_df[edges_df[\"Edge Type\"] == \"PerformerOf\"]\ncomposer_of        = edges_df[edges_df[\"Edge Type\"] == \"ComposerOf\"]\nproducer_of        = edges_df[edges_df[\"Edge Type\"] == \"ProducerOf\"]\nlyricist_of        = edges_df[edges_df[\"Edge Type\"] == \"LyricistOf\"]\nrecorded_by        = edges_df[edges_df[\"Edge Type\"] == \"RecordedBy\"]\ndistributed_by     = edges_df[edges_df[\"Edge Type\"] == \"DistributedBy\"]\nmember_of          = edges_df[edges_df[\"Edge Type\"] == \"MemberOf\"]\n\n# Influence-type edges\nin_style_of        = edges_df[edges_df[\"Edge Type\"] == \"InStyleOf\"]\ninterpolates_from  = edges_df[edges_df[\"Edge Type\"] == \"InterpolatesFrom\"]\ncover_of           = edges_df[edges_df[\"Edge Type\"] == \"CoverOf\"]\nlyrical_ref        = edges_df[edges_df[\"Edge Type\"] == \"LyricalReferenceTo\"]\ndirectly_samples   = edges_df[edges_df[\"Edge Type\"] == \"DirectlySamples\"]\nConsolidate these edge types into a single influence table\n{python}\ninfluence_edges = edges_df[edges_df[\"Edge Type\"].isin([\n    \"InStyleOf\", \"InterpolatesFrom\", \"CoverOf\",\n    \"LyricalReferenceTo\", \"DirectlySamples\"\n])].copy()\nExport nodes and edges into CSVs\npersons.to_csv(\"persons.csv\", index=False)\nsongs.to_csv(\"songs.csv\", index=False)\nalbums.to_csv(\"albums.csv\", index=False)\nmusical_groups.to_csv(\"musical_groups.csv\", index=False)\nrecord_labels.to_csv(\"record_labels.csv\", index=False)\n\ninfluence_edges.to_csv(\"influence_edges.csv\", index=False)\nperformer_of.to_csv(\"performer_of.csv\", index=False)\ncomposer_of.to_csv(\"composer_of.csv\", index=False)\nproducer_of.to_csv(\"producer_of.csv\", index=False)\nmember_of.to_csv(\"member_of.csv\", index=False)"
+  },
+  {
+    "objectID": "project.html#gephi",
+    "href": "project.html#gephi",
+    "title": "Project Proposal",
+    "section": "Gephi",
+    "text": "Gephi\n\nImport nodes and edges CSVs into Gephi\nRun ForceAtlas and adjust visual attributes to prepare graph visualisation"
+  },
+  {
+    "objectID": "project.html#tableau",
+    "href": "project.html#tableau",
+    "title": "Project Proposal",
+    "section": "Tableau",
+    "text": "Tableau\n\nDashboards and Visualisations"
+  },
+  {
+    "objectID": "project.html#timeline",
+    "href": "project.html#timeline",
+    "title": "Project Proposal",
+    "section": "Timeline",
+    "text": "Timeline\n\n\n\n\n\n\n\n\nWeek\nPhase\nTasks and Deliverables\n\n\n\n\n9\nData Exploration\n\nProject Proposal\nDownload and parse json dataset with Python\nCreate csv files for nodes and edges\n\n\n\n10\n\n\nGephi Layouts\nBuild dashboards\n\n\n\n11\n\n\nBuild dashboards\nCreate Poster\n\n\n\n12\n\n\nBuild dashboards\nCreate User Guide\n\n\n\n13\n\n\n\n\n14\nFinal Presentation\n\nPoster Presentation\nSubmission of Final artifact and project report"
+  },
+  {
+    "objectID": "project.html#allocation-of-work",
+    "href": "project.html#allocation-of-work",
+    "title": "Project Proposal",
+    "section": "Allocation of Work",
+    "text": "Allocation of Work\n\n\n\nTeam Member\nProject Focus\n\n\n\n\nAnthea Chua\n\n\n\nMarcus Tan\n\n\n\nSavannah Koh"
   },
   {
     "objectID": "about.html",

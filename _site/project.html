@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -130,7 +165,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#background-and-problem-statement" id="toc-background-and-problem-statement" class="nav-link active" data-scroll-target="#background-and-problem-statement">Background and Problem Statement</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#dataset-overview" id="toc-dataset-overview" class="nav-link" data-scroll-target="#dataset-overview">Dataset Overview</a></li>
+  <li><a href="#proposed-methodology" id="toc-proposed-methodology" class="nav-link" data-scroll-target="#proposed-methodology">Proposed Methodology</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#gephi" id="toc-gephi" class="nav-link" data-scroll-target="#gephi">Gephi</a></li>
+  <li><a href="#tableau" id="toc-tableau" class="nav-link" data-scroll-target="#tableau">Tableau</a>
+  <ul class="collapse">
+  <li><a href="#dashboards-and-visualisations" id="toc-dashboards-and-visualisations" class="nav-link" data-scroll-target="#dashboards-and-visualisations">Dashboards and Visualisations</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#project-management" id="toc-project-management" class="nav-link" data-scroll-target="#project-management">Project Management</a>
+  <ul class="collapse">
+  <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
+  <li><a href="#allocation-of-work" id="toc-allocation-of-work" class="nav-link" data-scroll-target="#allocation-of-work">Allocation of Work</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -156,9 +208,334 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level1">
-<h1>Overview</h1>
-<p>The project topic will be based on <a href="https://vast-challenge.github.io/2025/index.html">VAST Challenge 2025</a>. We have chosen</p>
+<section id="background-and-problem-statement" class="level1">
+<h1>Background and Problem Statement</h1>
+<p>The project topic will be based on <a href="https://vast-challenge.github.io/2025/index.html">VAST Challenge 2025</a>. We have chosen <a href="https://vast-challenge.github.io/2025/MC1.html">Mini-Challenge 1</a>.</p>
+<p>VAST Challenge 2025 Mini Challenge 1 centres on the rise of Sailor Shift, a musician from the island nation of Oceanus. She’s famous for spreading the influence of the Oceanus Folk genre and frequently collaborating with lesser-known artists. Silas Reed, a local journalist, has assembled a knowledge graph encompassing artists, albums, songs, collaborations, and influence relationships spanning decades.</p>
+<p>The challenge presents a rich but complex network dataset for us to uncover the structural patterns in how Sailor rose to fame, who she influenced, and how Oceanus Folk spread globally.</p>
+<p>Our project aims to build a suite of coordinated Tableau dashboards that can transform this knowledge graph into a cohesive, interactive visual narrative — answering all prescribed analytical questions and going beyond to surface emergent insights about genre diffusion and the making of a music star.</p>
+</section>
+<section id="objectives" class="level1">
+<h1>Objectives</h1>
+<p>Our project is structured around three thematic clusters that map directly to the challenge tasks. We aim to explore and understand:</p>
+<ol type="1">
+<li><strong>Sailor Shift’s Career Profile</strong>
+<ul>
+<li>Who has she been most <strong>influenced</strong> by over time?</li>
+<li>Who has she <strong>collaborated</strong> with and directly or indirectly influenced?</li>
+<li>How has she influenced collaborators of the broader <strong>Oceanus Folk community</strong>?</li>
+</ul></li>
+<li><strong>Spread of Oceanus Folk Genre</strong>
+<ul>
+<li>Was this influence <strong>intermittent</strong> or did it have a <strong>gradual rise</strong>?</li>
+<li>What <strong>genres</strong> and <strong>top artists</strong> have been most influenced by Oceanus Folk?</li>
+<li>On the converse, how has Oceanus Folk <strong>changed</strong> with the rise of Sailor Shift? From which genres does it draw most of its <strong>contemporary inspiration</strong>?</li>
+</ul></li>
+<li><strong>Prediction and Profile of Rising Stars</strong>
+<ul>
+<li>Visualize the careers of three artists. Compare and contrast their <strong>rise in popularity and influence</strong>.</li>
+<li>Using this characterization, give three <strong>predictions</strong> of who the next Oceanus Folk stars with be over the next five years.</li>
+</ul></li>
+</ol>
+</section>
+<section id="dataset-overview" class="level1">
+<h1>Dataset Overview</h1>
+<p>The data provided by the challenge is a <strong>directed multigraph (MC1_graph.json)</strong> that contains <em>17,412 nodes</em> and <em>27,857 edges</em> spanning five node types and twelve relationship types.</p>
+<p>The dataset was loaded using NetworkX’s node_link_graph() function in python. The description and schema of the data are categorised by nodes and edges:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Node Type</th>
+<th>Description</th>
+<th>Attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Person</td>
+<td>Anyone in the music industry, including singers, producers, instrumentalists, composers, etc</td>
+<td>name, stage_name (optional)</td>
+</tr>
+<tr class="even">
+<td>MusicalGroup</td>
+<td>Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music</td>
+<td>name</td>
+</tr>
+<tr class="odd">
+<td>RecordLabel</td>
+<td>Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music.</td>
+<td>name</td>
+</tr>
+<tr class="even">
+<td>Song</td>
+<td>Information on songs</td>
+<td>genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional)</td>
+</tr>
+<tr class="odd">
+<td>Album</td>
+<td>Information on albums</td>
+<td>genre, release_date, notable (bool), notoriety_date (optional), written_date (optional)</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Edge Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PerformerOf</td>
+<td>Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album)</td>
+</tr>
+<tr class="even">
+<td>ComposerOf</td>
+<td>Indicates that the source node (Person) composed the destination node (Song or Album)</td>
+</tr>
+<tr class="odd">
+<td>ProducerOf</td>
+<td>Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup)</td>
+</tr>
+<tr class="even">
+<td>LyricistOf</td>
+<td>Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album)</td>
+</tr>
+<tr class="odd">
+<td>RecordedBy</td>
+<td>Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album)</td>
+</tr>
+<tr class="even">
+<td>DistributedBy</td>
+<td>Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album)</td>
+</tr>
+<tr class="odd">
+<td>InStyleOf</td>
+<td>Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup)</td>
+</tr>
+<tr class="even">
+<td>InterpolatesFrom</td>
+<td>Indicates that the source node (Song or Album) <a href="https://en.wikipedia.org/wiki/Interpolation_(popular_music)">interpolated</a> a melody from the destination node (Song or Album).</td>
+</tr>
+<tr class="odd">
+<td>CoverOf</td>
+<td>Indicates that the source node (Song or Album) is a <a href="https://en.wikipedia.org/wiki/Cover_version">cover</a> of the destination node (Song or Album)</td>
+</tr>
+<tr class="even">
+<td>LyricalReferenceTo</td>
+<td>Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album)</td>
+</tr>
+<tr class="odd">
+<td>DirectlySamples</td>
+<td>Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via <a href="https://en.wikipedia.org/wiki/Sampling_(music)">sampling</a></td>
+</tr>
+<tr class="even">
+<td>MemberOf</td>
+<td>Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="proposed-methodology" class="level1">
+<h1>Proposed Methodology</h1>
+<p>The proposed data pipeline runs in three stages: (1) Python extraction and metric computation, (2) Gephi layout for network coordinates, and (3) Tableau ingestion and dashboard construction.</p>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
+<p>Create a python file, parse_data.py, to extract csv files from the MC1_graph.json.</p>
+<ol type="1">
+<li><p>Load the graph using NetworkX’s node_link_graph() to reconstruct the directed multigraph</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd  </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"MC1_graph.json"</span>, <span class="st">"r"</span>) <span class="im">as</span> f:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(f)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.node_link_graph(data)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Nodes: </span><span class="sc">{</span>G<span class="sc">.</span>number_of_nodes()<span class="sc">}</span><span class="ss">"</span>)   <span class="co"># expect 17,412</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Edges: </span><span class="sc">{</span>G<span class="sc">.</span>number_of_edges()<span class="sc">}</span><span class="ss">"</span>)   <span class="co"># expect 37,857</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Extract and split nodes into a dataframe</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nodes <span class="op">=</span> []</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> node_id, attrs <span class="kw">in</span> G.nodes(data<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> {<span class="st">"id"</span>: node_id}</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    row.update(attrs)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    nodes.append(row)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>nodes_df <span class="op">=</span> pd.DataFrame(nodes)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nodes_df[<span class="st">"Node Type"</span>].value_counts())</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Split into one table per node type</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>persons       <span class="op">=</span> nodes_df[nodes_df[<span class="st">"Node Type"</span>] <span class="op">==</span> <span class="st">"Person"</span>].copy()</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>songs         <span class="op">=</span> nodes_df[nodes_df[<span class="st">"Node Type"</span>] <span class="op">==</span> <span class="st">"Song"</span>].copy()</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>albums        <span class="op">=</span> nodes_df[nodes_df[<span class="st">"Node Type"</span>] <span class="op">==</span> <span class="st">"Album"</span>].copy()</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>musical_groups<span class="op">=</span> nodes_df[nodes_df[<span class="st">"Node Type"</span>] <span class="op">==</span> <span class="st">"MusicalGroup"</span>].copy()</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>record_labels <span class="op">=</span> nodes_df[nodes_df[<span class="st">"Node Type"</span>] <span class="op">==</span> <span class="st">"RecordLabel"</span>].copy()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Extract edges</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>edges <span class="op">=</span> []</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> source, target, attrs <span class="kw">in</span> G.edges(data<span class="op">=</span><span class="va">True</span>):</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> {<span class="st">"source"</span>: source, <span class="st">"target"</span>: target}</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    row.update(attrs)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    edges.append(row)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>edges_df <span class="op">=</span> pd.DataFrame(edges)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(edges_df[<span class="st">"Edge Type"</span>].value_counts())</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Split into one table per edge type</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>performer_of       <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"PerformerOf"</span>]</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>composer_of        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"ComposerOf"</span>]</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>producer_of        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"ProducerOf"</span>]</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>lyricist_of        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"LyricistOf"</span>]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>recorded_by        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"RecordedBy"</span>]</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>distributed_by     <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"DistributedBy"</span>]</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>member_of          <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"MemberOf"</span>]</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Influence-type edges</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>in_style_of        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"InStyleOf"</span>]</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>interpolates_from  <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"InterpolatesFrom"</span>]</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>cover_of           <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"CoverOf"</span>]</span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>lyrical_ref        <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"LyricalReferenceTo"</span>]</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>directly_samples   <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>] <span class="op">==</span> <span class="st">"DirectlySamples"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Consolidate these edge types into a single influence table</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{python}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>influence_edges <span class="op">=</span> edges_df[edges_df[<span class="st">"Edge Type"</span>].isin([</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"InStyleOf"</span>, <span class="st">"InterpolatesFrom"</span>, <span class="st">"CoverOf"</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"LyricalReferenceTo"</span>, <span class="st">"DirectlySamples"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>])].copy()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Export nodes and edges into CSVs</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>persons.to_csv(<span class="st">"persons.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>songs.to_csv(<span class="st">"songs.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>albums.to_csv(<span class="st">"albums.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>musical_groups.to_csv(<span class="st">"musical_groups.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>record_labels.to_csv(<span class="st">"record_labels.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>influence_edges.to_csv(<span class="st">"influence_edges.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>performer_of.to_csv(<span class="st">"performer_of.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>composer_of.to_csv(<span class="st">"composer_of.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>producer_of.to_csv(<span class="st">"producer_of.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>member_of.to_csv(<span class="st">"member_of.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+<section id="gephi" class="level2">
+<h2 class="anchored" data-anchor-id="gephi">Gephi</h2>
+<ol type="1">
+<li>Import nodes and edges CSVs into Gephi</li>
+<li>Run ForceAtlas and adjust visual attributes to prepare graph visualisation</li>
+<li></li>
+</ol>
+</section>
+<section id="tableau" class="level2">
+<h2 class="anchored" data-anchor-id="tableau">Tableau</h2>
+<section id="dashboards-and-visualisations" class="level3">
+<h3 class="anchored" data-anchor-id="dashboards-and-visualisations">Dashboards and Visualisations</h3>
+</section>
+</section>
+</section>
+<section id="project-management" class="level1">
+<h1>Project Management</h1>
+<section id="timeline" class="level2">
+<h2 class="anchored" data-anchor-id="timeline">Timeline</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 25%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Week</th>
+<th>Phase</th>
+<th>Tasks and Deliverables</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>9</td>
+<td>Data Exploration</td>
+<td><ul>
+<li><p>Project Proposal</p></li>
+<li><p>Download and parse json dataset with Python</p></li>
+<li><p>Create csv files for nodes and edges</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td></td>
+<td><ul>
+<li><p>Gephi Layouts</p></li>
+<li><p>Build dashboards</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td></td>
+<td><ul>
+<li><p>Build dashboards</p></li>
+<li><p>Create Poster</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td></td>
+<td><ul>
+<li><p>Build dashboards</p></li>
+<li><p>Create User Guide</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Final Presentation</td>
+<td><ul>
+<li><p>Poster Presentation</p></li>
+<li><p>Submission of Final artifact and project report</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="allocation-of-work" class="level2">
+<h2 class="anchored" data-anchor-id="allocation-of-work">Allocation of Work</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Team Member</th>
+<th>Project Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Anthea Chua</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Marcus Tan</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Savannah Koh</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p><a href="https://vast-challenge.github.io/2025/MC1.html" class="uri">https://vast-challenge.github.io/2025/MC1.html</a></p>
+<p><a href="https://nicole-klassen.medium.com/building-a-network-graph-in-tableau-bdaec20d79e4" class="uri">https://nicole-klassen.medium.com/building-a-network-graph-in-tableau-bdaec20d79e4</a></p>
+<p><a href="https://www.phdata.io/blog/how-to-create-network-visualizations-tableau/" class="uri">https://www.phdata.io/blog/how-to-create-network-visualizations-tableau/</a></p>
 
 
 </section>

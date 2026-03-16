@@ -35,47 +35,28 @@ The data provided by the challenge is a **directed multigraph (MC1_graph.json)**
 
 The dataset was loaded using NetworkX's node_link_graph() function in python. The description and schema of the data are categorised by nodes and edges:
 
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Node Type    | Description                                                                                                                             | Attributes                                                                                                 |
-+==============+=========================================================================================================================================+============================================================================================================+
-| Person       | Anyone in the music industry, including singers, producers, instrumentalists, composers, etc                                            | name, stage_name (optional)                                                                                |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| MusicalGroup | Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music                                 | name                                                                                                       |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| RecordLabel  | Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music. | name                                                                                                       |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Song         | Information on songs                                                                                                                    | genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional) |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Album        | Information on albums                                                                                                                   | genre, release_date, notable (bool), notoriety_date (optional), written_date (optional)                    |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Node Type | Description | Attributes |
+|----|----|----|
+| Person | Anyone in the music industry, including singers, producers, instrumentalists, composers, etc | name, stage_name (optional) |
+| MusicalGroup | Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music | name |
+| RecordLabel | Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music. | name |
+| Song | Information on songs | genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional) |
+| Album | Information on albums | genre, release_date, notable (bool), notoriety_date (optional), written_date (optional) |
 
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Edge Type          | Description                                                                                                                                                                                                                                    |
-+====================+================================================================================================================================================================================================================================================+
-| PerformerOf        | Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album)                                                                                                                                       |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ComposerOf         | Indicates that the source node (Person) composed the destination node (Song or Album)                                                                                                                                                          |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ProducerOf         | Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup)                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LyricistOf         | Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album)                                                                                                                                                  |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| RecordedBy         | Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album)                                                                                                                           |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DistributedBy      | Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album)                                                                                                                        |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| InStyleOf          | Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup)                                                                                       |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| InterpolatesFrom   | Indicates that the source node (Song or Album) [interpolated](https://en.wikipedia.org/wiki/Interpolation_(popular_music)) a melody from the destination node (Song or Album).                                                                 |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| CoverOf            | Indicates that the source node (Song or Album) is a [cover](https://en.wikipedia.org/wiki/Cover_version) of the destination node (Song or Album)                                                                                               |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LyricalReferenceTo | Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album)                                                                                                                               |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DirectlySamples    | Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via [sampling](https://en.wikipedia.org/wiki/Sampling_(music)) |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| MemberOf           | Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup)                                                                                                                                            |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Edge Type | Description |
+|----|----|
+| PerformerOf | Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album) |
+| ComposerOf | Indicates that the source node (Person) composed the destination node (Song or Album) |
+| ProducerOf | Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup) |
+| LyricistOf | Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album) |
+| RecordedBy | Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album) |
+| DistributedBy | Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album) |
+| InStyleOf | Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup) |
+| InterpolatesFrom | Indicates that the source node (Song or Album) [interpolated](https://en.wikipedia.org/wiki/Interpolation_(popular_music)) a melody from the destination node (Song or Album). |
+| CoverOf | Indicates that the source node (Song or Album) is a [cover](https://en.wikipedia.org/wiki/Cover_version) of the destination node (Song or Album) |
+| LyricalReferenceTo | Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album) |
+| DirectlySamples | Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via [sampling](https://en.wikipedia.org/wiki/Sampling_(music)) |
+| MemberOf | Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup) |
 
 # Proposed Methodology
 
@@ -87,7 +68,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 1.  Load the graph using NetworkX's node_link_graph() to reconstruct the directed multigraph
 
-    ```{python}
+    ``` python
     import json
     import networkx as nx
     import pandas as pd  
@@ -103,7 +84,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 2.  Extract and split nodes into a dataframe
 
-    ```{python}
+    ``` python
 
     nodes = []
     for node_id, attrs in G.nodes(data=True):
@@ -124,7 +105,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 3.  Extract edges
 
-    ```{python}
+    ``` python
     edges = []
     for source, target, attrs in G.edges(data=True):
         row = {"source": source, "target": target}
@@ -153,7 +134,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 4.  Consolidate these edge types into a single influence table
 
-    ```{python}
+    ``` python
     {python}
     influence_edges = edges_df[edges_df["Edge Type"].isin([
         "InStyleOf", "InterpolatesFrom", "CoverOf",
@@ -163,7 +144,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 5.  Export nodes and edges into CSVs
 
-    ```{python}
+    ``` python
     persons.to_csv("persons.csv", index=False)
     songs.to_csv("songs.csv", index=False)
     albums.to_csv("albums.csv", index=False)
@@ -177,7 +158,7 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
     member_of.to_csv("member_of.csv", index=False)
     ```
 
-## Gephi 
+## Gephi
 
 1.  Import nodes and edges CSVs into Gephi
 2.  Run ForceAtlas and adjust visual attributes to prepare graph visualisation
@@ -185,51 +166,47 @@ Create a python file, parse_data.py, to extract csv files from the MC1_graph.jso
 
 ## Tableau
 
-### Dashboards and Visualisations 
+### Dashboards and Visualisations
 
 # Project Management
 
 ## Timeline
 
-+-------------+--------------------+-----------------------------------------------------+
-| Week        | Phase              | Tasks and Deliverables                              |
-+=============+====================+=====================================================+
-| 9           | Data Exploration   | -   Project Proposal                                |
-|             |                    |                                                     |
-|             |                    | -   Download and parse json dataset with Python     |
-|             |                    |                                                     |
-|             |                    | -   Create csv files for nodes and edges            |
-+-------------+--------------------+-----------------------------------------------------+
-| 10          |                    | -   Gephi Layouts                                   |
-|             |                    |                                                     |
-|             |                    | -   Build dashboards                                |
-+-------------+--------------------+-----------------------------------------------------+
-| 11          |                    | -   Build dashboards                                |
-|             |                    |                                                     |
-|             |                    | -   Create Poster                                   |
-+-------------+--------------------+-----------------------------------------------------+
-| 12          |                    | -   Build dashboards                                |
-|             |                    |                                                     |
-|             |                    | -   Create User Guide                               |
-+-------------+--------------------+-----------------------------------------------------+
-| 13          |                    |                                                     |
-+-------------+--------------------+-----------------------------------------------------+
-| 14          | Final Presentation | -   Poster Presentation                             |
-|             |                    |                                                     |
-|             |                    | -   Submission of Final artifact and project report |
-+-------------+--------------------+-----------------------------------------------------+
++------+--------------------+-----------------------------------------------------+
+| Week | Phase              | Tasks and Deliverables                              |
++======+====================+=====================================================+
+| 9    | Data Exploration   | -   Project Proposal                                |
+|      |                    |                                                     |
+|      |                    | -   Download and parse json dataset with Python     |
+|      |                    |                                                     |
+|      |                    | -   Create csv files for nodes and edges            |
++------+--------------------+-----------------------------------------------------+
+| 10   |                    | -   Gephi Layouts                                   |
+|      |                    |                                                     |
+|      |                    | -   Build dashboards                                |
++------+--------------------+-----------------------------------------------------+
+| 11   |                    | -   Build dashboards                                |
+|      |                    |                                                     |
+|      |                    | -   Create Poster                                   |
++------+--------------------+-----------------------------------------------------+
+| 12   |                    | -   Build dashboards                                |
+|      |                    |                                                     |
+|      |                    | -   Create User Guide                               |
++------+--------------------+-----------------------------------------------------+
+| 13   |                    |                                                     |
++------+--------------------+-----------------------------------------------------+
+| 14   | Final Presentation | -   Poster Presentation                             |
+|      |                    |                                                     |
+|      |                    | -   Submission of Final artifact and project report |
++------+--------------------+-----------------------------------------------------+
 
 ## Allocation of Work
 
-+---------------+--------------------------------------+
-| Team Member   | Project Focus                        |
-+===============+======================================+
-| Anthea Chua   |                                      |
-+---------------+--------------------------------------+
-| Marcus Tan    |                                      |
-+---------------+--------------------------------------+
-| Savannah Koh  |                                      |
-+---------------+--------------------------------------+
+| Team Member  | Project Focus |
+|--------------|---------------|
+| Anthea Chua  |               |
+| Marcus Tan   |               |
+| Savannah Koh |               |
 
 # References
 
