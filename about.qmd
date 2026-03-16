@@ -1,4 +1,16 @@
 ---
-title: "about"
+title: "About"
 format: html
 ---
+
+Hello! We are a group of final year SMU Information Student (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.
+
+Team PowerPuffs:
+
+-   Anthea Chua
+
+-   Marcus Tan
+
+-   Savannah Koh
+
+This is our website for our Visual Analytics project.
