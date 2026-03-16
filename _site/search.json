@@ -1,9 +1,23 @@
 [
   {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "Overview\nThe project topic will be based on VAST Challenge 2025. We have chosen"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nTeam PowerPuffs:\n\nAnthea Chua\nMarcus Tan\nSavannah Koh\n\nThis is our website for our Visual Analytics project."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "IS428 - PowerPuffs",
+    "title": "IS428 Project - Team PowerPuffs",
     "section": "",
-    "text": "GeoMusketeer is a project brought by SMT201: Geographical Information Systems for Urban Planning module, which is supported by Professor Kam Tin Seong from Singapore Management University’s School of Computing and Information Systems.\nDue to the frequent urban flooding disasters in Libya, the government is actively designing strategies to mitigate the damages and aid in disaster recovery and relief to protect its people and economy. Yet, insufficient measures are put in placed by the government to prevent it from occurring again.\nThis project aims to find out the accessibility of emergency and medical centres to people in order to improve Derna city’s level of preparedness and reduce rescue time. This is done by evaluating whether there are enough emergency facilities in populated areas and whether they are easily accessible."
+    "text": "Hello, welcome to our website for our Visual Analytics Project!"
   }
 ]
