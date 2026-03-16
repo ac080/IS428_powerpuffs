@@ -3,6 +3,238 @@ title: "Project Proposal"
 editor: visual
 ---
 
-# Overview
+# Background and Problem Statement
 
-The project topic will be based on [VAST Challenge 2025](https://vast-challenge.github.io/2025/index.html). We have chosen
+The project topic will be based on [VAST Challenge 2025](https://vast-challenge.github.io/2025/index.html). We have chosen [Mini-Challenge 1](https://vast-challenge.github.io/2025/MC1.html).
+
+VAST Challenge 2025 Mini Challenge 1 centres on the rise of Sailor Shift, a musician from the island nation of Oceanus. She's famous for spreading the influence of the Oceanus Folk genre and frequently collaborating with lesser-known artists. Silas Reed, a local journalist, has assembled a knowledge graph encompassing artists, albums, songs, collaborations, and influence relationships spanning decades.
+
+The challenge presents a rich but complex network dataset for us to uncover the structural patterns in how Sailor rose to fame, who she influenced, and how Oceanus Folk spread globally.
+
+Our project aims to build a suite of coordinated Tableau dashboards that can transform this knowledge graph into a cohesive, interactive visual narrative — answering all prescribed analytical questions and going beyond to surface emergent insights about genre diffusion and the making of a music star.
+
+# Objectives
+
+Our project is structured around three thematic clusters that map directly to the challenge tasks. We aim to explore and understand:
+
+1.  **Sailor Shift's Career Profile**
+    -   Who has she been most **influenced** by over time?
+    -   Who has she **collaborated** with and directly or indirectly influenced?
+    -   How has she influenced collaborators of the broader **Oceanus Folk community**?
+2.  **Spread of Oceanus Folk Genre**
+    -   Was this influence **intermittent** or did it have a **gradual rise**?
+    -   What **genres** and **top artists** have been most influenced by Oceanus Folk?
+    -   On the converse, how has Oceanus Folk **changed** with the rise of Sailor Shift? From which genres does it draw most of its **contemporary inspiration**?
+3.  **Prediction and Profile of Rising Stars**
+    -   Visualize the careers of three artists. Compare and contrast their **rise in popularity and influence**.
+    -   Using this characterization, give three **predictions** of who the next Oceanus Folk stars with be over the next five years.
+
+# Dataset Overview
+
+The data provided by the challenge is a **directed multigraph (MC1_graph.json)** that contains *17,412 nodes* and *27,857 edges* spanning five node types and twelve relationship types.
+
+The dataset was loaded using NetworkX's node_link_graph() function in python. The description and schema of the data are categorised by nodes and edges:
+
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Node Type    | Description                                                                                                                             | Attributes                                                                                                 |
++==============+=========================================================================================================================================+============================================================================================================+
+| Person       | Anyone in the music industry, including singers, producers, instrumentalists, composers, etc                                            | name, stage_name (optional)                                                                                |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| MusicalGroup | Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music                                 | name                                                                                                       |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| RecordLabel  | Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music. | name                                                                                                       |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Song         | Information on songs                                                                                                                    | genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional) |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Album        | Information on albums                                                                                                                   | genre, release_date, notable (bool), notoriety_date (optional), written_date (optional)                    |
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Edge Type          | Description                                                                                                                                                                                                                                    |
++====================+================================================================================================================================================================================================================================================+
+| PerformerOf        | Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album)                                                                                                                                       |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ComposerOf         | Indicates that the source node (Person) composed the destination node (Song or Album)                                                                                                                                                          |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ProducerOf         | Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup)                                                                                    |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LyricistOf         | Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album)                                                                                                                                                  |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| RecordedBy         | Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album)                                                                                                                           |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DistributedBy      | Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album)                                                                                                                        |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| InStyleOf          | Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup)                                                                                       |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| InterpolatesFrom   | Indicates that the source node (Song or Album) [interpolated](https://en.wikipedia.org/wiki/Interpolation_(popular_music)) a melody from the destination node (Song or Album).                                                                 |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CoverOf            | Indicates that the source node (Song or Album) is a [cover](https://en.wikipedia.org/wiki/Cover_version) of the destination node (Song or Album)                                                                                               |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LyricalReferenceTo | Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album)                                                                                                                               |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DirectlySamples    | Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via [sampling](https://en.wikipedia.org/wiki/Sampling_(music)) |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| MemberOf           | Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup)                                                                                                                                            |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+# Proposed Methodology
+
+The proposed data pipeline runs in three stages: (1) Python extraction and metric computation, (2) Gephi layout for network coordinates, and (3) Tableau ingestion and dashboard construction.
+
+## Data Preparation
+
+Create a python file, parse_data.py, to extract csv files from the MC1_graph.json.
+
+1.  Load the graph using NetworkX's node_link_graph() to reconstruct the directed multigraph
+
+    ```{python}
+    import json
+    import networkx as nx
+    import pandas as pd  
+
+    with open("MC1_graph.json", "r") as f:
+        data = json.load(f)
+
+    G = nx.node_link_graph(data)
+
+    print(f"Nodes: {G.number_of_nodes()}")   # expect 17,412
+    print(f"Edges: {G.number_of_edges()}")   # expect 37,857
+    ```
+
+2.  Extract and split nodes into a dataframe
+
+    ```{python}
+
+    nodes = []
+    for node_id, attrs in G.nodes(data=True):
+        row = {"id": node_id}
+        row.update(attrs)
+        nodes.append(row)
+
+    nodes_df = pd.DataFrame(nodes)
+    print(nodes_df["Node Type"].value_counts())
+
+    # Split into one table per node type
+    persons       = nodes_df[nodes_df["Node Type"] == "Person"].copy()
+    songs         = nodes_df[nodes_df["Node Type"] == "Song"].copy()
+    albums        = nodes_df[nodes_df["Node Type"] == "Album"].copy()
+    musical_groups= nodes_df[nodes_df["Node Type"] == "MusicalGroup"].copy()
+    record_labels = nodes_df[nodes_df["Node Type"] == "RecordLabel"].copy()
+    ```
+
+3.  Extract edges
+
+    ```{python}
+    edges = []
+    for source, target, attrs in G.edges(data=True):
+        row = {"source": source, "target": target}
+        row.update(attrs)
+        edges.append(row)
+
+    edges_df = pd.DataFrame(edges)
+    print(edges_df["Edge Type"].value_counts())
+
+    # Split into one table per edge type
+    performer_of       = edges_df[edges_df["Edge Type"] == "PerformerOf"]
+    composer_of        = edges_df[edges_df["Edge Type"] == "ComposerOf"]
+    producer_of        = edges_df[edges_df["Edge Type"] == "ProducerOf"]
+    lyricist_of        = edges_df[edges_df["Edge Type"] == "LyricistOf"]
+    recorded_by        = edges_df[edges_df["Edge Type"] == "RecordedBy"]
+    distributed_by     = edges_df[edges_df["Edge Type"] == "DistributedBy"]
+    member_of          = edges_df[edges_df["Edge Type"] == "MemberOf"]
+
+    # Influence-type edges
+    in_style_of        = edges_df[edges_df["Edge Type"] == "InStyleOf"]
+    interpolates_from  = edges_df[edges_df["Edge Type"] == "InterpolatesFrom"]
+    cover_of           = edges_df[edges_df["Edge Type"] == "CoverOf"]
+    lyrical_ref        = edges_df[edges_df["Edge Type"] == "LyricalReferenceTo"]
+    directly_samples   = edges_df[edges_df["Edge Type"] == "DirectlySamples"]
+    ```
+
+4.  Consolidate these edge types into a single influence table
+
+    ```{python}
+    {python}
+    influence_edges = edges_df[edges_df["Edge Type"].isin([
+        "InStyleOf", "InterpolatesFrom", "CoverOf",
+        "LyricalReferenceTo", "DirectlySamples"
+    ])].copy()
+    ```
+
+5.  Export nodes and edges into CSVs
+
+    ```{python}
+    persons.to_csv("persons.csv", index=False)
+    songs.to_csv("songs.csv", index=False)
+    albums.to_csv("albums.csv", index=False)
+    musical_groups.to_csv("musical_groups.csv", index=False)
+    record_labels.to_csv("record_labels.csv", index=False)
+
+    influence_edges.to_csv("influence_edges.csv", index=False)
+    performer_of.to_csv("performer_of.csv", index=False)
+    composer_of.to_csv("composer_of.csv", index=False)
+    producer_of.to_csv("producer_of.csv", index=False)
+    member_of.to_csv("member_of.csv", index=False)
+    ```
+
+## Gephi 
+
+1.  Import nodes and edges CSVs into Gephi
+2.  Run ForceAtlas and adjust visual attributes to prepare graph visualisation
+3.  
+
+## Tableau
+
+### Dashboards and Visualisations 
+
+# Project Management
+
+## Timeline
+
++-------------+--------------------+-----------------------------------------------------+
+| Week        | Phase              | Tasks and Deliverables                              |
++=============+====================+=====================================================+
+| 9           | Data Exploration   | -   Project Proposal                                |
+|             |                    |                                                     |
+|             |                    | -   Download and parse json dataset with Python     |
+|             |                    |                                                     |
+|             |                    | -   Create csv files for nodes and edges            |
++-------------+--------------------+-----------------------------------------------------+
+| 10          |                    | -   Gephi Layouts                                   |
+|             |                    |                                                     |
+|             |                    | -   Build dashboards                                |
++-------------+--------------------+-----------------------------------------------------+
+| 11          |                    | -   Build dashboards                                |
+|             |                    |                                                     |
+|             |                    | -   Create Poster                                   |
++-------------+--------------------+-----------------------------------------------------+
+| 12          |                    | -   Build dashboards                                |
+|             |                    |                                                     |
+|             |                    | -   Create User Guide                               |
++-------------+--------------------+-----------------------------------------------------+
+| 13          |                    |                                                     |
++-------------+--------------------+-----------------------------------------------------+
+| 14          | Final Presentation | -   Poster Presentation                             |
+|             |                    |                                                     |
+|             |                    | -   Submission of Final artifact and project report |
++-------------+--------------------+-----------------------------------------------------+
+
+## Allocation of Work
+
++---------------+--------------------------------------+
+| Team Member   | Project Focus                        |
++===============+======================================+
+| Anthea Chua   |                                      |
++---------------+--------------------------------------+
+| Marcus Tan    |                                      |
++---------------+--------------------------------------+
+| Savannah Koh  |                                      |
++---------------+--------------------------------------+
+
+# References
+
+<https://vast-challenge.github.io/2025/MC1.html>
+
+<https://nicole-klassen.medium.com/building-a-network-graph-in-tableau-bdaec20d79e4>
+
+<https://www.phdata.io/blog/how-to-create-network-visualizations-tableau/>
