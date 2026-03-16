@@ -15,7 +15,7 @@ website:
         text: "Poster"
       - href: analysis_results.qmd
         text: "Analysis & Results"
-      - href: user guide.qmd
+      - href: user_guide.qmd
         text: "User Guide"
     right:
       - href: about.qmd
