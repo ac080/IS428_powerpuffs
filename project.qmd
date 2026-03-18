@@ -91,7 +91,7 @@ From this graph, we will derive a set of analysis-ready tables for Tableau. Thes
 
 # 4. Proposed Methodology
 
-The project will be completed in two main stages. First, Gephi will be used to explore the data, extract relevant nodes for deeper analysis, and generate network coordinates for node-link visualisations that cannot be natively laid out in Tableau. Second, Tableau will be used to build coordinated interactive dashboards that support filtering, comparison, and guided storytelling across all three challenge themes.
+The project will be completed in two main stages. First, Gephi will be used to explore the data, extract relevant nodes for deeper analysis, and generate network coordinates for node-link visualisations that cannot be natively laid out in Tableau. Second, Tableau will be used to build coordinated interactive dashboards that support filtering, comparison, and guided storytelling across all three challenge themes. We will also explore if we can transform the data manually to create Tableau-ready data inputs.
 
 ## 4.1 Scope of Work 
 
