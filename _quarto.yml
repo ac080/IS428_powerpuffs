@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "PowerPuffs"
+  title: "IS428 Project - Team PowerPuffs"
   navbar:
     left:
       - href: project.qmd
