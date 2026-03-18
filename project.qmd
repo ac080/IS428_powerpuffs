@@ -33,7 +33,7 @@ Our project is structured around three thematic clusters that map directly to th
 
 The data provided by the challenge is a **directed multigraph (MC1_graph.json)** that contains *17,412 nodes* and *27,857 edges* spanning five node types and twelve relationship types.
 
-The network json has been converted into a workable csv format (mc1_nodes.csv and mc1_edges.csv) by Prof Kam. 
+The network json has been converted into a workable **CSV file (mc1_nodes.csv and mc1_edges.csv)** by Prof Kam. 
 
 This final graph contains nodes representing persons, songs, albums, musical groups, and record labels, as well as edges representing performance, authorship, group membership, label relationships, and multiple forms of musical influence.\
 
@@ -91,7 +91,7 @@ From this graph, we will derive a set of analysis-ready tables for Tableau. Thes
 
 # 4. Proposed Methodology
 
-The project will be completed in two main stages. First, Gephi will be used to explore the data, extract relevant nodes for deeper analysis, and generate network coordinates for node-link visualisations that cannot be natively laid out in Tableau. Second, Tableau will be used to build coordinated interactive dashboards that support filtering, comparison, and guided storytelling across all three challenge themes.
+The project will be completed in two main stages. First, Gephi will be used to explore the data, extract relevant nodes for deeper analysis, and generate network coordinates for node-link visualisations that cannot be natively laid out in Tableau. Second, Tableau will be used to build coordinated interactive dashboards that support filtering, comparison, and guided storytelling across all three challenge themes. We will also explore if we can transform the data manually to create Tableau-ready data inputs.
 
 ## 4.1 Scope of Work 
 
