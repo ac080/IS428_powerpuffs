@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.35">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Analysis &amp; Results – IS428 Project - Team PowerPuffs</title>
+<title>Theme 1: Sailor Shift Career Profile – IS428 Project - Team PowerPuffs</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4397f41838bf6696a92fdfbed53ac40c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b8f9b2f3cffee265242a5d44fbb1e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,6 +80,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IS428 Project - Team PowerPuffs</span>
     </a>
@@ -104,10 +104,29 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./prototypes.html"> 
 <span class="menu-text">Data Exploration &amp; Visualisation Prototypes</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./analysis_results.html" aria-current="page"> 
-<span class="menu-text">Analysis &amp; Results</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analysis--results" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Analysis &amp; Results</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-analysis--results">    
+        <li>
+    <a class="dropdown-item" href="./theme1.html">
+ <span class="dropdown-text">Theme 1: Sailor Shift Career Profile</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./theme2.html">
+ <span class="dropdown-text">Theme 2: Spread of Oceanus Folk Genre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./theme3.html">
+ <span class="dropdown-text">Theme 3: Prediction and Profile of Rising Stars</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./conclusion.qmd">
+ <span class="dropdown-text"></span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./user_guide.html"> 
 <span class="menu-text">User Guide</span></a>
@@ -134,14 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dashboards-discussion" id="toc-dashboards-discussion" class="nav-link active" data-scroll-target="#dashboards-discussion">Dashboards &amp; Discussion</a>
-  <ul class="collapse">
-  <li><a href="#theme-1-sailor-shift-career-profile" id="toc-theme-1-sailor-shift-career-profile" class="nav-link" data-scroll-target="#theme-1-sailor-shift-career-profile"><strong>Theme 1: Sailor Shift Career Profile</strong></a></li>
-  <li><a href="#theme-2-spread-of-oceanus-folk-genre" id="toc-theme-2-spread-of-oceanus-folk-genre" class="nav-link" data-scroll-target="#theme-2-spread-of-oceanus-folk-genre"><strong>Theme 2: Spread of Oceanus Folk Genre</strong></a></li>
-  <li><a href="#theme-3-prediction-and-profile-of-rising-stars" id="toc-theme-3-prediction-and-profile-of-rising-stars" class="nav-link" data-scroll-target="#theme-3-prediction-and-profile-of-rising-stars"><strong>Theme 3: Prediction and Profile of Rising Stars</strong></a></li>
-  </ul></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#limitations-future-works" id="toc-limitations-future-works" class="nav-link" data-scroll-target="#limitations-future-works">Limitations &amp; Future Works</a></li>
+  <li><a href="#dashboards-discussion" id="toc-dashboards-discussion" class="nav-link active" data-scroll-target="#dashboards-discussion">Dashboards &amp; Discussion</a></li>
   </ul>
 </nav>
     </div>
@@ -150,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Analysis &amp; Results</h1>
+<h1 class="title">Theme 1: Sailor Shift Career Profile</h1>
 </div>
 
 
@@ -169,21 +181,6 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="dashboards-discussion" class="level1">
 <h1>Dashboards &amp; Discussion</h1>
-<section id="theme-1-sailor-shift-career-profile" class="level2">
-<h2 class="anchored" data-anchor-id="theme-1-sailor-shift-career-profile"><strong>Theme 1: Sailor Shift Career Profile</strong></h2>
-</section>
-<section id="theme-2-spread-of-oceanus-folk-genre" class="level2">
-<h2 class="anchored" data-anchor-id="theme-2-spread-of-oceanus-folk-genre"><strong>Theme 2: Spread of Oceanus Folk Genre</strong></h2>
-</section>
-<section id="theme-3-prediction-and-profile-of-rising-stars" class="level2">
-<h2 class="anchored" data-anchor-id="theme-3-prediction-and-profile-of-rising-stars"><strong>Theme 3: Prediction and Profile of Rising Stars</strong></h2>
-</section>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-</section>
-<section id="limitations-future-works" class="level1">
-<h1>Limitations &amp; Future Works</h1>
 
 
 </section>

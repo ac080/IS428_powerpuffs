@@ -4,7 +4,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nGroup 2 – Team PowerPuffs:\n\nAnthea CHUA Xinyi\nMarcus TAN\nSavannah KOH Ye\n\nThis is our website for our Visual Analytics project.\nGitHub Repository:\n[insert link]"
+    "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nGroup 2 – Team PowerPuffs:\n\nAnthea CHUA Xinyi\nMarcus TAN\nSavannah KOH Ye\n\nThis is our website for our Visual Analytics project.\nGitHub Repository:\nhttps://github.com/ac080/IS428_powerpuffs"
+  },
+  {
+    "objectID": "theme3.html",
+    "href": "theme3.html",
+    "title": "Theme 3: Prediction and Profile of Rising Stars",
+    "section": "",
+    "text": "Dashboards & Discussion"
+  },
+  {
+    "objectID": "theme1.html",
+    "href": "theme1.html",
+    "title": "Theme 1: Sailor Shift Career Profile",
+    "section": "",
+    "text": "Dashboards & Discussion"
   },
   {
     "objectID": "poster.html",
@@ -75,5 +89,12 @@
     "title": "Data Exploration & Visualisation Prototypes",
     "section": "",
     "text": "Exploratory Data Analysis\n\n\nData Preparation\n\n\nVisualisation Prototypes"
+  },
+  {
+    "objectID": "theme2.html",
+    "href": "theme2.html",
+    "title": "Theme 2: Spread of Oceanus Folk Genre",
+    "section": "",
+    "text": "Dashboards & Discussion"
   }
 ]

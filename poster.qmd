@@ -3,4 +3,4 @@ title: "Poster"
 format: html
 ---
 
-![*Project Poster*](images/IS428 project poster FINAL_page-0001 (1).jpg)
+![*Project Poster*](images/IS428%20project%20poster%20FINAL_page-0001%20(1).jpg)

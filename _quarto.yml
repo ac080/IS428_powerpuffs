@@ -5,7 +5,10 @@ project:
     - project.qmd
     - poster.qmd
     - prototypes.qmd
-    - analysis_results.qmd
+    - theme1.qmd
+    - theme2.qmd
+    - theme3.qmd
+    - conclusion
     - user_guide.qmd
     - about.qmd
 
@@ -22,8 +25,12 @@ website:
         text: "Poster"
       - href: prototypes.qmd
         text: "Data Exploration & Visualisation Prototypes"
-      - href: analysis_results.qmd
-        text: "Analysis & Results"
+      - text: "Analysis & Results"
+        menu: 
+        - theme1.qmd
+        - theme2.qmd
+        - theme3.qmd
+        - conclusion.qmd
       - href: user_guide.qmd
         text: "User Guide"
     right:
