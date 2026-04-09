@@ -7,25 +7,25 @@
     "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nGroup 2 – Team PowerPuffs:\n\nAnthea CHUA Xinyi\nMarcus TAN\nSavannah KOH Ye\n\nThis is our website for our Visual Analytics project.\nGitHub Repository:\nhttps://github.com/ac080/IS428_powerpuffs"
   },
   {
-    "objectID": "theme3.html",
-    "href": "theme3.html",
-    "title": "Theme 3: Prediction and Profile of Rising Stars",
+    "objectID": "conclusion.html",
+    "href": "conclusion.html",
+    "title": "Conclusion, Limitations And Future Works",
+    "section": "",
+    "text": "Conclusion\n\n\nLimitations & Future Works"
+  },
+  {
+    "objectID": "theme2.html",
+    "href": "theme2.html",
+    "title": "Theme 2: Spread of Oceanus Folk Genre",
     "section": "",
     "text": "Dashboards & Discussion"
   },
   {
-    "objectID": "theme1.html",
-    "href": "theme1.html",
-    "title": "Theme 1: Sailor Shift Career Profile",
+    "objectID": "prototypes.html",
+    "href": "prototypes.html",
+    "title": "Data Exploration & Visualisation Prototypes",
     "section": "",
-    "text": "Dashboards & Discussion"
-  },
-  {
-    "objectID": "poster.html",
-    "href": "poster.html",
-    "title": "Poster",
-    "section": "",
-    "text": "Project Poster"
+    "text": "Exploratory Data Analysis\n\n\nData Preparation\n\n\nVisualisation Prototypes"
   },
   {
     "objectID": "project.html",
@@ -84,16 +84,23 @@
     "text": "5.2 Allocation of Work [TBC]\n\n\n\nTeam Member\nProject Focus\n\n\n\n\nMarcus Tan\nTheme 1\n\n\nAnthea Chua\nTheme 2\n\n\nSavannah Koh\nTheme 3"
   },
   {
-    "objectID": "prototypes.html",
-    "href": "prototypes.html",
-    "title": "Data Exploration & Visualisation Prototypes",
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
     "section": "",
-    "text": "Exploratory Data Analysis\n\n\nData Preparation\n\n\nVisualisation Prototypes"
+    "text": "Project Poster"
   },
   {
-    "objectID": "theme2.html",
-    "href": "theme2.html",
-    "title": "Theme 2: Spread of Oceanus Folk Genre",
+    "objectID": "theme1.html",
+    "href": "theme1.html",
+    "title": "Theme 1: Sailor Shift Career Profile",
+    "section": "",
+    "text": "Dashboards & Discussion"
+  },
+  {
+    "objectID": "theme3.html",
+    "href": "theme3.html",
+    "title": "Theme 3: Prediction and Profile of Rising Stars",
     "section": "",
     "text": "Dashboards & Discussion"
   }
