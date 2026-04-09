@@ -8,7 +8,7 @@ project:
     - theme1.qmd
     - theme2.qmd
     - theme3.qmd
-    - conclusion
+    - conclusion.qmd
     - user_guide.qmd
     - about.qmd
 
