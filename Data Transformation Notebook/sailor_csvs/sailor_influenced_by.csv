@@ -1,0 +1,27 @@
+influence_type,sailor_work_id,influencing_work_id,key,sailor_work_name,sailor_work_year,sailor_work_genre,sailor_work_notable,influencing_work_name,influencing_work_year,influencing_work_genre,influencing_creators,influencing_creator_ids
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,Ming Long|Yong Lu|Kimberly Estrada|Fang Ding|Phantom Roots,1335|1336|14894|14895|16910
+InStyleOf,17049,14107,0,Electric Reverie,2038.0,Oceanus Folk,True,Folklore's Heartbeat,2020.0,Blues Rock,Brooke Olson|Tao Hu,12948|14108
+InterpolatesFrom,17049,7026,0,Electric Reverie,2038.0,Oceanus Folk,True,Reflejo Interior,1983.0,Americana,Sheryl Roman|John Graves|Jason Aguirre|Matthew Lane,7027|7028|7029|7030
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,Debra Graham|Edward Evans|Dylan Schwartz|James Henderson|Amy Powell|Shawn Johnson|Joel Long|Michael Nixon|Nathan Jones,14353|14354|14355|14356|14357|14358|14359|14360|14361
+InStyleOf,17231,14296,0,Tides of Echos,2029.0,Oceanus Folk,True,The Long Way Home,2023.0,Dream Pop,Ming Qiao|Na Ye,14297|14298
+DirectlySamples,17261,2197,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Hallowed Transaction,2017.0,Doom Metal,Yoko Hashimoto|Kaori Ito|Naoko Sato,2198|2199|2200
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,Joseph Ponce|Herbert Mcfarland|Rachel Montes|Caitlin Miller|Rebecca Wise,9224|9225|9226|9227|9228
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,Jun Zhou|Min Long|Gang Shao|Qiang Yuan|Wei Zhao|Juan Zhou|Yang Zhao|Ursus,934|3760|3761|3763|3764|3882|3883|16823
+CoverOf,17273,9848,0,Salty Dreams,2030.0,Oceanus Folk,True,Partisan's Lament,2030.0,Indie Pop,Sean Jones|Samantha Bullock,3086|5213
+CoverOf,17275,16312,0,Coral Beats,2034.0,Oceanus Folk,True,Harvest Dance at Ler Valley,2010.0,Psychedelic Rock,Belinda Knappe|Simone Säuberlich,304|16031
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,Yang Peng|Min Cao|Yang Wan|Juan Shi|Ming Zhou,455|457|1952|15224|15856
+LyricalReferenceTo,17277,876,0,Oceanbound,2038.0,Oceanus Folk,True,Bold Without Apology,2010.0,Indie Rock,Qiang Zhou|Jing Kang,877|878
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,Yong Dong|Yan Tang|Xiulan Fang|Qiang Liu|Jun Qiao|Ming Huang,1276|2400|3987|3988|3989|3990
+InterpolatesFrom,17279,14658,0,High Tide Heartbeat,2028.0,Oceanus Folk,False,Addicted to Your Heartache,2004.0,Southern Gothic Rock,Urszula Stochmal,1294
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,Miss Jennifer Williams|William Robinson|Judy Yang|Joanna Avery|Molly Gonzalez,14934|14935|14936|14937|14938
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,Jeremiah Love|Zachary Francis|Robert Woods,2705|2706|2707
+InStyleOf,17285,8207,0,Driftwood Lullaby,2030.0,Oceanus Folk,False,Echoes of Forgotten Light,2004.0,Alternative Rock,Igor Dyś,8208
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,Ping Jin|Tao Wen|Guiying Ren|Lei Shi|Wei Liang,10904|10905|10906|10907|10908
+LyricalReferenceTo,17287,13589,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Silent Steps in the Forest's Embrace,2023.0,Avant-Garde Folk,Tao Gao|Wei Zhao,8880|13590
+InterpolatesFrom,17287,11254,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Divergent Memories,2017.0,Indie Folk,Joshua Taylor,11255
+InStyleOf,17289,5574,0,Barnacle Heart,2034.0,Oceanus Folk,False,Our Inevitable Path,2017.0,Indie Folk,Shannon Harvey,5575
+InterpolatesFrom,17290,12685,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Coastal Whispers of Biscay,2031.0,Alternative Rock,James Medina|Matthew Best|Linda Burns,12686|12687|12688
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,Ming Ren|Lei Fu|Yan Dai|Daniel Mccormick|Lei Jin,76|12238|12239|12240|12241
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,Cipriano Peranda|David Reese|Ryan Dunlap|Elmo Calbo|Amico Luciani,8026|13015|13016|13017|13018
+InStyleOf,17292,6592,0,Stormsong,2038.0,Oceanus Folk,True,When the Bar Lights Go Up,2000.0,Emo/Pop Punk,Lori Massey,6593
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,Ping Liao|Trevor Bass|Xiuying Du|Xia Yuan|Sandra Burke|Yan Li,10017|10018|10019|10020|10021|10022

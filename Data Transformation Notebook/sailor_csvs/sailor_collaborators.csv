@@ -1,0 +1,68 @@
+collab_role,collaborator_id,work_id,key,collaborator_name,work_name,release_year,genre,notable,work_type
+LyricistOf,16958,16961,0,Zane Cruz,Neon Heartbeat,2031.0,Synthwave,False,Album
+ComposerOf,16959,16961,0,Iris Moon,Neon Heartbeat,2031.0,Synthwave,False,Album
+ComposerOf,16983,16989,0,Sophie Bennett,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album
+LyricistOf,16984,16989,0,Michael Harris,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album
+LyricistOf,16985,16989,0,Kara Lee,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album
+ComposerOf,16986,16989,0,Ethan Clarke,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album
+ComposerOf,16993,16999,0,Olivia Carter,Melancholy Circuitry,2033.0,Americana,True,Album
+ComposerOf,16994,16999,0,Lucas Bennett,Melancholy Circuitry,2033.0,Americana,True,Album
+ComposerOf,16995,16999,0,Maya Torres,Melancholy Circuitry,2033.0,Americana,True,Album
+LyricistOf,17041,17047,0,Arlo Sterling,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album
+LyricistOf,17041,17048,0,Arlo Sterling,Artificial Sunsets,2035.0,Oceanus Folk,True,Album
+LyricistOf,17041,17049,0,Arlo Sterling,Electric Reverie,2038.0,Oceanus Folk,True,Album
+ComposerOf,17042,17047,0,Lyra Blaze,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album
+ComposerOf,17042,17048,0,Lyra Blaze,Artificial Sunsets,2035.0,Oceanus Folk,True,Album
+ComposerOf,17042,17049,0,Lyra Blaze,Electric Reverie,2038.0,Oceanus Folk,True,Album
+ComposerOf,17043,17047,0,Orion Cruz,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album
+ComposerOf,17043,17048,0,Orion Cruz,Artificial Sunsets,2035.0,Oceanus Folk,True,Album
+ComposerOf,17043,17049,0,Orion Cruz,Electric Reverie,2038.0,Oceanus Folk,True,Album
+ComposerOf,17044,17047,0,Elara May,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album
+ComposerOf,17044,17048,0,Elara May,Artificial Sunsets,2035.0,Oceanus Folk,True,Album
+ComposerOf,17044,17049,0,Elara May,Electric Reverie,2038.0,Oceanus Folk,True,Album
+ComposerOf,17045,17047,0,Cassian Rae,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album
+ComposerOf,17045,17048,0,Cassian Rae,Artificial Sunsets,2035.0,Oceanus Folk,True,Album
+ComposerOf,17045,17049,0,Cassian Rae,Electric Reverie,2038.0,Oceanus Folk,True,Album
+LyricistOf,17118,17121,0,Zachary Cole,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album
+LyricistOf,17119,17121,0,Lia Grant,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album
+LyricistOf,17164,17261,0,Rusty Riggins,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+LyricistOf,17164,17263,0,Rusty Riggins,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album
+ComposerOf,17165,17261,0,Finn McGraw,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+ComposerOf,17166,17261,0,William Tidewell,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+LyricistOf,17189,17275,0,Ewan MacCrae,Coral Beats,2034.0,Oceanus Folk,True,Album
+LyricistOf,17189,17277,0,Ewan MacCrae,Oceanbound,2038.0,Oceanus Folk,True,Album
+ComposerOf,17190,17275,0,Astrid Nørgaard,Coral Beats,2034.0,Oceanus Folk,True,Album
+ComposerOf,17191,17275,0,Freya Lindholm,Coral Beats,2034.0,Oceanus Folk,True,Album
+ComposerOf,17191,17277,0,Freya Lindholm,Oceanbound,2038.0,Oceanus Folk,True,Album
+ComposerOf,17205,17272,0,Liam O'Sullivan,Tidal Pop Waves,2028.0,Oceanus Folk,True,Album
+ComposerOf,17206,17272,0,Fiona Mercer,Tidal Pop Waves,2028.0,Oceanus Folk,True,Album
+LyricistOf,17226,17231,0,Kai Reynolds,Tides of Echos,2029.0,Oceanus Folk,True,Album
+PerformerOf,17226,17410,0,Kai Reynolds,Seashell Serenade,2030.0,Oceanus Folk,True,Song
+LyricistOf,17227,17231,0,Aiden Harper,Tides of Echos,2029.0,Oceanus Folk,True,Album
+LyricistOf,17228,17231,0,Finn Morgan,Tides of Echos,2029.0,Oceanus Folk,True,Album
+LyricistOf,17229,17231,0,Skylar Brooks,Tides of Echos,2029.0,Oceanus Folk,True,Album
+LyricistOf,17248,17252,0,Mia Waters,Hidden Depths,2031.0,Oceanus Folk,True,Album
+ComposerOf,17249,17252,0,Lila Rivers,Hidden Depths,2031.0,Oceanus Folk,True,Album
+ComposerOf,17256,17121,0,Maya Jensen,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album
+ComposerOf,17256,17261,0,Maya Jensen,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+ComposerOf,17256,17262,0,Maya Jensen,Luminescent Tides,2025.0,Oceanus Folk,True,Album
+ComposerOf,17256,17263,0,Maya Jensen,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album
+ComposerOf,17257,17261,0,"Lila ""Lilly"" Hartman",The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+ComposerOf,17257,17262,0,"Lila ""Lilly"" Hartman",Luminescent Tides,2025.0,Oceanus Folk,True,Album
+ComposerOf,17257,17263,0,"Lila ""Lilly"" Hartman",Shoreline Sonnets,2026.0,Oceanus Folk,True,Album
+ComposerOf,17258,17261,0,Jade Thompson,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+ComposerOf,17258,17262,0,Jade Thompson,Luminescent Tides,2025.0,Oceanus Folk,True,Album
+ComposerOf,17258,17263,0,Jade Thompson,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album
+LyricistOf,17259,17261,0,Sophie Ramirez,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album
+LyricistOf,17259,17262,0,Sophie Ramirez,Luminescent Tides,2025.0,Oceanus Folk,True,Album
+LyricistOf,17259,17263,0,Sophie Ramirez,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album
+ComposerOf,17296,17276,0,Coralia Bellweather,Tides & Ballads,2036.0,Oceanus Folk,True,Album
+LyricistOf,17309,17276,0,Levi Holloway,Tides & Ballads,2036.0,Oceanus Folk,True,Album
+ComposerOf,17310,17278,0,Marin Thorne,Echoes of the Deep,2040.0,Oceanus Folk,True,Album
+LyricistOf,17311,17278,0,Jonah Calloway,Echoes of the Deep,2040.0,Oceanus Folk,True,Album
+PerformerOf,17349,17350,0,Beatrice Albright,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album
+LyricistOf,17349,17350,1,Beatrice Albright,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album
+PerformerOf,17349,17350,2,Beatrice Albright,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album
+PerformerOf,17355,17356,0,Daniel O'Connell,Submerged Sonatas,2031.0,Oceanus Folk,True,Album
+ComposerOf,17355,17356,1,Daniel O'Connell,Submerged Sonatas,2031.0,Oceanus Folk,True,Album
+PerformerOf,17355,17356,2,Daniel O'Connell,Submerged Sonatas,2031.0,Oceanus Folk,True,Album

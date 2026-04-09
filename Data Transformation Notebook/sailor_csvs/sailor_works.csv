@@ -1,0 +1,39 @@
+work_id,work_type,work_name,release_year,genre,notable,sailor_roles
+16961,Album,Neon Heartbeat,2031.0,Synthwave,False,LyricistOf
+16989,Album,Ballads for the End of Time,2033.0,Oceanus Folk,True,LyricistOf
+16999,Album,Melancholy Circuitry,2033.0,Americana,True,LyricistOf
+17047,Album,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,LyricistOf
+17048,Album,Artificial Sunsets,2035.0,Oceanus Folk,True,LyricistOf
+17049,Album,Electric Reverie,2038.0,Oceanus Folk,True,LyricistOf
+17121,Album,Ballads for the Low Tide,2037.0,Oceanus Folk,True,LyricistOf
+17231,Album,Tides of Echos,2029.0,Oceanus Folk,True,LyricistOf
+17252,Album,Hidden Depths,2031.0,Oceanus Folk,True,LyricistOf
+17261,Album,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,LyricistOf
+17262,Album,Luminescent Tides,2025.0,Oceanus Folk,True,LyricistOf
+17263,Album,Shoreline Sonnets,2026.0,Oceanus Folk,True,LyricistOf
+17272,Album,Tidal Pop Waves,2028.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17273,Album,Salty Dreams,2030.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17274,Album,The Current & The Chord,2032.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17275,Album,Coral Beats,2034.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17276,Album,Tides & Ballads,2036.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17277,Album,Oceanbound,2038.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17278,Album,Echoes of the Deep,2040.0,Oceanus Folk,True,PerformerOf|LyricistOf
+17279,Song,High Tide Heartbeat,2028.0,Oceanus Folk,False,PerformerOf
+17280,Song,Electric Eel Love,2028.0,Oceanus Folk,True,PerformerOf
+17281,Song,Sun-Drenched Daydream,2028.0,Oceanus Folk,False,PerformerOf
+17282,Song,Chord of the Deep,2028.0,Oceanus Folk,False,PerformerOf
+17283,Song,Heart of the Habitat,2030.0,Oceanus Folk,False,PerformerOf
+17284,Song,Reef Rhythm,2030.0,Oceanus Folk,False,PerformerOf
+17285,Song,Driftwood Lullaby,2030.0,Oceanus Folk,False,PerformerOf
+17286,Song,Saltwater Hymn,2032.0,Oceanus Folk,False,PerformerOf
+17287,Song,Moon Over the Tide,2034.0,Oceanus Folk,True,PerformerOf
+17288,Song,Into the Current,2034.0,Oceanus Folk,False,PerformerOf
+17289,Song,Barnacle Heart,2034.0,Oceanus Folk,False,PerformerOf
+17290,Song,Fog & Fiddle,2036.0,Oceanus Folk,True,PerformerOf
+17291,Song,The Fisherman's Prayer,2036.0,Oceanus Folk,False,PerformerOf
+17292,Song,Stormsong,2038.0,Oceanus Folk,True,PerformerOf
+17293,Song,Salt in My Veins,2040.0,Oceanus Folk,False,PerformerOf
+17294,Song,The Last Mariner,2040.0,Oceanus Folk,False,PerformerOf
+17350,Album,Tidesworn Ballads,2031.0,Oceanus Folk,True,LyricistOf|PerformerOf
+17356,Album,Submerged Sonatas,2031.0,Oceanus Folk,True,LyricistOf|PerformerOf
+17410,Song,Seashell Serenade,2030.0,Oceanus Folk,True,PerformerOf

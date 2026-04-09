@@ -1,0 +1,123 @@
+influence_type,sailor_work_id,influencing_work_id,key,sailor_work_name,sailor_work_year,sailor_work_genre,sailor_work_notable,influencing_work_name,influencing_work_year,influencing_work_genre,creator_id,creator_name,creator_role
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,1335,Ming Long,PerformerOf
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,1335,Ming Long,ProducerOf
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,1336,Yong Lu,LyricistOf
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,14894,Kimberly Estrada,PerformerOf
+CoverOf,16999,14893,0,Melancholy Circuitry,2033.0,Americana,True,Twilight's Threshold,2007.0,Synthwave,14895,Fang Ding,PerformerOf
+InStyleOf,17049,14107,0,Electric Reverie,2038.0,Oceanus Folk,True,Folklore's Heartbeat,2020.0,Blues Rock,12948,Brooke Olson,PerformerOf
+InStyleOf,17049,14107,0,Electric Reverie,2038.0,Oceanus Folk,True,Folklore's Heartbeat,2020.0,Blues Rock,14108,Tao Hu,ComposerOf
+InStyleOf,17049,14107,0,Electric Reverie,2038.0,Oceanus Folk,True,Folklore's Heartbeat,2020.0,Blues Rock,14108,Tao Hu,PerformerOf
+InterpolatesFrom,17049,7026,0,Electric Reverie,2038.0,Oceanus Folk,True,Reflejo Interior,1983.0,Americana,7027,Sheryl Roman,PerformerOf
+InterpolatesFrom,17049,7026,0,Electric Reverie,2038.0,Oceanus Folk,True,Reflejo Interior,1983.0,Americana,7028,John Graves,ComposerOf
+InterpolatesFrom,17049,7026,0,Electric Reverie,2038.0,Oceanus Folk,True,Reflejo Interior,1983.0,Americana,7029,Jason Aguirre,PerformerOf
+InterpolatesFrom,17049,7026,0,Electric Reverie,2038.0,Oceanus Folk,True,Reflejo Interior,1983.0,Americana,7030,Matthew Lane,ProducerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14353,Debra Graham,ComposerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14353,Debra Graham,PerformerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14354,Edward Evans,LyricistOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14355,Dylan Schwartz,PerformerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14356,James Henderson,PerformerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14357,Amy Powell,ProducerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14358,Shawn Johnson,ProducerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14359,Joel Long,PerformerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14360,Michael Nixon,ComposerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14360,Michael Nixon,PerformerOf
+InterpolatesFrom,17231,14352,0,Tides of Echos,2029.0,Oceanus Folk,True,Weathered Miles,2023.0,Doom Metal,14361,Nathan Jones,PerformerOf
+InStyleOf,17231,14296,0,Tides of Echos,2029.0,Oceanus Folk,True,The Long Way Home,2023.0,Dream Pop,14297,Ming Qiao,LyricistOf
+InStyleOf,17231,14296,0,Tides of Echos,2029.0,Oceanus Folk,True,The Long Way Home,2023.0,Dream Pop,14298,Na Ye,PerformerOf
+InStyleOf,17231,14296,0,Tides of Echos,2029.0,Oceanus Folk,True,The Long Way Home,2023.0,Dream Pop,14298,Na Ye,ProducerOf
+DirectlySamples,17261,2197,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Hallowed Transaction,2017.0,Doom Metal,2198,Yoko Hashimoto,ProducerOf
+DirectlySamples,17261,2197,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Hallowed Transaction,2017.0,Doom Metal,2199,Kaori Ito,ComposerOf
+DirectlySamples,17261,2197,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Hallowed Transaction,2017.0,Doom Metal,2200,Naoko Sato,LyricistOf
+DirectlySamples,17261,2197,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Hallowed Transaction,2017.0,Doom Metal,2200,Naoko Sato,PerformerOf
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,9224,Joseph Ponce,PerformerOf
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,9225,Herbert Mcfarland,PerformerOf
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,9226,Rachel Montes,PerformerOf
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,9227,Caitlin Miller,LyricistOf
+CoverOf,17261,9223,0,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Für uns alle zusammen,2017.0,Alternative Rock,9228,Rebecca Wise,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,934,Jun Zhou,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3760,Min Long,LyricistOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3760,Min Long,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3761,Gang Shao,LyricistOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3761,Gang Shao,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3763,Qiang Yuan,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3764,Wei Zhao,ProducerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3882,Juan Zhou,PerformerOf
+InStyleOf,17273,3881,0,Salty Dreams,2030.0,Oceanus Folk,True,Susurros de Pasión,2004.0,Synthwave,3883,Yang Zhao,PerformerOf
+CoverOf,17273,9848,0,Salty Dreams,2030.0,Oceanus Folk,True,Partisan's Lament,2030.0,Indie Pop,3086,Sean Jones,ProducerOf
+CoverOf,17273,9848,0,Salty Dreams,2030.0,Oceanus Folk,True,Partisan's Lament,2030.0,Indie Pop,5213,Samantha Bullock,PerformerOf
+CoverOf,17275,16312,0,Coral Beats,2034.0,Oceanus Folk,True,Harvest Dance at Ler Valley,2010.0,Psychedelic Rock,304,Belinda Knappe,ProducerOf
+CoverOf,17275,16312,0,Coral Beats,2034.0,Oceanus Folk,True,Harvest Dance at Ler Valley,2010.0,Psychedelic Rock,16031,Simone Säuberlich,ComposerOf
+CoverOf,17275,16312,0,Coral Beats,2034.0,Oceanus Folk,True,Harvest Dance at Ler Valley,2010.0,Psychedelic Rock,16031,Simone Säuberlich,PerformerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,455,Yang Peng,PerformerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,455,Yang Peng,ProducerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,457,Min Cao,PerformerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,1952,Yang Wan,ComposerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,15224,Juan Shi,PerformerOf
+InStyleOf,17275,15855,0,Coral Beats,2034.0,Oceanus Folk,True,Sacred Fragments,2003.0,Synthwave,15856,Ming Zhou,PerformerOf
+LyricalReferenceTo,17277,876,0,Oceanbound,2038.0,Oceanus Folk,True,Bold Without Apology,2010.0,Indie Rock,877,Qiang Zhou,ComposerOf
+LyricalReferenceTo,17277,876,0,Oceanbound,2038.0,Oceanus Folk,True,Bold Without Apology,2010.0,Indie Rock,878,Jing Kang,PerformerOf
+LyricalReferenceTo,17277,876,0,Oceanbound,2038.0,Oceanus Folk,True,Bold Without Apology,2010.0,Indie Rock,878,Jing Kang,ProducerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,1276,Yong Dong,PerformerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,2400,Yan Tang,ComposerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,3987,Xiulan Fang,PerformerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,3988,Qiang Liu,ComposerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,3988,Qiang Liu,PerformerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,3989,Jun Qiao,PerformerOf
+LyricalReferenceTo,17277,3986,0,Oceanbound,2038.0,Oceanus Folk,True,Altitude of Mistakes,2015.0,Americana,3990,Ming Huang,PerformerOf
+InterpolatesFrom,17279,14658,0,High Tide Heartbeat,2028.0,Oceanus Folk,False,Addicted to Your Heartache,2004.0,Southern Gothic Rock,1294,Urszula Stochmal,PerformerOf
+InterpolatesFrom,17279,14658,0,High Tide Heartbeat,2028.0,Oceanus Folk,False,Addicted to Your Heartache,2004.0,Southern Gothic Rock,1294,Urszula Stochmal,LyricistOf
+InterpolatesFrom,17279,14658,0,High Tide Heartbeat,2028.0,Oceanus Folk,False,Addicted to Your Heartache,2004.0,Southern Gothic Rock,1294,Urszula Stochmal,ComposerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14934,Miss Jennifer Williams,PerformerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14935,William Robinson,PerformerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14935,William Robinson,ProducerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14936,Judy Yang,PerformerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14937,Joanna Avery,PerformerOf
+CoverOf,17280,14933,0,Electric Eel Love,2028.0,Oceanus Folk,True,The Crown We Wear,2022.0,Indie Rock,14938,Molly Gonzalez,PerformerOf
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,2705,Jeremiah Love,PerformerOf
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,2705,Jeremiah Love,ProducerOf
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,2706,Zachary Francis,PerformerOf
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,2707,Robert Woods,LyricistOf
+InStyleOf,17280,10534,0,Electric Eel Love,2028.0,Oceanus Folk,True,Twelve Bells of Augsburg,2026.0,Psychedelic Rock,2707,Robert Woods,PerformerOf
+InStyleOf,17285,8207,0,Driftwood Lullaby,2030.0,Oceanus Folk,False,Echoes of Forgotten Light,2004.0,Alternative Rock,8208,Igor Dyś,PerformerOf
+InStyleOf,17285,8207,0,Driftwood Lullaby,2030.0,Oceanus Folk,False,Echoes of Forgotten Light,2004.0,Alternative Rock,8208,Igor Dyś,LyricistOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10904,Ping Jin,LyricistOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10905,Tao Wen,PerformerOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10905,Tao Wen,ProducerOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10906,Guiying Ren,PerformerOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10907,Lei Shi,PerformerOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10908,Wei Liang,ComposerOf
+InStyleOf,17286,10903,0,Saltwater Hymn,2032.0,Oceanus Folk,False,Parallel Memories,2028.0,Dream Pop,10908,Wei Liang,PerformerOf
+LyricalReferenceTo,17287,13589,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Silent Steps in the Forest's Embrace,2023.0,Avant-Garde Folk,8880,Tao Gao,PerformerOf
+LyricalReferenceTo,17287,13589,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Silent Steps in the Forest's Embrace,2023.0,Avant-Garde Folk,8880,Tao Gao,ProducerOf
+LyricalReferenceTo,17287,13589,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Silent Steps in the Forest's Embrace,2023.0,Avant-Garde Folk,13590,Wei Zhao,ComposerOf
+InterpolatesFrom,17287,11254,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Divergent Memories,2017.0,Indie Folk,11255,Joshua Taylor,PerformerOf
+InterpolatesFrom,17287,11254,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Divergent Memories,2017.0,Indie Folk,11255,Joshua Taylor,LyricistOf
+InterpolatesFrom,17287,11254,0,Moon Over the Tide,2034.0,Oceanus Folk,True,Divergent Memories,2017.0,Indie Folk,11255,Joshua Taylor,ComposerOf
+InStyleOf,17289,5574,0,Barnacle Heart,2034.0,Oceanus Folk,False,Our Inevitable Path,2017.0,Indie Folk,5575,Shannon Harvey,PerformerOf
+InStyleOf,17289,5574,0,Barnacle Heart,2034.0,Oceanus Folk,False,Our Inevitable Path,2017.0,Indie Folk,5575,Shannon Harvey,LyricistOf
+InStyleOf,17289,5574,0,Barnacle Heart,2034.0,Oceanus Folk,False,Our Inevitable Path,2017.0,Indie Folk,5575,Shannon Harvey,ComposerOf
+InterpolatesFrom,17290,12685,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Coastal Whispers of Biscay,2031.0,Alternative Rock,12686,James Medina,PerformerOf
+InterpolatesFrom,17290,12685,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Coastal Whispers of Biscay,2031.0,Alternative Rock,12687,Matthew Best,LyricistOf
+InterpolatesFrom,17290,12685,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Coastal Whispers of Biscay,2031.0,Alternative Rock,12687,Matthew Best,PerformerOf
+InterpolatesFrom,17290,12685,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Coastal Whispers of Biscay,2031.0,Alternative Rock,12688,Linda Burns,PerformerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,76,Ming Ren,PerformerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12238,Lei Fu,PerformerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12238,Lei Fu,ProducerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12239,Yan Dai,LyricistOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12239,Yan Dai,PerformerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12240,Daniel Mccormick,PerformerOf
+InStyleOf,17290,12237,0,Fog & Fiddle,2036.0,Oceanus Folk,True,Provence Aria,2023.0,Indie Rock,12241,Lei Jin,PerformerOf
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,8026,Cipriano Peranda,ComposerOf
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,13015,David Reese,PerformerOf
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,13016,Ryan Dunlap,PerformerOf
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,13017,Elmo Calbo,PerformerOf
+DirectlySamples,17292,13014,0,Stormsong,2038.0,Oceanus Folk,True,Exoskeleton Dissolve,2020.0,Indie Rock,13018,Amico Luciani,PerformerOf
+InStyleOf,17292,6592,0,Stormsong,2038.0,Oceanus Folk,True,When the Bar Lights Go Up,2000.0,Emo/Pop Punk,6593,Lori Massey,PerformerOf
+InStyleOf,17292,6592,0,Stormsong,2038.0,Oceanus Folk,True,When the Bar Lights Go Up,2000.0,Emo/Pop Punk,6593,Lori Massey,LyricistOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10017,Ping Liao,LyricistOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10018,Trevor Bass,PerformerOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10019,Xiuying Du,PerformerOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10020,Xia Yuan,PerformerOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10021,Sandra Burke,PerformerOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10022,Yan Li,ComposerOf
+CoverOf,17350,10016,0,Tidesworn Ballads,2031.0,Oceanus Folk,True,Dreamscape of Judgment,2023.0,Symphonic Metal,10022,Yan Li,PerformerOf

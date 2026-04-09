@@ -1,0 +1,147 @@
+collaborator_id,collaborator_name,first_collab_year,work_id,work_name,release_year,genre,notable,work_type,collab_role,pre_post
+16958,Zane Cruz,2031.0,16961,Neon Heartbeat,2031.0,Synthwave,False,Album,LyricistOf,After
+16958,Zane Cruz,2031.0,16962,Cosmic Lullabies,2035.0,Synthwave,True,Album,LyricistOf,After
+16959,Iris Moon,2031.0,16961,Neon Heartbeat,2031.0,Synthwave,False,Album,ComposerOf,After
+16959,Iris Moon,2031.0,16962,Cosmic Lullabies,2035.0,Synthwave,True,Album,ComposerOf,After
+16983,Sophie Bennett,2033.0,16988,Songs from the Drowned World,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+16983,Sophie Bennett,2033.0,16989,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album,ComposerOf,After
+16984,Michael Harris,2033.0,16988,Songs from the Drowned World,2035.0,Oceanus Folk,True,Album,LyricistOf,After
+16984,Michael Harris,2033.0,16989,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album,LyricistOf,After
+16985,Kara Lee,2033.0,16988,Songs from the Drowned World,2035.0,Oceanus Folk,True,Album,LyricistOf,After
+16985,Kara Lee,2033.0,16989,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album,LyricistOf,After
+16986,Ethan Clarke,2033.0,16988,Songs from the Drowned World,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+16986,Ethan Clarke,2033.0,16989,Ballads for the End of Time,2033.0,Oceanus Folk,True,Album,ComposerOf,After
+16993,Olivia Carter,2033.0,16997,Rust & Ruin,2030.0,Americana,False,Album,ComposerOf,Before
+16993,Olivia Carter,2033.0,16998,Glitches in the Rain,2035.0,Americana,False,Album,ComposerOf,After
+16993,Olivia Carter,2033.0,16999,Melancholy Circuitry,2033.0,Americana,True,Album,ComposerOf,After
+16994,Lucas Bennett,2033.0,16997,Rust & Ruin,2030.0,Americana,False,Album,ComposerOf,Before
+16994,Lucas Bennett,2033.0,16998,Glitches in the Rain,2035.0,Americana,False,Album,ComposerOf,After
+16994,Lucas Bennett,2033.0,16999,Melancholy Circuitry,2033.0,Americana,True,Album,ComposerOf,After
+16995,Maya Torres,2033.0,16997,Rust & Ruin,2030.0,Americana,False,Album,ComposerOf,Before
+16995,Maya Torres,2033.0,16998,Glitches in the Rain,2035.0,Americana,False,Album,ComposerOf,After
+16995,Maya Torres,2033.0,16999,Melancholy Circuitry,2033.0,Americana,True,Album,ComposerOf,After
+17041,Arlo Sterling,2034.0,17047,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album,LyricistOf,After
+17041,Arlo Sterling,2034.0,17048,Artificial Sunsets,2035.0,Oceanus Folk,True,Album,LyricistOf,After
+17041,Arlo Sterling,2034.0,17049,Electric Reverie,2038.0,Oceanus Folk,True,Album,LyricistOf,After
+17042,Lyra Blaze,2034.0,17047,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17042,Lyra Blaze,2034.0,17048,Artificial Sunsets,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+17042,Lyra Blaze,2034.0,17049,Electric Reverie,2038.0,Oceanus Folk,True,Album,ComposerOf,After
+17043,Orion Cruz,2034.0,17047,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17043,Orion Cruz,2034.0,17048,Artificial Sunsets,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+17043,Orion Cruz,2034.0,17049,Electric Reverie,2038.0,Oceanus Folk,True,Album,ComposerOf,After
+17044,Elara May,2034.0,17047,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17044,Elara May,2034.0,17048,Artificial Sunsets,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+17044,Elara May,2034.0,17049,Electric Reverie,2038.0,Oceanus Folk,True,Album,ComposerOf,After
+17045,Cassian Rae,2034.0,17047,Drifting Between the Stars and the Sea,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17045,Cassian Rae,2034.0,17048,Artificial Sunsets,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+17045,Cassian Rae,2034.0,17049,Electric Reverie,2038.0,Oceanus Folk,True,Album,ComposerOf,After
+17118,Zachary Cole,2037.0,17121,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album,LyricistOf,After
+17119,Lia Grant,2037.0,17121,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album,LyricistOf,After
+17164,Rusty Riggins,2024.0,17168,Tales from the Briny Deep,1975.0,Sea Shanties,True,Album,LyricistOf,Before
+17164,Rusty Riggins,2024.0,17169,Rum & Reckoning,1977.0,Sea Shanties,True,Album,LyricistOf,Before
+17164,Rusty Riggins,2024.0,17170,Sailors & Ghosts,1979.0,Sea Shanties,True,Album,LyricistOf,Before
+17164,Rusty Riggins,2024.0,17171,Blackwater Ballads,1981.0,Sea Shanties,True,Album,LyricistOf,Before
+17164,Rusty Riggins,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,LyricistOf,After
+17164,Rusty Riggins,2024.0,17263,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album,LyricistOf,After
+17165,Finn McGraw,2024.0,17168,Tales from the Briny Deep,1975.0,Sea Shanties,True,Album,ComposerOf,Before
+17165,Finn McGraw,2024.0,17169,Rum & Reckoning,1977.0,Sea Shanties,True,Album,ComposerOf,Before
+17165,Finn McGraw,2024.0,17170,Sailors & Ghosts,1979.0,Sea Shanties,True,Album,ComposerOf,Before
+17165,Finn McGraw,2024.0,17171,Blackwater Ballads,1981.0,Sea Shanties,True,Album,ComposerOf,Before
+17165,Finn McGraw,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,ComposerOf,After
+17166,William Tidewell,2024.0,17168,Tales from the Briny Deep,1975.0,Sea Shanties,True,Album,ComposerOf,Before
+17166,William Tidewell,2024.0,17169,Rum & Reckoning,1977.0,Sea Shanties,True,Album,ComposerOf,Before
+17166,William Tidewell,2024.0,17170,Sailors & Ghosts,1979.0,Sea Shanties,True,Album,ComposerOf,Before
+17166,William Tidewell,2024.0,17171,Blackwater Ballads,1981.0,Sea Shanties,True,Album,ComposerOf,Before
+17166,William Tidewell,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,ComposerOf,After
+17189,Ewan MacCrae,2034.0,17193,Echoes of the Old Way,1980.0,Celtic Folk,True,Album,LyricistOf,Before
+17189,Ewan MacCrae,2034.0,17194,Runes & Reverie,1981.0,Celtic Folk,True,Album,LyricistOf,Before
+17189,Ewan MacCrae,2034.0,17195,Blood & Heather,1982.0,Celtic Folk,True,Album,LyricistOf,Before
+17189,Ewan MacCrae,2034.0,17275,Coral Beats,2034.0,Oceanus Folk,True,Album,LyricistOf,After
+17189,Ewan MacCrae,2034.0,17277,Oceanbound,2038.0,Oceanus Folk,True,Album,LyricistOf,After
+17190,Astrid Nørgaard,2034.0,17193,Echoes of the Old Way,1980.0,Celtic Folk,True,Album,ComposerOf,Before
+17190,Astrid Nørgaard,2034.0,17194,Runes & Reverie,1981.0,Celtic Folk,True,Album,ComposerOf,Before
+17190,Astrid Nørgaard,2034.0,17195,Blood & Heather,1982.0,Celtic Folk,True,Album,ComposerOf,Before
+17190,Astrid Nørgaard,2034.0,17275,Coral Beats,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17191,Freya Lindholm,2034.0,17193,Echoes of the Old Way,1980.0,Celtic Folk,True,Album,ComposerOf,Before
+17191,Freya Lindholm,2034.0,17194,Runes & Reverie,1981.0,Celtic Folk,True,Album,ComposerOf,Before
+17191,Freya Lindholm,2034.0,17195,Blood & Heather,1982.0,Celtic Folk,True,Album,ComposerOf,Before
+17191,Freya Lindholm,2034.0,17275,Coral Beats,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17191,Freya Lindholm,2034.0,17277,Oceanbound,2038.0,Oceanus Folk,True,Album,ComposerOf,After
+17205,Liam O'Sullivan,2028.0,17208,Miles & Moments,1984.0,Acoustic Folk,True,Album,ComposerOf,Before
+17205,Liam O'Sullivan,2028.0,17209,Echoes and Embers,1987.0,Acoustic Folk,True,Album,ComposerOf,Before
+17205,Liam O'Sullivan,2028.0,17210,The Road & The Reckoning,1989.0,Acoustic Folk,True,Album,ComposerOf,Before
+17205,Liam O'Sullivan,2028.0,17211,Homeward Winds,1991.0,Acoustic Folk,True,Album,ComposerOf,Before
+17205,Liam O'Sullivan,2028.0,17272,Tidal Pop Waves,2028.0,Oceanus Folk,True,Album,ComposerOf,After
+17206,Fiona Mercer,2028.0,17208,Miles & Moments,1984.0,Acoustic Folk,True,Album,ComposerOf,Before
+17206,Fiona Mercer,2028.0,17209,Echoes and Embers,1987.0,Acoustic Folk,True,Album,ComposerOf,Before
+17206,Fiona Mercer,2028.0,17210,The Road & The Reckoning,1989.0,Acoustic Folk,True,Album,ComposerOf,Before
+17206,Fiona Mercer,2028.0,17211,Homeward Winds,1991.0,Acoustic Folk,True,Album,ComposerOf,Before
+17206,Fiona Mercer,2028.0,17272,Tidal Pop Waves,2028.0,Oceanus Folk,True,Album,ComposerOf,After
+17226,Kai Reynolds,2029.0,17231,Tides of Echos,2029.0,Oceanus Folk,True,Album,LyricistOf,After
+17226,Kai Reynolds,2029.0,17232,Driftwood Dreams,2032.0,Oceanus Folk,True,Album,LyricistOf,After
+17226,Kai Reynolds,2029.0,17410,Seashell Serenade,2030.0,Oceanus Folk,True,Song,PerformerOf,After
+17227,Aiden Harper,2029.0,17231,Tides of Echos,2029.0,Oceanus Folk,True,Album,LyricistOf,After
+17227,Aiden Harper,2029.0,17232,Driftwood Dreams,2032.0,Oceanus Folk,True,Album,LyricistOf,After
+17228,Finn Morgan,2029.0,17231,Tides of Echos,2029.0,Oceanus Folk,True,Album,LyricistOf,After
+17228,Finn Morgan,2029.0,17232,Driftwood Dreams,2032.0,Oceanus Folk,True,Album,LyricistOf,After
+17229,Skylar Brooks,2029.0,17231,Tides of Echos,2029.0,Oceanus Folk,True,Album,LyricistOf,After
+17229,Skylar Brooks,2029.0,17232,Driftwood Dreams,2032.0,Oceanus Folk,True,Album,LyricistOf,After
+17248,Mia Waters,2031.0,17251,Echos Below,2028.0,Oceanus Folk,True,Album,LyricistOf,Before
+17248,Mia Waters,2031.0,17252,Hidden Depths,2031.0,Oceanus Folk,True,Album,LyricistOf,After
+17249,Lila Rivers,2031.0,17251,Echos Below,2028.0,Oceanus Folk,True,Album,ComposerOf,Before
+17249,Lila Rivers,2031.0,17252,Hidden Depths,2031.0,Oceanus Folk,True,Album,ComposerOf,After
+17256,Maya Jensen,2024.0,17121,Ballads for the Low Tide,2037.0,Oceanus Folk,True,Album,ComposerOf,After
+17256,Maya Jensen,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,ComposerOf,After
+17256,Maya Jensen,2024.0,17262,Luminescent Tides,2025.0,Oceanus Folk,True,Album,ComposerOf,After
+17256,Maya Jensen,2024.0,17263,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album,ComposerOf,After
+17256,Maya Jensen,2024.0,17411,Tidal Whisper,2033.0,Oceanus Folk,True,Song,PerformerOf,After
+17257,"Lila ""Lilly"" Hartman",2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,ComposerOf,After
+17257,"Lila ""Lilly"" Hartman",2024.0,17262,Luminescent Tides,2025.0,Oceanus Folk,True,Album,ComposerOf,After
+17257,"Lila ""Lilly"" Hartman",2024.0,17263,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album,ComposerOf,After
+17258,Jade Thompson,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,ComposerOf,After
+17258,Jade Thompson,2024.0,17262,Luminescent Tides,2025.0,Oceanus Folk,True,Album,ComposerOf,After
+17258,Jade Thompson,2024.0,17263,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album,ComposerOf,After
+17259,Sophie Ramirez,2024.0,16988,Songs from the Drowned World,2035.0,Oceanus Folk,True,Album,LyricistOf,After
+17259,Sophie Ramirez,2024.0,17261,The Kelp Forest Canticles,2024.0,Oceanus Folk,True,Album,LyricistOf,After
+17259,Sophie Ramirez,2024.0,17262,Luminescent Tides,2025.0,Oceanus Folk,True,Album,LyricistOf,After
+17259,Sophie Ramirez,2024.0,17263,Shoreline Sonnets,2026.0,Oceanus Folk,True,Album,LyricistOf,After
+17259,Sophie Ramirez,2024.0,17247,Anchored Love,2030.0,Oceanus Folk,True,Song,ProducerOf,After
+17296,Coralia Bellweather,2036.0,17276,Tides & Ballads,2036.0,Oceanus Folk,True,Album,ComposerOf,After
+17296,Coralia Bellweather,2036.0,17300,Beneath the Coral Moon,1995.0,Oceanus Folk,True,Album,ComposerOf,Before
+17296,Coralia Bellweather,2036.0,17301,Salt-Stained Chronicles,1997.0,Oceanus Folk,True,Album,ComposerOf,Before
+17296,Coralia Bellweather,2036.0,17302,The Kelp Forest Ballads,1999.0,Oceanus Folk,True,Album,ComposerOf,Before
+17296,Coralia Bellweather,2036.0,17303,Tempest's Wake,2001.0,Oceanus Folk,True,Album,ComposerOf,Before
+17309,Levi Holloway,2036.0,17276,Tides & Ballads,2036.0,Oceanus Folk,True,Album,LyricistOf,After
+17309,Levi Holloway,2036.0,17315,Ghostlights & Galleons,1993.0,Oceanus Folk,True,Album,LyricistOf,Before
+17309,Levi Holloway,2036.0,17316,Currents & Curses,1994.0,Oceanus Folk,True,Album,LyricistOf,Before
+17309,Levi Holloway,2036.0,17317,The Quiet of the Deep,1995.0,Oceanus Folk,True,Album,LyricistOf,Before
+17310,Marin Thorne,2040.0,17278,Echoes of the Deep,2040.0,Oceanus Folk,True,Album,ComposerOf,After
+17310,Marin Thorne,2040.0,17315,Ghostlights & Galleons,1993.0,Oceanus Folk,True,Album,ComposerOf,Before
+17310,Marin Thorne,2040.0,17316,Currents & Curses,1994.0,Oceanus Folk,True,Album,ComposerOf,Before
+17310,Marin Thorne,2040.0,17317,The Quiet of the Deep,1995.0,Oceanus Folk,True,Album,ComposerOf,Before
+17311,Jonah Calloway,2040.0,17278,Echoes of the Deep,2040.0,Oceanus Folk,True,Album,LyricistOf,After
+17311,Jonah Calloway,2040.0,17315,Ghostlights & Galleons,1993.0,Oceanus Folk,True,Album,LyricistOf,Before
+17311,Jonah Calloway,2040.0,17316,Currents & Curses,1994.0,Oceanus Folk,True,Album,LyricistOf,Before
+17311,Jonah Calloway,2040.0,17317,The Quiet of the Deep,1995.0,Oceanus Folk,True,Album,LyricistOf,Before
+17349,Beatrice Albright,2031.0,17350,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album,PerformerOf,After
+17349,Beatrice Albright,2031.0,17350,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album,LyricistOf,After
+17349,Beatrice Albright,2031.0,17350,Tidesworn Ballads,2031.0,Oceanus Folk,True,Album,PerformerOf,After
+17349,Beatrice Albright,2031.0,17351,The Siren's Sigh,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17349,Beatrice Albright,2031.0,17352,Whispers on the Jetty Wind,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17349,Beatrice Albright,2031.0,17353,Moonlit Kelp Forest Dance,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17349,Beatrice Albright,2031.0,17354,Seven Fathoms Deep,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17349,Beatrice Albright,2031.0,17362,Tide-Worn Tales,2034.0,Oceanus Folk,True,Album,LyricistOf,After
+17349,Beatrice Albright,2031.0,17362,Tide-Worn Tales,2034.0,Oceanus Folk,True,Album,PerformerOf,After
+17349,Beatrice Albright,2031.0,17363,The Sunken Compass,2035.0,Oceanus Folk,True,Album,LyricistOf,After
+17349,Beatrice Albright,2031.0,17363,The Sunken Compass,2035.0,Oceanus Folk,True,Album,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17356,Submerged Sonatas,2031.0,Oceanus Folk,True,Album,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17356,Submerged Sonatas,2031.0,Oceanus Folk,True,Album,ComposerOf,After
+17355,Daniel O'Connell,2031.0,17356,Submerged Sonatas,2031.0,Oceanus Folk,True,Album,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17357,The Language of the Tides,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17358,Coral Bloom Energy,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17359,Song of the Wandering Whale,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17360,Deep Sea Reverie,2031.0,Oceanus Folk,True,Song,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17362,Tide-Worn Tales,2034.0,Oceanus Folk,True,Album,ComposerOf,After
+17355,Daniel O'Connell,2031.0,17362,Tide-Worn Tales,2034.0,Oceanus Folk,True,Album,PerformerOf,After
+17355,Daniel O'Connell,2031.0,17363,The Sunken Compass,2035.0,Oceanus Folk,True,Album,ComposerOf,After
+17355,Daniel O'Connell,2031.0,17363,The Sunken Compass,2035.0,Oceanus Folk,True,Album,PerformerOf,After

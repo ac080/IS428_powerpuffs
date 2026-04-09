@@ -13,6 +13,8 @@ website:
         # this is for the hamburger
       - href: poster.qmd
         text: "Poster"
+      - href: prototypes.qmd
+        text: "Data Exploration & Visualisation Prototypes"
       - href: analysis_results.qmd
         text: "Analysis & Results"
       - href: user_guide.qmd

@@ -41,51 +41,32 @@ From this graph, we will derive a set of analysis-ready tables for Tableau. Thes
 
 ## 3.1 Node Types
 
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Node Type    | Description                                                                                                                             | Attributes                                                                                                 |
-+==============+=========================================================================================================================================+============================================================================================================+
-| Person       | Anyone in the music industry, including singers, producers, instrumentalists, composers, etc                                            | name, stage_name (optional)                                                                                |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| MusicalGroup | Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music                                 | name                                                                                                       |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| RecordLabel  | Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music. | name                                                                                                       |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Song         | Information on songs                                                                                                                    | genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional) |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-| Album        | Information on albums                                                                                                                   | genre, release_date, notable (bool), notoriety_date (optional), written_date (optional)                    |
-+--------------+-----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Node Type | Description | Attributes |
+|----|----|----|
+| Person | Anyone in the music industry, including singers, producers, instrumentalists, composers, etc | name, stage_name (optional) |
+| MusicalGroup | Bands, quartets, small choirs, or other officially organized entities formed by musicians to make music | name |
+| RecordLabel | Organizations—professional, commercial, or otherwise institutional—involved in the recording, production, or distribution of the music. | name |
+| Song | Information on songs | genre, release_date, notable (bool), notoriety_date (optional), single (optional), written_date (optional) |
+| Album | Information on albums | genre, release_date, notable (bool), notoriety_date (optional), written_date (optional) |
 
 **Note on sparse columns:** Attributes like single, genre, and release_date are only defined on Song and Album nodes. When all five node types are loaded into a single DataFrame, these columns appear “NA” for Person, MusicalGroup, and RecordLabel rows. This is expected. 
 
 ## 3.2 Edge Types
 
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Edge Type          | Description                                                                                                                                                                                                                                    |
-+====================+================================================================================================================================================================================================================================================+
-| PerformerOf        | Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album)                                                                                                                                       |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ComposerOf         | Indicates that the source node (Person) composed the destination node (Song or Album)                                                                                                                                                          |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ProducerOf         | Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup)                                                                                    |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LyricistOf         | Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album)                                                                                                                                                  |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| RecordedBy         | Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album)                                                                                                                           |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DistributedBy      | Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album)                                                                                                                        |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| InStyleOf          | Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup)                                                                                       |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| InterpolatesFrom   | Indicates that the source node (Song or Album) [interpolated](https://en.wikipedia.org/wiki/Interpolation_(popular_music)) a melody from the destination node (Song or Album).                                                                 |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| CoverOf            | Indicates that the source node (Song or Album) is a [cover](https://en.wikipedia.org/wiki/Cover_version) of the destination node (Song or Album)                                                                                               |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LyricalReferenceTo | Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album)                                                                                                                               |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| DirectlySamples    | Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via [sampling](https://en.wikipedia.org/wiki/Sampling_(music)) |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| MemberOf           | Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup)                                                                                                                                            |
-+--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Edge Type | Description |
+|----|----|
+| PerformerOf | Indicates a that the source node (Person or MusicalGroup) performed the destination node (Song or Album) |
+| ComposerOf | Indicates that the source node (Person) composed the destination node (Song or Album) |
+| ProducerOf | Indicates that the source node (Person or RecordLabel) participated in the production of the destination node’s work (Song, Album, Person, or MusicalGroup) |
+| LyricistOf | Indicates that the source node (Person) wrote lyrics for the destination node (Song or Album) |
+| RecordedBy | Indicates that the destination node (RecordLabel) aided in the recording process for the source node (Song or Album) |
+| DistributedBy | Indicates that the destination node (RecordLabel) aided in the distribution process for the source node (Song or Album) |
+| InStyleOf | Indicates that the source node (Song or Album) was performed at least partly in the style of the destination node (Song, Album, Person, or MusicalGroup) |
+| InterpolatesFrom | Indicates that the source node (Song or Album) [interpolated](https://en.wikipedia.org/wiki/Interpolation_(popular_music)) a melody from the destination node (Song or Album). |
+| CoverOf | Indicates that the source node (Song or Album) is a [cover](https://en.wikipedia.org/wiki/Cover_version) of the destination node (Song or Album) |
+| LyricalReferenceTo | Indicates that the source node (Song or Album) makes a lyrical reference to the destination node (Song or Album) |
+| DirectlySamples | Indicates that the source node (Song or Album) consists of (an) audio recording(s) that directly reuse a portion of the audio recording of the destination node (Song or Album) via [sampling](https://en.wikipedia.org/wiki/Sampling_(music)) |
+| MemberOf | Indicates that the source node (Person) is (or was) a member of the destination node (MusicalGroup) |
 
 **Note on "Influence":** In this project, ‘Influence’ will refer to any direct or indirect relationship where a source node incorporates elements from a destination node through stylistic (InStyleOf), musical (InterpolatesFrom), lyrical (LyricalReferenceTo), audio-sampling (DirectlySamples). A cover (CoverOf) will also be treated as a form of influence, where the source work is a reinterpretation of the destination work.
 
@@ -93,7 +74,7 @@ From this graph, we will derive a set of analysis-ready tables for Tableau. Thes
 
 The project will be completed in two main stages. First, Gephi will be used to explore the data, extract relevant nodes for deeper analysis, and generate network coordinates for node-link visualisations that cannot be natively laid out in Tableau. Second, Tableau will be used to build coordinated interactive dashboards that support filtering, comparison, and guided storytelling across all three challenge themes. We will also explore if we can transform the data manually to create Tableau-ready data inputs.
 
-## 4.1 Scope of Work 
+## 4.1 Scope of Work
 
 **Theme 1: Sailor Shift Career Profile**
 
@@ -127,45 +108,41 @@ We have done a initial extraction of Sailor Shift's network graph in Gephi, whic
 
 ## 5.1 Timeline
 
-+--------------+--------------------------+------------------------------------------------------------------------+
-| Week         | Phase                    | Tasks and Deliverables                                                 |
-+==============+==========================+========================================================================+
-| 10           | Data Exploration         | -   Project Proposal                                                   |
-|              |                          |                                                                        |
-|              |                          | -   Download node and edges CSV and load in Gephi for data exploration |
-|              |                          |                                                                        |
-|              |                          | -   Data wrangling for Tableau-ready input data                        |
-+--------------+--------------------------+------------------------------------------------------------------------+
-| 11           | Gephi Network Graphs     | -   Create necessary Gephi graphs                                      |
-|              |                          |                                                                        |
-|              |                          | -   Explore data in Tableau                                            |
-+--------------+--------------------------+------------------------------------------------------------------------+
-| 12           | Dashboard Build          | -   Build dashboards                                                   |
-|              |                          |                                                                        |
-|              |                          | -   Create Poster                                                      |
-+--------------+--------------------------+------------------------------------------------------------------------+
-| 13           | Refinement and Insights  | -   Build dashboards                                                   |
-|              |                          |                                                                        |
-|              |                          | -   Create User Guide                                                  |
-|              |                          |                                                                        |
-|              |                          | -   Finalise Poster                                                    |
-+--------------+--------------------------+------------------------------------------------------------------------+
-| 14           | Final Presentation       | -   Poster Presentation                                                |
-|              |                          |                                                                        |
-|              |                          | -   Submission of Final artifact and project report                    |
-+--------------+--------------------------+------------------------------------------------------------------------+
++------+-------------------------+------------------------------------------------------------------------+
+| Week | Phase                   | Tasks and Deliverables                                                 |
++======+=========================+========================================================================+
+| 10   | Data Exploration        | -   Project Proposal                                                   |
+|      |                         |                                                                        |
+|      |                         | -   Download node and edges CSV and load in Gephi for data exploration |
+|      |                         |                                                                        |
+|      |                         | -   Data wrangling for Tableau-ready input data                        |
++------+-------------------------+------------------------------------------------------------------------+
+| 11   | Gephi Network Graphs    | -   Create necessary Gephi graphs                                      |
+|      |                         |                                                                        |
+|      |                         | -   Explore data in Tableau                                            |
++------+-------------------------+------------------------------------------------------------------------+
+| 12   | Dashboard Build         | -   Build dashboards                                                   |
+|      |                         |                                                                        |
+|      |                         | -   Create Poster                                                      |
++------+-------------------------+------------------------------------------------------------------------+
+| 13   | Refinement and Insights | -   Build dashboards                                                   |
+|      |                         |                                                                        |
+|      |                         | -   Create User Guide                                                  |
+|      |                         |                                                                        |
+|      |                         | -   Finalise Poster                                                    |
++------+-------------------------+------------------------------------------------------------------------+
+| 14   | Final Presentation      | -   Poster Presentation                                                |
+|      |                         |                                                                        |
+|      |                         | -   Submission of Final artifact and project report                    |
++------+-------------------------+------------------------------------------------------------------------+
 
 ## 5.2 Allocation of Work \[TBC\]
 
-+---------------+--------------------------------+
-| Team Member   | Project Focus                  |
-+===============+================================+
-| Marcus Tan    | Theme 1                        |
-+---------------+--------------------------------+
-| Anthea Chua   | Theme 2                        |
-+---------------+--------------------------------+
-| Savannah Koh  | Theme 3                        |
-+---------------+--------------------------------+
+| Team Member  | Project Focus |
+|--------------|---------------|
+| Marcus Tan   | Theme 1       |
+| Anthea Chua  | Theme 2       |
+| Savannah Koh | Theme 3       |
 
 # References
 

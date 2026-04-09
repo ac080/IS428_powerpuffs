@@ -1,0 +1,188 @@
+section,artist_id,display_name,year,new_notable_works,cumulative_notable_works,new_collabs,cumulative_collabs,outbound_influence,cumulative_outbound,inbound_influence,cumulative_inbound,debut_year,notoriety_year,genre,works_in_genre,cumulative_works_in_genre
+timeline,1716,Kimberly Snyder,2016,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2017,1.0,3.0,13.0,13.0,2.0,2.0,1.0,1.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2018,2.0,5.0,6.0,19.0,3.0,5.0,3.0,4.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2019,1.0,6.0,10.0,29.0,1.0,6.0,1.0,5.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2020,1.0,7.0,3.0,32.0,5.0,11.0,4.0,9.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2021,0.0,7.0,0.0,32.0,0.0,11.0,0.0,9.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2022,0.0,7.0,0.0,32.0,0.0,11.0,5.0,14.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2023,5.0,12.0,30.0,62.0,16.0,27.0,31.0,45.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2024,2.0,14.0,13.0,75.0,8.0,35.0,7.0,52.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2025,2.0,16.0,10.0,85.0,12.0,47.0,9.0,61.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2026,2.0,18.0,28.0,113.0,17.0,64.0,16.0,77.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2027,1.0,19.0,2.0,115.0,2.0,66.0,12.0,89.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2028,0.0,19.0,0.0,115.0,0.0,66.0,8.0,97.0,2016,2023,,,
+timeline,1716,Kimberly Snyder,2029,1.0,20.0,9.0,124.0,8.0,74.0,9.0,106.0,2016,2023,,,
+timeline,5038,Min He,2020,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2021,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2022,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2023,3.0,4.0,10.0,11.0,4.0,5.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2024,0.0,4.0,0.0,11.0,0.0,5.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2025,0.0,4.0,0.0,11.0,0.0,5.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2026,1.0,5.0,1.0,12.0,8.0,13.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2027,1.0,6.0,1.0,13.0,3.0,16.0,0.0,0.0,2020,2023,,,
+timeline,5038,Min He,2028,2.0,8.0,2.0,15.0,21.0,37.0,0.0,0.0,2020,2023,,,
+timeline,17255,Sailor Shift,2028,2.0,2.0,0.0,0.0,3.0,3.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2029,0.0,2.0,0.0,0.0,0.0,3.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2030,2.0,4.0,1.0,1.0,3.0,6.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2031,2.0,6.0,2.0,3.0,1.0,7.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2032,1.0,7.0,0.0,3.0,1.0,8.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2033,0.0,7.0,0.0,3.0,0.0,8.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2034,2.0,9.0,0.0,3.0,5.0,13.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2035,0.0,9.0,0.0,3.0,0.0,13.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2036,2.0,11.0,0.0,3.0,2.0,15.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2037,0.0,11.0,0.0,3.0,0.0,15.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2038,2.0,13.0,0.0,3.0,4.0,19.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2039,0.0,13.0,0.0,3.0,0.0,19.0,0.0,0.0,2028,2030,,,
+timeline,17255,Sailor Shift,2040,1.0,14.0,0.0,3.0,0.0,19.0,0.0,0.0,2028,2030,,,
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Dream Pop,0.0,0.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Dream Pop,1.0,1.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Dream Pop,1.0,2.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Dream Pop,0.0,2.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Dream Pop,0.0,2.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Dream Pop,0.0,2.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Dream Pop,0.0,2.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Dream Pop,4.0,6.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Dream Pop,0.0,6.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Dream Pop,2.0,8.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Dream Pop,1.0,9.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Dream Pop,1.0,10.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Dream Pop,0.0,10.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Dream Pop,1.0,11.0
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Indie Rock,1.0,1.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Indie Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Indie Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Indie Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Indie Rock,1.0,2.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Indie Rock,0.0,2.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Indie Rock,0.0,2.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Indie Rock,0.0,2.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Indie Rock,0.0,2.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Indie Rock,0.0,2.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Indie Rock,1.0,3.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Indie Rock,0.0,3.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Indie Rock,0.0,3.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Indie Rock,0.0,3.0
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Post-Apocalyptic Folk,0.0,0.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Post-Apocalyptic Folk,1.0,1.0
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Space Rock,0.0,0.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Space Rock,0.0,0.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Space Rock,0.0,0.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Space Rock,1.0,1.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Space Rock,0.0,1.0
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Symphonic Metal,0.0,0.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Symphonic Metal,1.0,1.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Symphonic Metal,0.0,1.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Symphonic Metal,0.0,1.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Symphonic Metal,0.0,1.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Symphonic Metal,0.0,1.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Symphonic Metal,0.0,1.0
+genre,1716,Kimberly Snyder,2016,,,,,,,,,,,Synthwave,1.0,1.0
+genre,1716,Kimberly Snyder,2017,,,,,,,,,,,Synthwave,0.0,1.0
+genre,1716,Kimberly Snyder,2018,,,,,,,,,,,Synthwave,1.0,2.0
+genre,1716,Kimberly Snyder,2019,,,,,,,,,,,Synthwave,0.0,2.0
+genre,1716,Kimberly Snyder,2020,,,,,,,,,,,Synthwave,0.0,2.0
+genre,1716,Kimberly Snyder,2021,,,,,,,,,,,Synthwave,0.0,2.0
+genre,1716,Kimberly Snyder,2022,,,,,,,,,,,Synthwave,0.0,2.0
+genre,1716,Kimberly Snyder,2023,,,,,,,,,,,Synthwave,1.0,3.0
+genre,1716,Kimberly Snyder,2024,,,,,,,,,,,Synthwave,1.0,4.0
+genre,1716,Kimberly Snyder,2025,,,,,,,,,,,Synthwave,0.0,4.0
+genre,1716,Kimberly Snyder,2026,,,,,,,,,,,Synthwave,1.0,5.0
+genre,1716,Kimberly Snyder,2027,,,,,,,,,,,Synthwave,0.0,5.0
+genre,1716,Kimberly Snyder,2028,,,,,,,,,,,Synthwave,0.0,5.0
+genre,1716,Kimberly Snyder,2029,,,,,,,,,,,Synthwave,0.0,5.0
+genre,5038,Min He,2020,,,,,,,,,,,Americana,0.0,0.0
+genre,5038,Min He,2021,,,,,,,,,,,Americana,0.0,0.0
+genre,5038,Min He,2022,,,,,,,,,,,Americana,0.0,0.0
+genre,5038,Min He,2023,,,,,,,,,,,Americana,1.0,1.0
+genre,5038,Min He,2024,,,,,,,,,,,Americana,0.0,1.0
+genre,5038,Min He,2025,,,,,,,,,,,Americana,0.0,1.0
+genre,5038,Min He,2026,,,,,,,,,,,Americana,0.0,1.0
+genre,5038,Min He,2027,,,,,,,,,,,Americana,0.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Americana,0.0,1.0
+genre,5038,Min He,2020,,,,,,,,,,,Desert Rock,0.0,0.0
+genre,5038,Min He,2021,,,,,,,,,,,Desert Rock,0.0,0.0
+genre,5038,Min He,2022,,,,,,,,,,,Desert Rock,0.0,0.0
+genre,5038,Min He,2023,,,,,,,,,,,Desert Rock,1.0,1.0
+genre,5038,Min He,2024,,,,,,,,,,,Desert Rock,0.0,1.0
+genre,5038,Min He,2025,,,,,,,,,,,Desert Rock,0.0,1.0
+genre,5038,Min He,2026,,,,,,,,,,,Desert Rock,0.0,1.0
+genre,5038,Min He,2027,,,,,,,,,,,Desert Rock,0.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Desert Rock,0.0,1.0
+genre,5038,Min He,2020,,,,,,,,,,,Indie Folk,1.0,1.0
+genre,5038,Min He,2021,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2022,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2023,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2024,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2025,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2026,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2027,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Indie Folk,0.0,1.0
+genre,5038,Min He,2020,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2021,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2022,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2023,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2024,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2025,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2026,,,,,,,,,,,Jazz Surf Rock,0.0,0.0
+genre,5038,Min He,2027,,,,,,,,,,,Jazz Surf Rock,1.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Jazz Surf Rock,0.0,1.0
+genre,5038,Min He,2020,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2021,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2022,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2023,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2024,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2025,,,,,,,,,,,Space Rock,0.0,0.0
+genre,5038,Min He,2026,,,,,,,,,,,Space Rock,1.0,1.0
+genre,5038,Min He,2027,,,,,,,,,,,Space Rock,0.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Space Rock,2.0,3.0
+genre,5038,Min He,2020,,,,,,,,,,,Synthwave,0.0,0.0
+genre,5038,Min He,2021,,,,,,,,,,,Synthwave,0.0,0.0
+genre,5038,Min He,2022,,,,,,,,,,,Synthwave,0.0,0.0
+genre,5038,Min He,2023,,,,,,,,,,,Synthwave,1.0,1.0
+genre,5038,Min He,2024,,,,,,,,,,,Synthwave,0.0,1.0
+genre,5038,Min He,2025,,,,,,,,,,,Synthwave,0.0,1.0
+genre,5038,Min He,2026,,,,,,,,,,,Synthwave,0.0,1.0
+genre,5038,Min He,2027,,,,,,,,,,,Synthwave,0.0,1.0
+genre,5038,Min He,2028,,,,,,,,,,,Synthwave,0.0,1.0
+genre,17255,Sailor Shift,2028,,,,,,,,,,,Oceanus Folk,5.0,5.0
+genre,17255,Sailor Shift,2029,,,,,,,,,,,Oceanus Folk,0.0,5.0
+genre,17255,Sailor Shift,2030,,,,,,,,,,,Oceanus Folk,5.0,10.0
+genre,17255,Sailor Shift,2031,,,,,,,,,,,Oceanus Folk,2.0,12.0
+genre,17255,Sailor Shift,2032,,,,,,,,,,,Oceanus Folk,2.0,14.0
+genre,17255,Sailor Shift,2033,,,,,,,,,,,Oceanus Folk,0.0,14.0
+genre,17255,Sailor Shift,2034,,,,,,,,,,,Oceanus Folk,4.0,18.0
+genre,17255,Sailor Shift,2035,,,,,,,,,,,Oceanus Folk,0.0,18.0
+genre,17255,Sailor Shift,2036,,,,,,,,,,,Oceanus Folk,3.0,21.0
+genre,17255,Sailor Shift,2037,,,,,,,,,,,Oceanus Folk,0.0,21.0
+genre,17255,Sailor Shift,2038,,,,,,,,,,,Oceanus Folk,2.0,23.0
+genre,17255,Sailor Shift,2039,,,,,,,,,,,Oceanus Folk,0.0,23.0
+genre,17255,Sailor Shift,2040,,,,,,,,,,,Oceanus Folk,3.0,26.0
