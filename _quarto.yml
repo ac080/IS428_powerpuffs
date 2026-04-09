@@ -1,6 +1,13 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - project.qmd
+    - poster.qmd
+    - prototypes.qmd
+    - analysis_results.qmd
+    - user_guide.qmd
+    - about.qmd
 
 website:
   title: "IS428 Project - Team PowerPuffs"

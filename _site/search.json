@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nGroup 2 – Team PowerPuffs:\n\nAnthea CHUA Xinyi\nMarcus TAN\nSavannah KOH Ye\n\nThis is our website for our Visual Analytics project.\nGitHub Repository:\n[insert link]"
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "Project Poster"
+  },
+  {
     "objectID": "project.html",
     "href": "project.html",
     "title": "Project Proposal",
@@ -53,20 +67,13 @@
     "href": "project.html#allocation-of-work-tbc",
     "title": "Project Proposal",
     "section": "5.2 Allocation of Work [TBC]",
-    "text": "5.2 Allocation of Work [TBC]\n\n\n\n\n\n\n\nTeam Member\nProject Focus\n\n\n\n\nMarcus Tan\nTheme 1\n\n\nAnthea Chua\nTheme 2\n\n\nSavannah Koh\nTheme 3"
+    "text": "5.2 Allocation of Work [TBC]\n\n\n\nTeam Member\nProject Focus\n\n\n\n\nMarcus Tan\nTheme 1\n\n\nAnthea Chua\nTheme 2\n\n\nSavannah Koh\nTheme 3"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "prototypes.html",
+    "href": "prototypes.html",
+    "title": "Data Exploration & Visualisation Prototypes",
     "section": "",
-    "text": "Hello! We are a group of final year SMU Information Systems (Smart-City Management and Technology) students from AY2025/26 Term 2 IS428 Visual Analytics for Business Intelligence G2, taught by Professor Kam Tin Seong.\nTeam PowerPuffs:\n\nAnthea Chua\nMarcus Tan\nSavannah Koh\n\nThis is our website for our Visual Analytics project."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IS428 Project - Team PowerPuffs",
-    "section": "",
-    "text": "Hello, welcome to our website for our Visual Analytics Project!"
+    "text": "Exploratory Data Analysis\n\n\nData Preparation\n\n\nVisualisation Prototypes"
   }
 ]
