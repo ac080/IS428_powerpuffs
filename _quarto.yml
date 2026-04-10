@@ -11,6 +11,7 @@ project:
     - conclusion.qmd
     - user_guide.qmd
     - about.qmd
+    - index.qmd
 
 website:
   title: "IS428 Project - Team PowerPuffs"
