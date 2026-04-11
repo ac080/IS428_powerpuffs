@@ -59,18 +59,18 @@ The goal was not to pick three successful artists, but three artists who represe
 
 ### **Data Visualisations**
 
-![Visualisation 3a:](images/theme3 pictures/Career Timeline by Popularity and Influence.jpg){fig-align="center"}
+![Visualisation 3a:](images/theme3%20pictures/Career%20Timeline%20by%20Popularity%20and%20Influence.jpg){fig-align="center"}
 
 **Cumulative notable works over time** All three artists are shown on a single shared axis to allow direct comparison of trajectory shapes. Sailor Shift's steep acceleration from 2028 onward is immediately visible against Kimberly Snyder's earlier but now-flat line and Min He's gradual accumulation. The vertical markers at each artist's debut year show how long each took to reach chart recognition from debut.
 
-![Visualisation 3b:](images/theme3 pictures/Genre Diversity and Evolution.jpg){fig-align="center"}
+![Visualisation 3b:](images/theme3%20pictures/Genre%20Diversity%20and%20Evolution.jpg){fig-align="center"}
 
-![Visualisation 3c:](images/theme3 pictures/Popularity vs Influence Matrix.jpg)
+![Visualisation 3c:](images/theme3%20pictures/Popularity%20vs%20Influence%20Matrix.jpg)
 
 ### Key Findings
 
 | Observation from Part 1 | What it means for Part 2 |
-|------------------------------------|------------------------------------|
+|----|----|
 | Sailor Shift has 12 recent chart hits — more than anyone else | `recent_notable_works` is the strongest rising signal → highest weight (0.22) |
 | Kimberly Snyder has 20 all-time notable works but 0 recent | Recency must outweigh all-time totals — a plateaued artist should not score high |
 | Min He has 37 outbound influence edges with 0 recent chart hits | Outbound influence is independent of popularity → must be separately weighted (0.18) |
@@ -94,7 +94,7 @@ This led to two guiding principles that shaped the Rising Star Score parameter c
 The Rising Star Score is a weighted composite of 10 parameters, each normalised to a 0–1 scale using MinMaxScaler before combining. Weights were chosen arbitrarily but ranked according to justifications from Part 1.
 
 | Parameter | Weight | Justification |
-|-------------------------|------------------|-----------------------------|
+|----|----|----|
 | `recent_notable_works` | 0.22 | Directly observed as the defining signal of an actively rising artist (Sailor Shift: 12; Kimberly Snyder: 0) |
 | `outbound_influence` | 0.18 | Shown to be independent of chart success in Part 1; Min He's profile established it as a distinct rising signal |
 | `collab_with_popular_count` | 0.14 | Network proximity to established stars — being on a track with a top-quartile artist provides direct exposure to their audience |
@@ -150,28 +150,28 @@ OF alignment is deliberately excluded from the Rising Star Score and used only a
 
 ### Data Visualisations
 
-![**Top 15 rising star candidates (bar chart)** The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark.](images/theme3 pictures/Top 20 artists by rising star score.jpg){fig-align="center"}
+![**Top 15 rising star candidates (bar chart)** The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark.](images/theme3%20pictures/Top%2020%20artists%20by%20rising%20star%20score.jpg){fig-align="center"}
 
-![](images/theme3 pictures/Rising star score breakdown.jpg){fig-align="center"}
+![](images/theme3%20pictures/Rising%20star%20score%20breakdown.jpg){fig-align="center"}
 
-![](images/theme3 pictures/Top 20 artists most aligned to OF.jpg){fig-align="center"}
+![](images/theme3%20pictures/Top%2020%20artists%20most%20aligned%20to%20OF.jpg){fig-align="center"}
 
-![](images/theme3 pictures/OF Rising star predictions.jpg){fig-align="center"}
+![](images/theme3%20pictures/OF%20Rising%20star%20predictions.jpg){fig-align="center"}
 
 ## Final Dashboards & Discussion
 
 ### Dashboard 1 – Career Profiles of Three Artists: Sailor Shift, Kimberly Snyder and Min He
 
-![*Three artists were selected to represent contrasting career archetypes: **Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)**. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)*](images/theme3 pictures/Comparison of 3 artists.jpg){fig-align="center"}
+![*Three artists were selected to represent contrasting career archetypes: **Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)**. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)*](images/theme3%20pictures/Comparison%20of%203%20artists.jpg){fig-align="center"}
 
 The four-panel dashboard places all career metrics on a shared timeline to allow direct visual comparison of three distinct archetypes. The key argument the dashboard makes is that rising stars do not follow a single path: Sailor Shift's fast breakout, Kimberly Snyder's long career that has now plateaued, and Min He's sustained influence without recent commercial breakthrough all reflect different expressions of the same underlying characteristics — active output, network growth, and musical engagement.
 
 ### Dashboard 2 – Rising Star Leaderboard
 
-![](images/theme3 pictures/Rising star leaderboard.jpg)
+![](images/theme3%20pictures/Rising%20star%20leaderboard.jpg)
 
 ### Dashboard 3 – Oceanus Folk Rising Star Predictions
 
-![*Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)*](images/theme3 pictures/OF Rising star predictions w explaination.jpg)
+![*Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)*](images/theme3%20pictures/OF%20Rising%20star%20predictions%20w%20explaination.jpg)
 
 Bea Azure and Kael Storm are both members of Copper Canyon Ghosts, debuted in 2031, and frequently collaborate with Sailor Shift. They represent the OF-native pathway: artists already embedded in the scene who are building momentum through direct network proximity to the genre's defining figure. Ping Sun is the contrasting prediction — a Blues Rock artist whose outbound influence edges point heavily toward OF works, suggesting the next generation of Oceanus Folk stars may not all emerge from within the community itself, but from adjacent genres drawn toward its sound.
