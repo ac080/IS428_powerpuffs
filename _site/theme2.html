@@ -153,7 +153,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#theme-2-overview" id="toc-theme-2-overview" class="nav-link active" data-scroll-target="#theme-2-overview">Theme 2 Overview</a></li>
+  <li><a href="#theme-2-overview" id="toc-theme-2-overview" class="nav-link active" data-scroll-target="#theme-2-overview">Theme 2 Overview</a>
+  <ul class="collapse">
+  <li><a href="#key-definitions-used-throughout" id="toc-key-definitions-used-throughout" class="nav-link" data-scroll-target="#key-definitions-used-throughout">Key definitions used throughout</a></li>
+  <li><a href="#part-1-was-oceanus-folks-influence-growth-intermittent-or-a-gradual-rise" id="toc-part-1-was-oceanus-folks-influence-growth-intermittent-or-a-gradual-rise" class="nav-link" data-scroll-target="#part-1-was-oceanus-folks-influence-growth-intermittent-or-a-gradual-rise">Part 1: Was Oceanus Folk’s influence growth intermittent or a gradual rise?</a></li>
+  <li><a href="#part-2-which-genres-and-artists-were-influenced-most-by-oceanus-folk" id="toc-part-2-which-genres-and-artists-were-influenced-most-by-oceanus-folk" class="nav-link" data-scroll-target="#part-2-which-genres-and-artists-were-influenced-most-by-oceanus-folk">Part 2: Which genres and artists were influenced most by Oceanus Folk?</a></li>
+  <li><a href="#part-3-how-did-oceanus-folk-itself-change-with-the-rise-of-sailor-shift" id="toc-part-3-how-did-oceanus-folk-itself-change-with-the-rise-of-sailor-shift" class="nav-link" data-scroll-target="#part-3-how-did-oceanus-folk-itself-change-with-the-rise-of-sailor-shift">Part 3: How did Oceanus Folk itself change with the rise of Sailor Shift?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -181,8 +187,42 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="theme-2-overview" class="level2">
 <h2 class="anchored" data-anchor-id="theme-2-overview">Theme 2 Overview</h2>
+<p>Oceanus Folk is a genre that existed largely in isolation, where it is loved locally but unknown globally. Today, it is sampled and influenced by Rock and Pop artists, and cited as an inspiration by musicians across more than ten genres worldwide. This transformation did not happen gradually or organically. It happened because of one artist.</p>
+<p>Sailor Shift’s rise from Oceanus native to global superstar created a ripple effect that extended far beyond her own music. Her debut allowed artists who had never heard of Oceanus Folk began referencing it, sampling it, and writing in its style. At the same time, Oceanus Folk itself began to evolve. It started absorbing influences from the very genres it was now inspiring, shifting its sound from a pure folk tradition into something more commercially hybrid.</p>
+<p>This theme aims to answer 3 main questions:</p>
+<ul>
+<li><p>Was Oceanus Folk’s growing influence a sudden event or a slow build?</p></li>
+<li><p>Which genres and artists were influenced most by Oceanus Folk’s</p></li>
+<li><p>How did Oceanus Folk itself change in response to its own success?</p></li>
+</ul>
+<section id="key-definitions-used-throughout" class="level3">
+<h3 class="anchored" data-anchor-id="key-definitions-used-throughout">Key definitions used throughout</h3>
+<ul>
+<li><strong>Influence</strong> is measured by outbound influence: the count of influence-type edges (InStyleOf, CoverOf, DirectlySamples, InterpolatesFrom, LyricalReferenceTo) where the artist’s own works are the source — meaning their songs cite, cover, or draw from other works. This measures how actively an artist engages with and builds upon the broader musical landscape. Inbound influence (being cited by others) was considered but ultimately excluded from scoring due to a systematic data lag: recent artists, including Sailor Shift herself, score near zero because newer works have not yet accumulated citations in the crowdsourced dataset.</li>
+<li><strong>Artist role</strong> is where an artist may be credited as a PerformerOf, ComposerOf, LyricistOf, or ProducerOf a given track. An artist who both performed and produced the same song that references Oceanus Folk receives credit for both contributions.</li>
+<li><strong>Sailor Shift Era</strong> is used to divide the data into Pre-2028 (before Sailor’s solo debut) and Post-2028 (after). The year 2028 is used as the dividing line because it marks the year Sailor Shift released her first solo single after Ivy Echoes disbanded.</li>
+<li><strong>Genre group</strong> is a broader classification used for colour coding throughout the dashboards. Individual genres (Desert Rock, Dream Pop, Indie Folk, Synthwave etc.) are grouped into five families: Folk, Rock, Pop, Electronic, and Metal. The Americana genre remains as a standalone genre. This grouping makes the colour coding readable across charts while preserving the ability to drill into specific genres via filters.</li>
+</ul>
+</section>
+<section id="part-1-was-oceanus-folks-influence-growth-intermittent-or-a-gradual-rise" class="level3">
+<h3 class="anchored" data-anchor-id="part-1-was-oceanus-folks-influence-growth-intermittent-or-a-gradual-rise">Part 1: Was Oceanus Folk’s influence growth intermittent or a gradual rise?</h3>
+<p><img src="images/theme2 pictures/OF Influence over time (genre).png" class="img-fluid"></p>
+<p><img src="images/theme2 pictures/First time genre referenced OF.png" class="img-fluid"></p>
+</section>
+<section id="part-2-which-genres-and-artists-were-influenced-most-by-oceanus-folk" class="level3">
+<h3 class="anchored" data-anchor-id="part-2-which-genres-and-artists-were-influenced-most-by-oceanus-folk">Part 2: Which genres and artists were influenced most by Oceanus Folk?</h3>
+<p><img src="images/theme2 pictures/Top genres most influenced by OF.png" class="img-fluid"></p>
+<p><img src="images/theme2 pictures/Heatmap of Top Genres Influenced by OF.png" class="img-fluid"></p>
+<p><img src="images/theme2 pictures/Top 10 Artist influenced by OF.png" class="img-fluid"></p>
+<p><img src="images/theme2 pictures/Top 10 Artist influenced by OF (network).png" class="img-fluid"></p>
+</section>
+<section id="part-3-how-did-oceanus-folk-itself-change-with-the-rise-of-sailor-shift" class="level3">
+<h3 class="anchored" data-anchor-id="part-3-how-did-oceanus-folk-itself-change-with-the-rise-of-sailor-shift">Part 3: How did Oceanus Folk itself change with the rise of Sailor Shift?</h3>
+<p><img src="images/theme2 pictures/Genres influencing OF before:after sailor debut.png" class="img-fluid"></p>
+<p><img src="images/theme2 pictures/Type of influence distribution before:after debut.png" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
