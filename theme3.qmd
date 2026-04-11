@@ -11,7 +11,7 @@ This theme addresses two interconnected questions:
 
 -   Who are the next Oceanus Folk stars?
 
-The analysis is structured in two parts. Part 1 compares the careers of three carefully chosen artists to identify what separates a genuinely rising artist from one who has plateaued. Part 2 formalises those observations into a quantitative Rising Star Score, then applies it — alongside an independent Oceanus Folk Alignment measure — to predict the next three Oceanus Folk breakthroughs from a pool of 2,620 candidates.
+The analysis is structured in two parts. P1 compares the careers of three carefully chosen artists to identify what separates a genuinely rising artist from one who has plateaued. Part 2 formalises those observations into a quantitative Rising Star Score, then applies it — alongside an independent Oceanus Folk Alignment measure — to predict the next three Oceanus Folk breakthroughs from a pool of 2,620 candidates.
 
 **Key definitions used throughout:**
 
@@ -21,26 +21,19 @@ The analysis is structured in two parts. Part 1 compares the careers of three ca
 
 ### Summary of *Popularity* and *Influence* Indicators Used
 
-**Recent Notable Works**
-The count of songs or albums the artist released within the last five years (2035–2040) that carry a `notable = True` flag. This flag is a pre-existing indicator in the dataset, based on chart appearances and sales thresholds rather than derived by the analysis. It is the single heaviest parameter (weight 0.22) because it most directly answers whether the artist is gaining public recognition *right now*. The decision to use a five-year window was confirmed by Part 1: Kimberly Snyder's 20 all-time notable works scored 0 on this measure, correctly reflecting that her commercial momentum has stopped.
+**Recent Notable Works** The count of songs or albums the artist released within the last five years (2035–2040) that carry a `notable = True` flag. This flag is a pre-existing indicator in the dataset, based on chart appearances and sales thresholds rather than derived by the analysis. It is the single heaviest parameter (weight 0.22) because it most directly answers whether the artist is gaining public recognition *right now*. The decision to use a five-year window was confirmed by Part 1: Kimberly Snyder's 20 all-time notable works scored 0 on this measure, correctly reflecting that her commercial momentum has stopped.
 
-**Songs / Albums in Hot Genres (Genre Alignment Score)**
-Counts how many of an artist's recent works fall within the five most active genres by release volume over the last ten years. Hot genres are determined at runtime from the data rather than being hardcoded, so the analysis reflects the genre landscape as it actually appears in the dataset rather than assumptions about which genres are trending. The underlying logic is that an artist working in a genre with strong current audience engagement is more likely to receive visibility than one working in a genre that has contracted. This parameter captures whether the artist is positioned in fertile commercial territory, regardless of whether they have charted yet.
+**Songs / Albums in Hot Genres (Genre Alignment Score)** Counts how many of an artist's recent works fall within the five most active genres by release volume over the last ten years. Hot genres are determined at runtime from the data rather than being hardcoded, so the analysis reflects the genre landscape as it actually appears in the dataset rather than assumptions about which genres are trending. The underlying logic is that an artist working in a genre with strong current audience engagement is more likely to receive visibility than one working in a genre that has contracted. This parameter captures whether the artist is positioned in fertile commercial territory, regardless of whether they have charted yet.
 
-**Notoriety Data (Notoriety Recency Score)**
-Measures how recently the artist last received a `notoriety_date` — the year in which one of their works first appeared on a top chart. The score decays linearly from 1.0 (charted in the current year) to 0.0 (last charted ten or more years ago, or never charted). An artist who has not charted at all scores 0. This parameter's weight was reduced to 0.10 after Part 1 revealed a reliability problem: Sailor Shift scores 0 on this measure despite being clearly an active and celebrated artist, because her `notoriety_date` fields are sparsely populated in the dataset. `recent_notable_works` is the more dependable recency proxy.
+**Notoriety Data (Notoriety Recency Score)** Measures how recently the artist last received a `notoriety_date` — the year in which one of their works first appeared on a top chart. The score decays linearly from 1.0 (charted in the current year) to 0.0 (last charted ten or more years ago, or never charted). An artist who has not charted at all scores 0. This parameter's weight was reduced to 0.10 after Part 1 revealed a reliability problem: Sailor Shift scores 0 on this measure despite being clearly an active and celebrated artist, because her `notoriety_date` fields are sparsely populated in the dataset. `recent_notable_works` is the more dependable recency proxy.
 
-**Artistic Range — Genre Diversity and Role Diversity**
-Genre diversity is the raw count of distinct genres across all of the artist's works, normalised across the candidate pool. It rewards artists who work across multiple genres, reflecting the potential for crossover audiences and broader influence. Role diversity counts how many distinct creative roles the artist holds — performer only (1), performer and composer (2), or performer, composer, and lyricist (3). Multi-hyphenate artists tend to have stronger artistic identities and more direct creative ownership of their output. Role diversity carries a very low weight (0.01) because in practice most artists either perform only or perform all three roles, making it a weak differentiator between candidates. Genre diversity carries 0.07.
+**Artistic Range — Genre Diversity and Role Diversity** Genre diversity is the raw count of distinct genres across all of the artist's works, normalised across the candidate pool. It rewards artists who work across multiple genres, reflecting the potential for crossover audiences and broader influence. Role diversity counts how many distinct creative roles the artist holds — performer only (1), performer and composer (2), or performer, composer, and lyricist (3). Multi-hyphenate artists tend to have stronger artistic identities and more direct creative ownership of their output. Role diversity carries a very low weight (0.01) because in practice most artists either perform only or perform all three roles, making it a weak differentiator between candidates. Genre diversity carries 0.07.
 
-**Inbound Influence**
-The count of influence-type edges where another artist's work cites, covers, samples, or references this artist's work. This is the most intuitive measure of impact — if other artists are consciously building on your music, you have shaped the direction of the field. However, inbound influence was removed entirely from the Rising Star Score after Part 1 demonstrated a fundamental data quality problem: all three artists, including Sailor Shift, scored near zero. This is a consequence of how the crowdsourced influence repository accumulates data — newer works have not had time to be cited by subsequent releases. Including inbound influence in the score would systematically penalise exactly the artists the model is trying to identify. It is retained in the three-artist visualisations for contextual analysis, but is not a scored component.
+**Inbound Influence** The count of influence-type edges where another artist's work cites, covers, samples, or references this artist's work. This is the most intuitive measure of impact — if other artists are consciously building on your music, you have shaped the direction of the field. However, inbound influence was removed entirely from the Rising Star Score after Part 1 demonstrated a fundamental data quality problem: all three artists, including Sailor Shift, scored near zero. This is a consequence of how the crowdsourced influence repository accumulates data — newer works have not had time to be cited by subsequent releases. Including inbound influence in the score would systematically penalise exactly the artists the model is trying to identify. It is retained in the three-artist visualisations for contextual analysis, but is not a scored component.
 
-**Outbound Influence**
-The count of influence-type edges going from the artist's own works outward to other songs or albums — meaning the artist's works explicitly cite, cover, interpolate, sample, or style themselves after other works. This measures how actively the artist draws from and engages with the broader musical landscape. A high outbound influence count reflects deliberate artistic engagement: the artist is not working in isolation but is consciously situating their work within a tradition and responding to it. Min He's profile in Part 1 — 37 outbound edges with minimal recent chart activity — established this as a genuine and independent signal of industry embeddedness, distinct from commercial popularity. It carries the second-highest weight at 0.18.
+**Outbound Influence** The count of influence-type edges going from the artist's own works outward to other songs or albums — meaning the artist's works explicitly cite, cover, interpolate, sample, or style themselves after other works. This measures how actively the artist draws from and engages with the broader musical landscape. A high outbound influence count reflects deliberate artistic engagement: the artist is not working in isolation but is consciously situating their work within a tradition and responding to it. Min He's profile in Part 1 — 37 outbound edges with minimal recent chart activity — established this as a genuine and independent signal of industry embeddedness, distinct from commercial popularity. It carries the second-highest weight at 0.18.
 
-**Collaborations**
-Captured through two complementary sub-signals, combined into a single `collab_score`:
+**Collaborations** Captured through two complementary sub-signals, combined into a single `collab_score`:
 
 `recent_collab_count` (65% of the combined score) counts the number of distinct artists the candidate has collaborated with in the last five years — where a collaboration is defined as sharing a PerformerOf edge on the same song or album. This measures whether the artist is actively building their network right now.
 
@@ -48,10 +41,9 @@ Captured through two complementary sub-signals, combined into a single `collab_s
 
 A separate parameter — `collab_with_popular_count` — specifically measures network proximity to established stars: the number of distinct popular artists (those in the top 25th percentile by all-time notable works, plus Sailor Shift by force-inclusion) that the candidate has collaborated with. This carries the third-highest weight (0.14) and reflects the most direct version of the "moving in the right circles" principle: appearing on a track with a top-quartile artist provides immediate exposure to their audience and credibility signal.
 
-**Inspiration from Notable Works (Influenced by Popular Score)**
-Counts influence-type edges where the artist's works point at songs or albums that have `notoriety_date` populated — meaning the artist draws inspiration specifically from commercially recognised works rather than obscure ones. This is the weakest of the influence parameters (weight 0.04) and was included as a signal of commercial awareness rather than artistic quality. An artist who consciously builds on proven, charted music is more likely to reach the audiences that found that music compelling.
+**Inspiration from Notable Works (Influenced by Popular Score)** Counts influence-type edges where the artist's works point at songs or albums that have `notoriety_date` populated — meaning the artist draws inspiration specifically from commercially recognised works rather than obscure ones. This is the weakest of the influence parameters (weight 0.04) and was included as a signal of commercial awareness rather than artistic quality. An artist who consciously builds on proven, charted music is more likely to reach the audiences that found that music compelling.
 
-## Part 1: What does a rising star look like (in terms of "popularity" and "influence")? 
+## Part 1: What does a rising star look like (in terms of "popularity" and "influence")?
 
 ### **Three Artist Career Analysis**
 
@@ -67,26 +59,25 @@ The goal was not to pick three successful artists, but three artists who represe
 
 ### **Data Visualisations**
 
-![Visualisation 3a:](images/Career Timeline by Popularity and Influence.jpg){fig-align="center"}
+![Visualisation 3a:](images/theme3 pictures/Career Timeline by Popularity and Influence.jpg){fig-align="center"}
 
-**Cumulative notable works over time**
-All three artists are shown on a single shared axis to allow direct comparison of trajectory shapes. Sailor Shift's steep acceleration from 2028 onward is immediately visible against Kimberly Snyder's earlier but now-flat line and Min He's gradual accumulation. The vertical markers at each artist's debut year show how long each took to reach chart recognition from debut.
+**Cumulative notable works over time** All three artists are shown on a single shared axis to allow direct comparison of trajectory shapes. Sailor Shift's steep acceleration from 2028 onward is immediately visible against Kimberly Snyder's earlier but now-flat line and Min He's gradual accumulation. The vertical markers at each artist's debut year show how long each took to reach chart recognition from debut.
 
-![Visualisation 3b:](images/Genre Diversity and Evolution.jpg){fig-align="center"}
+![Visualisation 3b:](images/theme3 pictures/Genre Diversity and Evolution.jpg){fig-align="center"}
 
-![Visualisation 3c:](images/Popularity vs Influence Matrix.jpg)
+![Visualisation 3c:](images/theme3 pictures/Popularity vs Influence Matrix.jpg)
 
-### Key Findings 
+### Key Findings
 
 | Observation from Part 1 | What it means for Part 2 |
-|----|----|
+|------------------------------------|------------------------------------|
 | Sailor Shift has 12 recent chart hits — more than anyone else | `recent_notable_works` is the strongest rising signal → highest weight (0.22) |
 | Kimberly Snyder has 20 all-time notable works but 0 recent | Recency must outweigh all-time totals — a plateaued artist should not score high |
 | Min He has 37 outbound influence edges with 0 recent chart hits | Outbound influence is independent of popularity → must be separately weighted (0.18) |
 | All three artists have near-zero inbound influence due to data lag | Inbound influence (i.e. times cited by others) removed entirely from the score |
 | Sailor Shift scores 0 on `notoriety_recency_score` despite being clearly active | This field is unreliable for very recent artists → weight reduced to 0.10 |
 
-## Part 2: Who are the next Oceanus Folk stars? 
+## Part 2: Who are the next Oceanus Folk stars?
 
 ### Rising Star Score
 
@@ -103,7 +94,7 @@ This led to two guiding principles that shaped the Rising Star Score parameter c
 The Rising Star Score is a weighted composite of 10 parameters, each normalised to a 0–1 scale using MinMaxScaler before combining. Weights were chosen arbitrarily but ranked according to justifications from Part 1.
 
 | Parameter | Weight | Justification |
-|-------------------------|-----------------|------------------------------|
+|-------------------------|------------------|-----------------------------|
 | `recent_notable_works` | 0.22 | Directly observed as the defining signal of an actively rising artist (Sailor Shift: 12; Kimberly Snyder: 0) |
 | `outbound_influence` | 0.18 | Shown to be independent of chart success in Part 1; Min He's profile established it as a distinct rising signal |
 | `collab_with_popular_count` | 0.14 | Network proximity to established stars — being on a track with a top-quartile artist provides direct exposure to their audience |
@@ -159,28 +150,28 @@ OF alignment is deliberately excluded from the Rising Star Score and used only a
 
 ### Data Visualisations
 
-![**Top 15 rising star candidates (bar chart)** The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark. ](images/Screenshot 2026-04-10 at 3.47.54 PM.jpg){fig-align="center"}
+![**Top 15 rising star candidates (bar chart)** The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark.](images/theme3 pictures/Top 20 artists by rising star score.jpg){fig-align="center"}
 
-![](images/Screenshot 2026-04-10 at 3.48.01 PM.jpg){fig-align="center"}
+![](images/theme3 pictures/Rising star score breakdown.jpg){fig-align="center"}
 
-![](images/Screenshot 2026-04-10 at 3.48.14 PM.jpg){fig-align="center"}
+![](images/theme3 pictures/Top 20 artists most aligned to OF.jpg){fig-align="center"}
 
-![](images/Screenshot 2026-04-10 at 4.51.04 PM.jpg){fig-align="center"}
+![](images/theme3 pictures/OF Rising star predictions.jpg){fig-align="center"}
 
 ## Final Dashboards & Discussion
 
 ### Dashboard 1 – Career Profiles of Three Artists: Sailor Shift, Kimberly Snyder and Min He
 
-![*Three artists were selected to represent contrasting career archetypes: **Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)**. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)*](images/Screenshot 2026-04-10 at 3.22.23 PM.jpg){fig-align="center"}
+![*Three artists were selected to represent contrasting career archetypes: **Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)**. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)*](images/theme3 pictures/Comparison of 3 artists.jpg){fig-align="center"}
 
 The four-panel dashboard places all career metrics on a shared timeline to allow direct visual comparison of three distinct archetypes. The key argument the dashboard makes is that rising stars do not follow a single path: Sailor Shift's fast breakout, Kimberly Snyder's long career that has now plateaued, and Min He's sustained influence without recent commercial breakthrough all reflect different expressions of the same underlying characteristics — active output, network growth, and musical engagement.
 
-### Dashboard 2 – Rising Star Leaderboard 
+### Dashboard 2 – Rising Star Leaderboard
 
-![](images/Screenshot 2026-04-10 at 3.48.25 PM.jpg){fig-align="center"}
+![](images/theme3 pictures/Rising star leaderboard.jpg)
 
 ### Dashboard 3 – Oceanus Folk Rising Star Predictions
 
-![*Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)*](images/Screenshot 2026-04-10 at 3.48.28 PM-01.jpg)
+![*Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)*](images/theme3 pictures/OF Rising star predictions w explaination.jpg)
 
 Bea Azure and Kael Storm are both members of Copper Canyon Ghosts, debuted in 2031, and frequently collaborate with Sailor Shift. They represent the OF-native pathway: artists already embedded in the scene who are building momentum through direct network proximity to the genre's defining figure. Ping Sun is the contrasting prediction — a Blues Rock artist whose outbound influence edges point heavily toward OF works, suggesting the next generation of Oceanus Folk stars may not all emerge from within the community itself, but from adjacent genres drawn toward its sound.

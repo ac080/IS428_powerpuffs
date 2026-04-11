@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.35">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Theme 3: Prediction and Profile of Rising Stars – IS428 Project - Team PowerPuffs</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4397f41838bf6696a92fdfbed53ac40c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b8f9b2f3cffee265242a5d44fbb1e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,6 +80,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IS428 Project - Team PowerPuffs</span>
     </a>
@@ -208,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>What does a rising star look like (in terms of “popularity” and “influence”), and</p></li>
 <li><p>Who are the next Oceanus Folk stars?</p></li>
 </ul>
-<p>The analysis is structured in two parts. Part 1 compares the careers of three carefully chosen artists to identify what separates a genuinely rising artist from one who has plateaued. Part 2 formalises those observations into a quantitative Rising Star Score, then applies it — alongside an independent Oceanus Folk Alignment measure — to predict the next three Oceanus Folk breakthroughs from a pool of 2,620 candidates.</p>
+<p>The analysis is structured in two parts. P1 compares the careers of three carefully chosen artists to identify what separates a genuinely rising artist from one who has plateaued. Part 2 formalises those observations into a quantitative Rising Star Score, then applies it — alongside an independent Oceanus Folk Alignment measure — to predict the next three Oceanus Folk breakthroughs from a pool of 2,620 candidates.</p>
 <p><strong>Key definitions used throughout:</strong></p>
 <ul>
 <li><p><strong>Popularity</strong> is measured by public commercial success — specifically, number of <code>recent_notable_works</code> and works that received a <code>notoriety_date</code> (chart recognition), weighted toward recency. An artist is <em>rising</em> when their chart activity is recent (defined as within the last 5-10 years), not historical.</p></li>
@@ -245,20 +245,20 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="data-visualisations"><strong>Data Visualisations</strong></h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Career Timeline by Popularity and Influence.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/Career Timeline by Popularity and Influence.jpg" class="img-fluid figure-img"></p>
 <figcaption>Visualisation 3a:</figcaption>
 </figure>
 </div>
 <p><strong>Cumulative notable works over time</strong> All three artists are shown on a single shared axis to allow direct comparison of trajectory shapes. Sailor Shift’s steep acceleration from 2028 onward is immediately visible against Kimberly Snyder’s earlier but now-flat line and Min He’s gradual accumulation. The vertical markers at each artist’s debut year show how long each took to reach chart recognition from debut.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Genre Diversity and Evolution.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/Genre Diversity and Evolution.jpg" class="img-fluid figure-img"></p>
 <figcaption>Visualisation 3b:</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Popularity vs Influence Matrix.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/Popularity vs Influence Matrix.jpg" class="img-fluid figure-img"></p>
 <figcaption>Visualisation 3c:</figcaption>
 </figure>
 </div>
@@ -316,8 +316,8 @@ ul.task-list li input[type="checkbox"] {
 <table class="caption-top table">
 <colgroup>
 <col style="width: 34%">
-<col style="width: 23%">
-<col style="width: 41%">
+<col style="width: 25%">
+<col style="width: 40%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -410,23 +410,23 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="data-visualisations-1">Data Visualisations</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.47.54 PM.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/Top 20 artists by rising star score.jpg" class="img-fluid figure-img"></p>
 <figcaption><strong>Top 15 rising star candidates (bar chart)</strong> The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.48.01 PM.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/Rising star score breakdown.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.48.14 PM.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/Top 20 artists most aligned to OF.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 4.51.04 PM.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/OF Rising star predictions.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -437,7 +437,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="dashboard-1-career-profiles-of-three-artists-sailor-shift-kimberly-snyder-and-min-he">Dashboard 1 – Career Profiles of Three Artists: Sailor Shift, Kimberly Snyder and Min He</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.22.23 PM.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/Comparison of 3 artists.jpg" class="img-fluid figure-img"></p>
 <figcaption><em>Three artists were selected to represent contrasting career archetypes: <strong>Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)</strong>. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)</em></figcaption>
 </figure>
 </div>
@@ -445,17 +445,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="dashboard-2-rising-star-leaderboard" class="level3">
 <h3 class="anchored" data-anchor-id="dashboard-2-rising-star-leaderboard">Dashboard 2 – Rising Star Leaderboard</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.48.25 PM.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
+<p><img src="images/theme3 pictures/Rising star leaderboard.jpg" class="img-fluid"></p>
 </section>
 <section id="dashboard-3-oceanus-folk-rising-star-predictions" class="level3">
 <h3 class="anchored" data-anchor-id="dashboard-3-oceanus-folk-rising-star-predictions">Dashboard 3 – Oceanus Folk Rising Star Predictions</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2026-04-10 at 3.48.28 PM-01.jpg" class="img-fluid figure-img"></p>
+<p><img src="images/theme3 pictures/OF Rising star predictions w explaination.jpg" class="img-fluid figure-img"></p>
 <figcaption><em>Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)</em></figcaption>
 </figure>
 </div>
