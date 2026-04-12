@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Theme 3: Prediction and Profile of Rising Stars – IS428 Project - Team PowerPuffs</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b8f9b2f3cffee265242a5d44fbb1e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4397f41838bf6696a92fdfbed53ac40c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,8 +82,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IS428 Project - Team PowerPuffs</span>
     </a>
@@ -167,7 +167,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#rising-star-score" id="toc-rising-star-score" class="nav-link" data-scroll-target="#rising-star-score">Rising Star Score</a></li>
   <li><a href="#oceanus-folk-alignment-score" id="toc-oceanus-folk-alignment-score" class="nav-link" data-scroll-target="#oceanus-folk-alignment-score">Oceanus Folk Alignment Score</a></li>
-  <li><a href="#what-it-measures" id="toc-what-it-measures" class="nav-link" data-scroll-target="#what-it-measures"><strong>What it measures</strong></a></li>
   <li><a href="#data-visualisations-1" id="toc-data-visualisations-1" class="nav-link" data-scroll-target="#data-visualisations-1">Data Visualisations</a></li>
   </ul></li>
   <li><a href="#final-dashboards-discussion" id="toc-final-dashboards-discussion" class="nav-link" data-scroll-target="#final-dashboards-discussion">Final Dashboards &amp; Discussion</a>
@@ -246,22 +245,33 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/theme3 pictures/Career Timeline by Popularity and Influence.jpg" class="img-fluid figure-img"></p>
-<figcaption>Visualisation 3a:</figcaption>
+<figcaption><strong><em>Career Timeline by Popularity and Influence</em></strong></figcaption>
 </figure>
 </div>
-<p><strong>Cumulative notable works over time</strong> All three artists are shown on a single shared axis to allow direct comparison of trajectory shapes. Sailor Shift’s steep acceleration from 2028 onward is immediately visible against Kimberly Snyder’s earlier but now-flat line and Min He’s gradual accumulation. The vertical markers at each artist’s debut year show how long each took to reach chart recognition from debut.</p>
+<p>This visualisation presents the cumulative career trajectories of three artists across four dimensions — notable works, outbound influence, inbound influence, and collaboration count — plotted from each artist’s debut year to the present on a shared x-axis, enabling direct shape comparison across different career lengths and starting points.</p>
+<p>Kimberly Snyder leads across every dimension in her career from 2016 to 2030: 20 cumulative notable works, approximately 65 outbound influence edges, over 100 inbound citations, and 130 collaborations accumulated over her career. Min He, with only eight years of activity, shows a more modest notable works count (~10) but a notably steep outbound influence line reaching ~40 by 2028, suggesting that his musical engagement with the broader industry outpaces his commercial output. Sailor Shift, debuting latest in 2028, shows consistent upward trajectories across popularity and outbound influence as well.</p>
+<p>The most analytically significant finding comes from the inbound influence panel: both Sailor Shift and Min He register flat lines at zero throughout their careers, despite Sailor Shift’s well-documented commercial success. This is likely not a reflection of their actual impact, but rather a consequence of data lag (i.e.&nbsp;newer works have not had sufficient time to be cited by subsequent releases in the dataset). This finding directly motivated the removal of inbound influence from the Rising Star Score. Similarly, the low collaboration counts for both Sailor Shift and Min He relative to Kimberly Snyder suggest that cumulative collaboration volume is a function of career length as much as industry integration, and is therefore a weaker indicator of rising potential than outbound influence or recent chart activity.</p>
+<p>Overall, this chart confirms that outbound influence and recent notable works are the most meaningful and reliable signals of an artist’s current trajectory, while inbound influence and raw collaboration counts are more reflective of career maturity than rising momentum.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/theme3 pictures/Genre Diversity and Evolution.jpg" class="img-fluid figure-img"></p>
-<figcaption>Visualisation 3b:</figcaption>
+<figcaption><strong><em>Genre Diversity and Evolution</em></strong></figcaption>
 </figure>
 </div>
+<p>This visualisation tracks the cumulative genre output of each artist over time using a stacked area chart in a small-multiples format, with each panel covering the artist’s active years independently to account for their different career lengths.</p>
+<p>Kimberly Snyder and Min He have each performed works across six distinct genres, while Sailor Shift’s panel is almost entirely a single colour representing Oceanus Folk — her catalogue shows no genre diversification whatsoever across a 12-year career. Kimberly Snyder’s dominant genres are Dream Pop, Indie Rock, and Synthwave, with consistent layering of new genres from her debut. Min He’s panel is notably smaller in scale but similarly diverse in composition.</p>
+<p>A particularly striking finding is that despite Min He having the highest outbound influence score among Oceanus Folk-connected artists, he has performed no Oceanus Folk works himself. His OF alignment comes entirely from his outbound influence edges — his songs cite, interpolate from, or style themselves after OF works, but his output sits in adjacent genres. This makes him a concrete example of an artist who is musically shaped by Oceanus Folk without producing within it — a pattern that has broader implications for understanding how genre influence spreads. It connects directly to the broader finding from <em>Theme 2</em>: Oceanus Folk has become influential enough that artists working in entirely different genres are actively drawing from it. This raises an important question for the predictions: the next Oceanus Folk star may not necessarily be an artist who produces exclusively OF content, but one who draws heavily from it and gradually migrates toward it (later evidenced by Ping Sun).</p>
+<p>This chart reinforces the importance of distinguishing between an artist’s genre of production and their genre of inspiration when assessing OF alignment, and supports the two-component definition of the OF Alignment Score (see below).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/theme3 pictures/Popularity vs Influence Matrix.jpg" class="img-fluid figure-img"></p>
-<figcaption>Visualisation 3c:</figcaption>
+<figcaption><em><strong>Popularity vs Influence Matrix</strong>: reference lines are the medians of all three artists’ respective metrics.</em></figcaption>
 </figure>
 </div>
+<p>This chart provides a static summary snapshot of where all three artists sit relative to each other on the two more striking dimensions (Notable Works and Outbound Influence) as defined in the first visualisation. The reference lines are set at the medians of the three artists’ respective metrics — notable works median at 10 and outbound influence median at approximately 40 — creating four interpretive quadrants.</p>
+<p>Kimberly Snyder occupies the top-right quadrant (More Popular, More Influenced) as the only artist with both above-median chart success and above-median outbound influence. Sailor Shift sits in the top-left (More Popular, Less Influenced), confirming that her 14 notable works exceed the group median but her 19 outbound influence edges fall below it. Min He falls in the bottom-right (Less Popular, More Influenced), having 8 notable works below the median but 37 outbound influence edges well above it.</p>
+<p>The most important insight this chart communicates is that none of the three artists occupy the bottom-left quadrant — there are no artists in this group who are both commercially obscure and musically disengaged. All three have broken through on at least one dimension, which is itself a selection effect of having chosen them as comparison archetypes.</p>
+<p><em>It is worth noting the reference lines are derived from only three data points, which makes them sensitive to the specific artists chosen. The quadrant positions should be read as a relative ordering of these three archetypes rather than absolute thresholds of popularity or influence.</em></p>
 </section>
 <section id="key-findings" class="level3">
 <h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
@@ -384,9 +394,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="oceanus-folk-alignment-score" class="level3">
 <h3 class="anchored" data-anchor-id="oceanus-folk-alignment-score">Oceanus Folk Alignment Score</h3>
-</section>
-<section id="what-it-measures" class="level3">
-<h3 class="anchored" data-anchor-id="what-it-measures"><strong>What it measures</strong></h3>
+<p><strong>What it measures</strong></p>
 <p>The Oceanus Folk Alignment Score measures how centrally Oceanus Folk sits within an artist’s output and inspiration. It is a single continuous value between 0 and 1, calculated as the average of two proportions:</p>
 <ul>
 <li><strong>OF genre proportion</strong> — the share of the artist’s total works that are tagged <code>genre = "Oceanus Folk"</code>:</li>
@@ -411,24 +419,39 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/theme3 pictures/Top 20 artists by rising star score.jpg" class="img-fluid figure-img"></p>
-<figcaption><strong>Top 15 rising star candidates (bar chart)</strong> The leaderboard shows rising_star_score for the top 20 candidates with Sailor Shift highlighted as the benchmark.</figcaption>
+<figcaption><strong><em>Top 20 Rising Star Candidates</em></strong></figcaption>
 </figure>
 </div>
+<p>This ranked horizontal bar chart displays the top 20 artists by Rising Star Score, with the bar colour encoding the Oceanus Folk Alignment Score. Sailor Shift’s bar is both the longest and the darkest, confirming she simultaneously leads on general rising momentum and Oceanus Folk alignment — validating her as the correct benchmark for the framework.</p>
+<p>The colour encoding reveals the chart’s most important finding: most of the top 20 rising star candidates show very light bars, indicating near-zero OF alignment despite their high general scores. Bea Azure is the clear exception — her bar at rank 7 is among the darkest in the top 20, signalling that she is the only high-scoring artist who is also meaningfully OF-aligned. The results immediately justifies why a separate OF Alignment dimension is necessary (see prediction bubble chart below): without it, the leaderboard alone would direct predictions toward artists with no OF orientation at all.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/theme3 pictures/Rising star score breakdown.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/Rising star score breakdown.jpg" class="img-fluid figure-img"></p>
+<figcaption><strong><em>Rising Star Score Component Breakdown</em></strong></figcaption>
 </figure>
 </div>
+<p>This 100% stacked bar chart shows the proportional contribution of each scoring parameter to the total Rising Star Score for every artist in the top 20. Rather than showing absolute scores, it reveals the internal composition of each artist’s ranking — why they score highly and on what basis.</p>
+<p>Sailor Shift’s bar is dominated by Recent Notable Works (dark brown) and Collab With Popular Count (orange), confirming that her score is driven by exactly the two signals the framework was designed to reward: current chart activity and proximity to established talent. Most other artists show a more diffuse spread, with Outbound Influence (purple) and Influenced By Popular Score (green) contributing substantially to their scores, suggesting their rising potential is rooted more in musical engagement than commercial output.</p>
+<p>Bea Azure and Kael Storm stand out for having one of the broader distributions of contributing parameters among the top artists, including a visible Genre Alignment Score (red) segment — one of few artists in the top 20 where this component contributes meaningfully, reflecting that their works fall within currently trending genres.</p>
+<p>The chart also surfaces an important limitation: Jude Rivers and Xiuying Xiang both rank highly despite having no Recent Notable Works contribution (no dark brown segment visible). This shows that the nine remaining parameters collectively carry sufficient weight to produce competitive scores in the absence of the top-weighted component, which raises a question about whether the highest-weight parameter is weighted heavily enough to truly anchor the definition of “rising.”, or if the “recency” window has been too narrowly defined.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/theme3 pictures/Top 20 artists most aligned to OF.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/Top 20 artists most aligned to OF.jpg" class="img-fluid figure-img"></p>
+<figcaption><strong><em>Top 20 Artists Most Aligned to Oceanus Folk Genre</em></strong></figcaption>
 </figure>
 </div>
+<p>This chart shows that 17 of the top 20 most OF-aligned artists score exactly 1.0, meaning their entire output is Oceanus Folk and all their outbound influence edges point toward OF works. The remaining three — Ping Feng, Li Deng, and XANOVA — score between 0.88 and 0.90, representing a slight but meaningful departure from complete OF orientation.</p>
+<p>The key insight is not which specific artists appear here, but what a score of 1.0 represents: an artist who both produces exclusively OF music and draws all their stylistic inspiration from OF sources. This is a very high bar, and the fact that 17 artists meet it confirms there is a substantial community of deeply OF-committed artists in the dataset. The practical implication for the predictions is that high OF alignment alone is insufficient to determine if one is a “rising star”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/theme3 pictures/OF Rising star predictions.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="images/theme3 pictures/OF Rising star predictions.jpg" class="img-fluid figure-img"></p>
+<figcaption><strong><em>Oceanus Folk Rising Star Predictions</em></strong></figcaption>
 </figure>
 </div>
+<p>This bubble chart is combines the Rising Star Score (x-axis), OF Alignment Score (y-axis), and number of Oceanus Folk works (bubble size) into a single view.</p>
+<p>The top-left cluster of artists with OF alignment near 1.0 but rising star scores below 1.5 — labelled “Lesser Known Oceanus Folk Stars” — represents the OF community’s established artists who have yet to reach their breakout. Artists like Chao Mo and John Maldonado have a “perfect” OF alignment but minimal industry integration, suggesting deep genre commitment without the collaboration networks, recent chart activity, or genre-trend positioning needed to break through. Xia Wu is a notable case within this group: a large orange bubble indicating a high number of OF works, but a rising star score that keeps her firmly in the left half of the chart, suggesting prolific OF production might have not yet translated into broader momentum.</p>
+<p>The three predicted artists occupy meaningfully distinct positions. Bea Azure (#1) at rising star score ~3.2 and OF alignment ~0.62 is the clearest case — high on both axes, with the largest bubble size reflecting substantial OF work output. Kael Storm (#2) has similar OF alignment (~0.50) but sits closer to the threshold on the x-axis (~2.5), suggesting slightly less general momentum while remaining above both reference lines. Ping Sun (#3) is the most analytically interesting position: lower on both axes than the other two (~2.2 rising score, ~0.53 OF alignment) but still above both reference lines, and represents the only prediction whose OF alignment comes primarily from outbound influence rather than genre production — an artist approaching OF from outside the community rather than within it.</p>
+<p>The bottom-right quadrant — “Rising Stars Outside Oceanus Folk Scene” — contains artists such as Jude Rivers and Sienna Fox with strong rising momentum but near-zero OF alignment. Their presence confirms that the x-axis captures genuine industry emergence, not OF-specific activity, validating the independence of the two axes.</p>
 </section>
 </section>
 <section id="final-dashboards-discussion" class="level2">
@@ -441,21 +464,23 @@ ul.task-list li input[type="checkbox"] {
 <figcaption><em>Three artists were selected to represent contrasting career archetypes: <strong>Sailor Shift (fast breakout), Kimberly Snyder (highest notable works in the dataset), and Min He (highest outbound influence among Oceanus Folk artists)</strong>. Their shared characteristics were then formalised into a Rising Star Score. (included in poster)</em></figcaption>
 </figure>
 </div>
-<p>The four-panel dashboard places all career metrics on a shared timeline to allow direct visual comparison of three distinct archetypes. The key argument the dashboard makes is that rising stars do not follow a single path: Sailor Shift’s fast breakout, Kimberly Snyder’s long career that has now plateaued, and Min He’s sustained influence without recent commercial breakthrough all reflect different expressions of the same underlying characteristics — active output, network growth, and musical engagement.</p>
+<p>This dashboard addresses the first challenge question: visualising and comparing the careers of three artists with distinct archetypes. It brings together the career timeline, genre evolution, and popularity-influence matrix into a single view, moving from individual trajectories (timeline charts) to aggregate comparison (matrix). A key insight is that rising stardom often does not follow a single path — Kimberly Snyder, Min He, and Sailor Shift each represent a different combination of popularity and influence — but all three share observable characteristics that can be formalised into a predictive framework. The dashboard establishes those shared characteristics as the foundation for Part 2, making it the analytical bridge between the three-artist exploration and the rising star score.</p>
 </section>
 <section id="dashboard-2-rising-star-leaderboard" class="level3">
 <h3 class="anchored" data-anchor-id="dashboard-2-rising-star-leaderboard">Dashboard 2 – Rising Star Leaderboard</h3>
 <p><img src="images/theme3 pictures/Rising star leaderboard.jpg" class="img-fluid"></p>
+<p>This dashboard presents the quantitative output of the Rising Star Score applied to 2,620 candidates. The ranked bar chart establishes who scores highest and encodes OF alignment through colour to immediately reveal which high scorers are also OF-relevant. The component breakdown below it explains the <em>why</em> behind each ranking — showing that Sailor Shift’s dominance is driven by recent chart activity and popular network proximity, while other high scorers are carried by different combinations of parameters. Together, they reveal which components drove the rising star score of the top artists.</p>
 </section>
 <section id="dashboard-3-oceanus-folk-rising-star-predictions" class="level3">
 <h3 class="anchored" data-anchor-id="dashboard-3-oceanus-folk-rising-star-predictions">Dashboard 3 – Oceanus Folk Rising Star Predictions</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/theme3 pictures/OF Rising star predictions w explaination.jpg" class="img-fluid figure-img"></p>
-<figcaption><em>Bea Azure, Kael Storm, and Ping Sun as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)</em></figcaption>
+<figcaption><em><strong>Bea Azure</strong>, <strong>Kael Storm</strong>, and <strong>Ping Sun</strong> as the three most likely next Oceanus Folk stars within the next five years, selected from a pool of 2620 candidates. (included in poster)</em></figcaption>
 </figure>
 </div>
-<p>Bea Azure and Kael Storm are both members of Copper Canyon Ghosts, debuted in 2031, and frequently collaborate with Sailor Shift. They represent the OF-native pathway: artists already embedded in the scene who are building momentum through direct network proximity to the genre’s defining figure. Ping Sun is the contrasting prediction — a Blues Rock artist whose outbound influence edges point heavily toward OF works, suggesting the next generation of Oceanus Folk stars may not all emerge from within the community itself, but from adjacent genres drawn toward its sound.</p>
+<p>This is the conclusion dashboard, directly answering the second challenge question. The bubble chart synthesises the rising star score and OF alignment into a single visual argument: only artists who score highly on both dimensions simultaneously are credible predictions for the next Oceanus Folk breakout. The quadrant structure makes this argument spatially intuitive — the top-right prediction zone is visually distinct, and the three labelled predictions (Bea Azure, Kael Storm, Ping Sun) are positioned there with clear separation from the rest of the candidate pool.</p>
+<p>The three predictions can represent two distinct pathways to OF stardom. Bea Azure and Kael Storm are both members of Copper Canyon Ghosts, debuted in 2031, and frequently collaborate with Sailor Shift — they represent the OF-native pathway: artists already embedded in the scene who are building momentum through direct network proximity to the genre’s defining figure. Their positions in the top-right quadrant reflect both strong rising star scores driven by recent notable works and collaboration with popular artists, and high OF alignment driven by their exclusive production within the genre. Ping Sun is the contrasting prediction — a Blues Rock artist whose outbound influence edges point heavily toward OF works despite producing no OF content directly. His presence in the prediction zone suggests the next generation of Oceanus Folk stars may not all emerge from within the community itself, but from adjacent genres drawn toward its sound — an observation that connects back to Min He’s career archetype in Part 1 and to the broader Theme 2 finding that OF’s influence has spread well beyond its own artists.</p>
 
 
 </section>

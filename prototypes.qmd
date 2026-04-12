@@ -2,10 +2,6 @@
 title: "Data Exploration & Visualisation Prototypes"
 ---
 
-## **Exploratory Data Analysis**
-
-## **Data Preparation**
-
-## **Visualisation Prototypes**
+*TO BE UPDATED*
 
 ## 
