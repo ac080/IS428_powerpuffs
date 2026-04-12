@@ -4,4 +4,50 @@ author: "Anthea Chua, Marcus Tan, Savannah Koh "
 format: html
 ---
 
-Hello, welcome to our website for our Visual Analytics Project!
+## Welcome
+
+This project explores how one artist, Sailor Shift, became a defining figure in the evolution of Oceanus Folk. Using a synthetic directed multigraph of music industry relationships, the analysis examines how Sailor was influenced by others, how her collaborations shaped the artists around her, and how Oceanus Folk itself evolved as a result of those interactions.
+
+The project is built around three connected themes. The first looks at Sailor Shift’s own career profile, tracing how her artistic identity remained strongly rooted in Oceanus Folk even as she drew influence from a broader range of creators and genres. The second investigates how Oceanus Folk spread outward, showing how the genre became less insular and more connected to adjacent styles over time. The third turns toward the future, using a rising-star framework to identify which artists are most likely to represent the next wave of Oceanus Folk breakout success.
+
+Together, these themes position Sailor Shift as more than a successful musician. She emerges as a central figure in a wider network of influence, collaboration, and genre diffusion. Her work reflects a balance between stability and openness: she maintains a strong Oceanus Folk identity while drawing from diverse influences, and her collaborations are strongly associated with pulling nearby artists closer to the genre.
+
+## What this project covers
+
+This project answers three main questions:
+
+- How was Sailor Shift shaped by the artists, works, and genres around her?
+- How did Sailor Shift contribute to the spread and transformation of Oceanus Folk?
+- Which artists are best positioned to become the next major Oceanus Folk stars?
+
+To answer these questions, the project analyses relationships between songs, albums, people, groups, and record labels in a large music knowledge graph. It focuses on patterns of influence, collaboration, genre movement, and downstream impact.
+
+## Key findings at a glance
+
+- Sailor Shift’s influences are broad rather than dominated by a single creator.
+- Her work remains overwhelmingly rooted in Oceanus Folk, even as the genres shaping her become more diverse.
+- Collaboration with Sailor is strongly associated with a shift in collaborators’ output toward Oceanus Folk.
+- Oceanus Folk becomes more outward-facing over time, increasingly interacting with genres beyond its original core.
+- The next generation of likely breakout artists includes both Oceanus Folk natives and artists approaching the genre from outside it.
+
+## Themes
+
+### Theme 1: Sailor Shift’s Career Profile
+
+This theme examines Sailor Shift as an artist. It explores the balance between a stable Oceanus Folk identity and an expanding set of outside influences. It also studies her collaborations and shows how those relationships appear to reshape the genre output of the people she works with.
+
+### Theme 2: The Spread of Oceanus Folk
+
+This theme shifts from the artist to the genre. It investigates how Oceanus Folk moves from a relatively self-contained tradition into a more connected and outward-facing musical identity. The analysis suggests that Sailor Shift’s rise aligns with a broader period of expansion in the genre’s visibility and influence.
+
+### Theme 3: Predicting the Next Rising Stars
+
+This theme looks forward. Using indicators such as recent notable works, outbound influence, collaboration activity, and network proximity, it identifies artists who are structurally well positioned to emerge as the next major Oceanus Folk stars.
+
+## Why this matters
+
+This project is not only about one musician. It is about how genres evolve through people, relationships, and creative exchange. By looking at Sailor Shift, Oceanus Folk, and the artists around them together, the project shows how musical traditions can remain rooted in a distinct identity while still expanding outward through influence and collaboration.
+
+## Explore the themes
+
+Use the navigation to move through the three themes and see how Sailor Shift’s career, Oceanus Folk’s evolution, and the prediction of future stars connect into one larger story.
