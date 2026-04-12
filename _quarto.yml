@@ -14,6 +14,7 @@ project:
     - index.qmd
 
 website:
+  search: false
   title: "IS428 Project - Team PowerPuffs"
   navbar:
     left:
