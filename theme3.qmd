@@ -69,7 +69,7 @@ The most analytically significant finding comes from the inbound influence panel
 
 Overall, this chart confirms that outbound influence and recent notable works are the most meaningful and reliable signals of an artist's current trajectory, while inbound influence and raw collaboration counts are more reflective of career maturity than rising momentum.
 
-![***Genre Diversity and Evolution*** ](images/theme3%20pictures/Genre%20Diversity%20and%20Evolution.jpg){fig-align="center"}
+![***Genre Diversity and Evolution***](images/theme3%20pictures/Genre%20Diversity%20and%20Evolution.jpg){fig-align="center"}
 
 This visualisation tracks the cumulative genre output of each artist over time using a stacked area chart in a small-multiples format, with each panel covering the artist's active years independently to account for their different career lengths.
 
@@ -79,7 +79,7 @@ A particularly striking finding is that despite Min He having the highest outbou
 
 This chart reinforces the importance of distinguishing between an artist's genre of production and their genre of inspiration when assessing OF alignment, and supports the two-component definition of the OF Alignment Score (see below).
 
-![***Popularity vs Influence Matrix**: reference lines are the medians of all three artists' respective metrics.* ](images/theme3%20pictures/Popularity%20vs%20Influence%20Matrix.jpg)
+![***Popularity vs Influence Matrix**: reference lines are the medians of all three artists' respective metrics.*](images/theme3%20pictures/Popularity%20vs%20Influence%20Matrix.jpg)
 
 This chart provides a static summary snapshot of where all three artists sit relative to each other on the two more striking dimensions (Notable Works and Outbound Influence) as defined in the first visualisation. The reference lines are set at the medians of the three artists' respective metrics — notable works median at 10 and outbound influence median at approximately 40 — creating four interpretive quadrants.
 
@@ -92,7 +92,7 @@ The most important insight this chart communicates is that none of the three art
 ### Key Findings
 
 | Observation from Part 1 | What it means for Part 2 |
-|------------------------------------|------------------------------------|
+|----|----|
 | Sailor Shift has 12 recent chart hits — more than anyone else | `recent_notable_works` is the strongest rising signal → highest weight (0.22) |
 | Kimberly Snyder has 20 all-time notable works but 0 recent | Recency must outweigh all-time totals — a plateaued artist should not score high |
 | Min He has 37 outbound influence edges with 0 recent chart hits | Outbound influence is independent of popularity → must be separately weighted (0.18) |
@@ -116,7 +116,7 @@ This led to two guiding principles that shaped the Rising Star Score parameter c
 The Rising Star Score is a weighted composite of 10 parameters, each normalised to a 0–1 scale using MinMaxScaler before combining. Weights were chosen arbitrarily but ranked according to justifications from Part 1.
 
 | Parameter | Weight | Justification |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `recent_notable_works` | 0.22 | Directly observed as the defining signal of an actively rising artist (Sailor Shift: 12; Kimberly Snyder: 0) |
 | `outbound_influence` | 0.18 | Shown to be independent of chart success in Part 1; Min He's profile established it as a distinct rising signal |
 | `collab_with_popular_count` | 0.14 | Network proximity to established stars — being on a track with a top-quartile artist provides direct exposure to their audience |
@@ -172,13 +172,13 @@ OF alignment is deliberately excluded from the Rising Star Score and used only a
 
 ### Data Visualisations
 
-![***Top 20 Rising Star Candidates*** ](images/theme3%20pictures/Top%2020%20artists%20by%20rising%20star%20score.jpg){fig-align="center"}
+![***Top 20 Rising Star Candidates***](images/theme3%20pictures/Top%2020%20artists%20by%20rising%20star%20score.jpg){fig-align="center"}
 
 This ranked horizontal bar chart displays the top 20 artists by Rising Star Score, with the bar colour encoding the Oceanus Folk Alignment Score. Sailor Shift's bar is both the longest and the darkest, confirming she simultaneously leads on general rising momentum and Oceanus Folk alignment — validating her as the correct benchmark for the framework.
 
 The colour encoding reveals the chart's most important finding: most of the top 20 rising star candidates show very light bars, indicating near-zero OF alignment despite their high general scores. Bea Azure is the clear exception — her bar at rank 7 is among the darkest in the top 20, signalling that she is the only high-scoring artist who is also meaningfully OF-aligned. The results immediately justifies why a separate OF Alignment dimension is necessary (see prediction bubble chart below): without it, the leaderboard alone would direct predictions toward artists with no OF orientation at all.
 
-![***Rising Star Score Component Breakdown*** ](images/theme3%20pictures/Rising%20star%20score%20breakdown.jpg){fig-align="center"}
+![***Rising Star Score Component Breakdown***](images/theme3%20pictures/Rising%20star%20score%20breakdown.jpg){fig-align="center"}
 
 This 100% stacked bar chart shows the proportional contribution of each scoring parameter to the total Rising Star Score for every artist in the top 20. Rather than showing absolute scores, it reveals the internal composition of each artist's ranking — why they score highly and on what basis.
 
@@ -194,7 +194,7 @@ This chart shows that 17 of the top 20 most OF-aligned artists score exactly 1.0
 
 The key insight is not which specific artists appear here, but what a score of 1.0 represents: an artist who both produces exclusively OF music and draws all their stylistic inspiration from OF sources. This is a very high bar, and the fact that 17 artists meet it confirms there is a substantial community of deeply OF-committed artists in the dataset. The practical implication for the predictions is that high OF alignment alone is insufficient to determine if one is a "rising star".
 
-![***Oceanus Folk Rising Star Predictions*** ](images/theme3%20pictures/OF%20Rising%20star%20predictions.jpg){fig-align="center"}
+![***Oceanus Folk Rising Star Predictions***](images/theme3%20pictures/OF%20Rising%20star%20predictions.jpg){fig-align="center"}
 
 This bubble chart is combines the Rising Star Score (x-axis), OF Alignment Score (y-axis), and number of Oceanus Folk works (bubble size) into a single view.
 
