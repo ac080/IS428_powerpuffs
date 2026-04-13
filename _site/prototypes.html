@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.35">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Data Exploration &amp; Visualisation Prototypes – IS428 Project - Team PowerPuffs</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -31,14 +28,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4397f41838bf6696a92fdfbed53ac40c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b8f9b2f3cffee265242a5d44fbb1e00.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -66,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IS428 Project - Team PowerPuffs</span>
     </a>
@@ -147,7 +147,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link active" data-scroll-target="#data-exploration">Data Exploration</a>
+  <ul class="collapse">
+  <li><a href="#sailor-shifts-network-graph" id="toc-sailor-shifts-network-graph" class="nav-link" data-scroll-target="#sailor-shifts-network-graph">Sailor Shift’s Network Graph</a></li>
+  <li><a href="#oceanus-folk-network-graph" id="toc-oceanus-folk-network-graph" class="nav-link" data-scroll-target="#oceanus-folk-network-graph">Oceanus Folk Network Graph</a></li>
+  </ul></li>
+  <li><a href="#visualisation-prototypes" id="toc-visualisation-prototypes" class="nav-link" data-scroll-target="#visualisation-prototypes">Visualisation Prototypes</a>
+  <ul class="collapse">
+  <li><a href="#theme-1-visualisation-prototype" id="toc-theme-1-visualisation-prototype" class="nav-link" data-scroll-target="#theme-1-visualisation-prototype">Theme 1 Visualisation Prototype</a></li>
+  <li><a href="#theme-2-visualisation-prototype" id="toc-theme-2-visualisation-prototype" class="nav-link" data-scroll-target="#theme-2-visualisation-prototype">Theme 2 Visualisation Prototype</a></li>
+  <li><a href="#theme-3-visualisation-prototype" id="toc-theme-3-visualisation-prototype" class="nav-link" data-scroll-target="#theme-3-visualisation-prototype">Theme 3 Visualisation Prototype</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -173,11 +183,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>TO BE UPDATED</em></p>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="data-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
+<p>Before our team started on creating the visualisation, we performed extensive Exploratory Data Analysis (EDA) to get a better understanding of the underlying distributions and relationships within the dataset. Our team decided to utilise a shared Jupyter Notebook and Gephi for initial network mapping. The complete code and transformation logic are documented in our GitHub repository under the ‘Data Transformation Notebook’. A primary objective of this phase was to ensure that all Tableau visualizations remained statistically aligned with the raw source data.</p>
+<p>Our team began by auditing the structure of the Nodes.csv and Edges.csv files to map out the relational hierarchy of the dataset.</p>
+<p><img src="images/Prototype/Nodes EDA.png" class="img-fluid"></p>
+<p><img src="images/Prototype/Edges EDA.png" class="img-fluid"></p>
+<p>On top of this, we generated preliminary graphs to allow us to have a sense of how the dataset looks. Additional detailed statistical analysis, including frequency distributions and outlier detection, is documented in the ‘basic_eda.ipynb’ notebook.</p>
+<p><img src="images/Prototype/Top Genres Influenced by OF.png" class="img-fluid"></p>
+<p><img src="images/Prototype/How other works are influenced by OF.png" class="img-fluid"></p>
+<p>For Theme 3 specifically, we performed specialised EDA and data preparation to define and calculate the ‘Rising Star’ metrics. This involved iterative data preparation across multiple notebooks, including ‘theme3_prep_eda.ipynb’, ‘theme3_final.ipynb’, ‘three_artists_db4.ipynb’ and ‘three_artists.ipynb’, to ensure the metrics were logically sound.</p>
+<p>Initially, we utilised Gephi to generate high-fidelity network graphs of Sailor Shift’s influence and the broader Oceanus Folk ecosystem. While these graphs provided a broad overview of the musical industry, we felt that they were hard to analyse as a whole and should be used instead as an introduction into the topic.</p>
+<section id="sailor-shifts-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="sailor-shifts-network-graph">Sailor Shift’s Network Graph</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Prototype/Sailor Shift Network.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="620"></p>
+</figure>
+</div>
+</section>
+<section id="oceanus-folk-network-graph" class="level3">
+<h3 class="anchored" data-anchor-id="oceanus-folk-network-graph">Oceanus Folk Network Graph</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Prototype/Oceanus Folk Network.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="574"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="visualisation-prototypes" class="level2">
+<h2 class="anchored" data-anchor-id="visualisation-prototypes">Visualisation Prototypes</h2>
+<p>Following the EDA phase, our team engaged in a collaborative whiteboarding session. By sketching prototypes, we were able to map specific chart types to our core research questions, ensuring that every visualisation served a direct purpose in the final narrative.</p>
+<section id="theme-1-visualisation-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="theme-1-visualisation-prototype">Theme 1 Visualisation Prototype</h3>
+<p><img src="images/Prototype/Theme1_prototype.jpg" class="img-fluid"></p>
+</section>
+<section id="theme-2-visualisation-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="theme-2-visualisation-prototype">Theme 2 Visualisation Prototype</h3>
+<p><img src="images/Prototype/Theme2_prototype.jpg" class="img-fluid"></p>
+</section>
+<section id="theme-3-visualisation-prototype" class="level3">
+<h3 class="anchored" data-anchor-id="theme-3-visualisation-prototype">Theme 3 Visualisation Prototype</h3>
+<p><img src="images/Prototype/Theme3_prototype.jpg" class="img-fluid"></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

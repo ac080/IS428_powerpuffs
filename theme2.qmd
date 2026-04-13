@@ -15,7 +15,7 @@ This theme aims to answer 3 main questions:
 
 -   Which genres and artists were influenced most by Oceanus Folk's
 
--   How did Oceanus Folk itself change in response to its own success?
+-   How did Oceanus Folk itself change with the rise of Sailor Shift?
 
 ### Key definitions used throughout
 
@@ -28,7 +28,7 @@ This theme aims to answer 3 main questions:
 
 ## Part 1: Was Oceanus Folk's influence growth intermittent or a gradual rise?
 
-![](images/theme2 pictures/OF Influence over time (genre).png)
+![](images/theme2%20pictures/OF%20Influence%20over%20time%20(genre).png)
 
 ### Number of times an artist referenced Oceanus Folk
 
@@ -38,7 +38,7 @@ From 2004 to 2021, references to Oceanus Folk from other genres were sparse and 
 
 Despite a decline in the number of Oceanus Folk releases, the number of references continued to increase intermittently across other genres like Rock and Pop. The peak in the influence of Oceanus Folk can be seen right after Sailor's debut in 2028, showing her breakthrough had caused a temporary trend in Oceanus Folk.
 
-![](images/theme2 pictures/First time genre referenced OF.png)
+![](images/theme2%20pictures/First%20time%20genre%20referenced%20OF.png)
 
 ### First Time Each Genre was Influenced by Oceanus Folk
 
@@ -54,13 +54,13 @@ The overall pattern indicated that Oceanus Folk's influence spread had intermitt
 
 ## Part 2: Which genres and artists were influenced most by Oceanus Folk?
 
-![](images/theme2 pictures/Top genres most influenced by OF.png)
+![](images/theme2%20pictures/Top%20genres%20most%20influenced%20by%20OF.png)
 
 ### Top Genres Most Influenced by Oceanus Folk
 
 This shows that Oceanus Folk itself leads by a huge margin of 147 references. This reflects an insular ecosystem, where the community actively builds on its own genre. Outside the genre itself, Desert Rock (50), Dream Pop (43) and Indie Folk (42) emerge as primary adopters. The high volume in these genres suggests a strongcompatibility, where the characteristics of Rock and Pop sub-genres align with the Oceanus Folk.
 
-![](images/theme2 pictures/Heatmap of Top Genres Influenced by OF.png)
+![](images/theme2%20pictures/Heatmap%20of%20Top%20Genres%20Influenced%20by%20OF.png)
 
 ### Heatmap of Top Genres Influenced by Oceanus Folk
 
@@ -70,13 +70,13 @@ The heatmap shows that these influences were time bounded rather than sustained.
 
 This confirms that Sailor Shift's debut acted as a catalytic event, triggering a massive adoption by mainstream Rock and Pop genre.
 
-![](images/theme2 pictures/Top 10 Artist influenced by OF.png)
+![](images/theme2%20pictures/Top%2010%20Artist%20influenced%20by%20OF.png)
 
 ### Top Artists Influenced by Oceanus Folk
 
 The bar chart shows artists who are strongly influenced by Oceanus Folk. The top four artists (Cosmic Drift, Lei Shen, Xia Cui and Xiuying Li) each shows a frequency of 9 references. Unlike a mainstream artist who might borrow a sound for a few songs, these artists demonstrate deep, repeated engagement. This confirms they are the core practitioners who define the genre's ongoing relevance.
 
-![](images/theme2 pictures/Top 10 Artist influenced by OF (network).png)
+![](images/theme2%20pictures/Top%2010%20Artist%20influenced%20by%20OF%20(network).png)
 
 ### Top 10 Artist Most Influenced by Oceanus Folk and their Career
 
@@ -92,7 +92,7 @@ The network shows that the top 10 most influenced artists are not just casual ob
 
 ## Part 3: How did Oceanus Folk itself change with the rise of Sailor Shift?
 
-![](images/theme2 pictures/Genres influencing OF before:after sailor debut.png)
+![](images/theme2%20pictures/Genres%20influencing%20OF%20before:after%20sailor%20debut.png)
 
 ### Genre Distribution That Influenced Oceanus Folk Before and After Sailor's Debut
 
@@ -104,7 +104,7 @@ Post 2028 shows a drastic change in the genres influencing Oceanus Folk. While O
 
 In totality, Oceanus Folk still retained its Folk core but evolved significantly by referencing Rock and Pop. This musical evolution in Oceanus Folk mirrors the findings in Theme 1, where Sailor's own artistic trajectory moved from pure Oceanus Folk to referencing more Rock music.
 
-![ ](images/theme2 pictures/Type of influence distribution before:after debut.png)
+![](images/theme2%20pictures/Type%20of%20influence%20distribution%20before:after%20debut.png)
 
 ### How Oceanus Folk Influences Others Before and After Sailor's Debut
 
@@ -122,7 +122,7 @@ This further proves that Sailor's debut changed the quality and type of influenc
 
 ### Dashboard 1: Oceanus Folk's Rising Influence
 
-![](images/theme2 pictures/Dashboard OF Rise of Influence.png)
+![](images/theme2%20pictures/Dashboard%20OF%20Rise%20of%20Influence.png)
 
 The dashboard shows that Oceanus Folk's influence shows three intermittent spikes. Following a decade of niche activity, the genre grew rapidly and experienced a sharp spike in the mid 2020s. This growth was directly driven by Sailor's rising profile, characterising the genre's expression as a concentrated breakout rather than a steady growth.
 
@@ -132,7 +132,7 @@ Moreover, at an individual artist level, Oceanus Folk's adopters form a communit
 
 ### Dashboard 2: Oceanus Folk's Evolution
 
-![](images/theme2 pictures/Dashboard OF Evolution.png)
+![](images/theme2%20pictures/Dashboard%20OF%20Evolution.png)
 
 This dashboard shows how Oceanus Folk's musical inspiration shifted before and after Sailor's debut, and whether the nature of that shift was superficial or fundamental.
 
