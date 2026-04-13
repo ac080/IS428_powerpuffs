@@ -6,7 +6,7 @@ format: html
 
 ## Welcome
 
-This project explores how one artist, Sailor Shift, became a defining figure in the evolution of Oceanus Folk. Using a synthetic directed multigraph of music industry relationships, the analysis examines how Sailor was influenced by others, how her collaborations shaped the artists around her, and how Oceanus Folk itself evolved as a result of those interactions.
+This project explores how one artist, Sailor Shift, became potentially a defining figure in the evolution of Oceanus Folk. Using a synthetic directed multigraph of music industry relationships, our team examines how Sailor Shift was influenced by others, how her collaborations shaped the artists around her, and how Oceanus Folk itself evolved as a result of those interactions.
 
 The project is built around three connected themes. The first looks at Sailor Shift’s own career profile, tracing how her artistic identity remained strongly rooted in Oceanus Folk even as she drew influence from a broader range of creators and genres. The second investigates how Oceanus Folk spread outward, showing how the genre became less insular and more connected to adjacent styles over time. The third turns toward the future, using a rising-star framework to identify which artists are most likely to represent the next wave of Oceanus Folk breakout success.
 
@@ -43,10 +43,6 @@ This theme shifts from the artist to the genre. It investigates how Oceanus Folk
 ### Theme 3: Predicting the Next Rising Stars
 
 This theme looks forward. Using indicators such as recent notable works, outbound influence, collaboration activity, and network proximity, it identifies artists who are structurally well positioned to emerge as the next major Oceanus Folk stars.
-
-## Why this matters
-
-This project is not only about one musician. It is about how genres evolve through people, relationships, and creative exchange. By looking at Sailor Shift, Oceanus Folk, and the artists around them together, the project shows how musical traditions can remain rooted in a distinct identity while still expanding outward through influence and collaboration.
 
 ## Explore the themes
 
