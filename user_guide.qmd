@@ -2,4 +2,16 @@
 title: "User Guide"
 ---
 
-*TO BE UPDATED*
+::: {#viz1776066031984 .tableauPlaceholder style="position: relative"}
+<noscript><a href='#'><img src="https://public.tableau.com/static/images/IS/IS428ProjectGroup2/FinalStory/1_rss.png" alt="Oceanus Folk Music Stars: Profile and InfluenceCharting the Rise of Today&apos;s and Tomorrow&apos;s Breakout Artists IS428 Visual Analytics for Business Intelligence | Group 2 | VAST Challenge MC1  " style="border: none"/></a></noscript>
+
+<object class="tableauViz" style="display:none;">
+
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IS428ProjectGroup2&#47;FinalStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;IS&#47;IS428ProjectGroup2&#47;FinalStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' />
+
+</object>
+:::
+
+```         
+            <script type='text/javascript'>                    var divElement = document.getElementById('viz1776066031984');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+```
