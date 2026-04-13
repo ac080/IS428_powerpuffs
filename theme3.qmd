@@ -57,9 +57,9 @@ The goal was not to pick three successful artists, but three artists who represe
 
 -   **Min He** was identified as the artist with the highest outbound influence among all Oceanus Folk-connected artists, with 37 outbound influence edges and connections spanning 6 genres. Unlike Sailor Shift, Min He's influence score is not accompanied by significant recent chart activity. His inclusion established that *influence and popularity are genuinely separate dimensions* — an artist can be deeply embedded in the musical fabric of a scene without breaking through commercially, and vice versa. This finding made `outbound_influence` a distinct, independently-weighted component rather than a proxy for chart success.
 
-### **Data Visualisations**
+### **Career Timeline by Popularity and Influence**
 
-![***Career Timeline by Popularity and Influence***](images/theme3%20pictures/Career%20Timeline%20by%20Popularity%20and%20Influence.jpg){fig-align="center"}
+![](images/theme3%20pictures/Career%20Timeline%20by%20Popularity%20and%20Influence.jpg){fig-align="center"}
 
 This visualisation presents the cumulative career trajectories of three artists across four dimensions — notable works, outbound influence, inbound influence, and collaboration count — plotted from each artist's debut year to the present on a shared x-axis, enabling direct shape comparison across different career lengths and starting points.
 
@@ -69,7 +69,9 @@ The most analytically significant finding comes from the inbound influence panel
 
 Overall, this chart confirms that outbound influence and recent notable works are the most meaningful and reliable signals of an artist's current trajectory, while inbound influence and raw collaboration counts are more reflective of career maturity than rising momentum.
 
-![***Genre Diversity and Evolution***](images/theme3%20pictures/Genre%20Diversity%20and%20Evolution.jpg){fig-align="center"}
+### Genre Diversity and Evolution
+
+![](images/theme3%20pictures/Genre%20Diversity%20and%20Evolution.jpg){fig-align="center"}
 
 This visualisation tracks the cumulative genre output of each artist over time using a stacked area chart in a small-multiples format, with each panel covering the artist's active years independently to account for their different career lengths.
 
@@ -79,7 +81,9 @@ A particularly striking finding is that despite Min He having the highest outbou
 
 This chart reinforces the importance of distinguishing between an artist's genre of production and their genre of inspiration when assessing OF alignment, and supports the two-component definition of the OF Alignment Score (see below).
 
-![***Popularity vs Influence Matrix**: reference lines are the medians of all three artists' respective metrics.*](images/theme3%20pictures/Popularity%20vs%20Influence%20Matrix.jpg)
+### Popularity vs Influence Matrix
+
+![](images/theme3%20pictures/Popularity%20vs%20Influence%20Matrix.jpg)
 
 This chart provides a static summary snapshot of where all three artists sit relative to each other on the two more striking dimensions (Notable Works and Outbound Influence) as defined in the first visualisation. The reference lines are set at the medians of the three artists' respective metrics — notable works median at 10 and outbound influence median at approximately 40 — creating four interpretive quadrants.
 
@@ -164,21 +168,23 @@ A score of 1.0 would require an artist to produce exclusively OF works and draw 
 
 **Why it captures two different kinds of alignment**
 
-The two components distinguish between artists who *produce* Oceanus Folk and artists who are *inspired* by it. An artist can be OF-aligned through production (high `of_genre_prop`), through inspiration (high `of_inf_prop`), or both. This distinction matters for the predictions: Bea Azure and Kael Storm score primarily through OF production, while Ping Sun — a Blues Rock artist — scores entirely through OF influence edges, reflecting an artist who draws heavily from the genre without yet producing within it.
+The two components distinguish between artists who *produce* Oceanus Folk and artists who are *inspired* by it. An artist can be OF-aligned through production (high `of_genre_prop`), through inspiration (high `of_inf_prop`), or both. This distinction matters for the predictions: Bea Azure (Beatrice Albright) and Kael Storm (Daniel O'Connell) score primarily through OF production, while Ping Sun — a Blues Rock artist — scores entirely through OF influence edges, reflecting an artist who draws heavily from the genre without yet producing within it.
 
 **Why it is kept separate from the Rising Star Score**
 
 OF alignment is deliberately excluded from the Rising Star Score and used only as the Y-axis on the prediction bubble chart. If included in the score, the X and Y axes of the chart would both partially reflect the same underlying signal, making the visualisation self-correlated and analytically circular. Keeping them independent means the two axes ask genuinely orthogonal questions: the X-axis asks how strong the artist's general rising momentum is, and the Y-axis asks how aligned they are with Oceanus Folk specifically. Only artists who score highly on both simultaneously belong in the top-right prediction quadrant — which is precisely the filter needed to identify the next Oceanus Folk stars rather than the next rising stars in general.
 
-### Data Visualisations
+### Top 20 Artists by Rising Star Score
 
-![***Top 20 Rising Star Candidates***](images/theme3%20pictures/Top%2020%20artists%20by%20rising%20star%20score.jpg){fig-align="center"}
+![](images/theme3%20pictures/Top%2020%20artists%20by%20rising%20star%20score.jpg){fig-align="center"}
 
 This ranked horizontal bar chart displays the top 20 artists by Rising Star Score, with the bar colour encoding the Oceanus Folk Alignment Score. Sailor Shift's bar is both the longest and the darkest, confirming she simultaneously leads on general rising momentum and Oceanus Folk alignment — validating her as the correct benchmark for the framework.
 
 The colour encoding reveals the chart's most important finding: most of the top 20 rising star candidates show very light bars, indicating near-zero OF alignment despite their high general scores. Bea Azure is the clear exception — her bar at rank 7 is among the darkest in the top 20, signalling that she is the only high-scoring artist who is also meaningfully OF-aligned. The results immediately justifies why a separate OF Alignment dimension is necessary (see prediction bubble chart below): without it, the leaderboard alone would direct predictions toward artists with no OF orientation at all.
 
-![***Rising Star Score Component Breakdown***](images/theme3%20pictures/Rising%20star%20score%20breakdown.jpg){fig-align="center"}
+### Rising Star Score Component Breakdown
+
+![](images/theme3%20pictures/Rising%20star%20score%20breakdown.jpg){fig-align="center"}
 
 This 100% stacked bar chart shows the proportional contribution of each scoring parameter to the total Rising Star Score for every artist in the top 20. Rather than showing absolute scores, it reveals the internal composition of each artist's ranking — why they score highly and on what basis.
 
@@ -188,13 +194,17 @@ Bea Azure and Kael Storm stand out for having one of the broader distributions o
 
 The chart also surfaces an important limitation: Jude Rivers and Xiuying Xiang both rank highly despite having no Recent Notable Works contribution (no dark brown segment visible). This shows that the nine remaining parameters collectively carry sufficient weight to produce competitive scores in the absence of the top-weighted component, which raises a question about whether the highest-weight parameter is weighted heavily enough to truly anchor the definition of "rising.", or if the "recency" window has been too narrowly defined.
 
-![***Top 20 Artists Most Aligned to Oceanus Folk Genre***](images/theme3%20pictures/Top%2020%20artists%20most%20aligned%20to%20OF.jpg){fig-align="center"}
+### Top 20 Artists Most Aligned to the Oceanus Folk Genre
+
+![](images/theme3%20pictures/Top%2020%20artists%20most%20aligned%20to%20OF.jpg){fig-align="center"}
 
 This chart shows that 17 of the top 20 most OF-aligned artists score exactly 1.0, meaning their entire output is Oceanus Folk and all their outbound influence edges point toward OF works. The remaining three — Ping Feng, Li Deng, and XANOVA — score between 0.88 and 0.90, representing a slight but meaningful departure from complete OF orientation.
 
 The key insight is not which specific artists appear here, but what a score of 1.0 represents: an artist who both produces exclusively OF music and draws all their stylistic inspiration from OF sources. This is a very high bar, and the fact that 17 artists meet it confirms there is a substantial community of deeply OF-committed artists in the dataset. The practical implication for the predictions is that high OF alignment alone is insufficient to determine if one is a "rising star".
 
-![***Oceanus Folk Rising Star Predictions***](images/theme3%20pictures/OF%20Rising%20star%20predictions.jpg){fig-align="center"}
+### Oceanus Folk Rising Star Predictions
+
+![](images/theme3%20pictures/OF%20Rising%20star%20predictions.jpg){fig-align="center"}
 
 This bubble chart is combines the Rising Star Score (x-axis), OF Alignment Score (y-axis), and number of Oceanus Folk works (bubble size) into a single view.
 
