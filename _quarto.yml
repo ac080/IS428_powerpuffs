@@ -12,6 +12,7 @@ project:
     - user_guide.qmd
     - about.qmd
     - index.qmd
+    - storyboard.qmd
 
 website:
   search: false
@@ -33,6 +34,8 @@ website:
         - theme2.qmd
         - theme3.qmd
         - conclusion.qmd
+      - href: storyboard.qmd
+        text: "Storyboard"
       - href: user_guide.qmd
         text: "User Guide"
     right:
