@@ -34,10 +34,10 @@ website:
         - theme2.qmd
         - theme3.qmd
         - conclusion.qmd
-      - href: storyboard.qmd
-        text: "Storyboard"
-      - href: user_guide.qmd
-        text: "User Guide"
+      - text: "Storyboard & User Guide"
+        menu:
+          - storyboard.qmd
+          - user_guide.qmd
     right:
       - href: about.qmd
         text: "About"

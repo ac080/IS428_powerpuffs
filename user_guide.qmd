@@ -1,4 +1,22 @@
 ---
 title: "User Guide"
+format:
+  html:
+    page-layout: full 
 ---
 
+![](images/1.png){fig-align="center"}
+
+![](images/2.png){fig-align="center"}
+
+![](images/3.png){fig-align="center"}
+
+![](images/4.png){fig-align="center"}
+
+![](images/5.png){fig-align="center"}
+
+![](images/6.png){fig-align="center"}
+
+![](images/7.png){fig-align="center"}
+
+![](images/8.png){fig-align="center"}
