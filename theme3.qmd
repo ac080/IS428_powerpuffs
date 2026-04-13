@@ -96,7 +96,7 @@ The most important insight this chart communicates is that none of the three art
 ### Key Findings
 
 | Observation from Part 1 | What it means for Part 2 |
-|------------------------------------|------------------------------------|
+|----|----|
 | Sailor Shift has 12 recent chart hits — more than anyone else | `recent_notable_works` is the strongest rising signal → highest weight (0.22) |
 | Kimberly Snyder has 20 all-time notable works but 0 recent | Recency must outweigh all-time totals — a plateaued artist should not score high |
 | Min He has 37 outbound influence edges with 0 recent chart hits | Outbound influence is independent of popularity → must be separately weighted (0.18) |
@@ -120,7 +120,7 @@ This led to two guiding principles that shaped the Rising Star Score parameter c
 The Rising Star Score is a weighted composite of 10 parameters, each normalised to a 0–1 scale using MinMaxScaler before combining. Weights were chosen arbitrarily but ranked according to justifications from Part 1.
 
 | Parameter | Weight | Justification |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `recent_notable_works` | 0.22 | Directly observed as the defining signal of an actively rising artist (Sailor Shift: 12; Kimberly Snyder: 0) |
 | `outbound_influence` | 0.18 | Shown to be independent of chart success in Part 1; Min He's profile established it as a distinct rising signal |
 | `collab_with_popular_count` | 0.14 | Network proximity to established stars — being on a track with a top-quartile artist provides direct exposure to their audience |
