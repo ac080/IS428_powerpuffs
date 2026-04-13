@@ -9,7 +9,7 @@ Our group was able to trace Sailor Shift’s career through incoming influence, 
 
 ### More than a Creator
 
-Sailor Shift’s artistic development is defined by a combination of a highly stable genre identity and a broad creative appetite. She draws from a wide range of creators, with no single dominant mentor, absorbing widely but expressing selectively. Her borrowing is led primarily by stylistic adoption (InStyleOf) rather than direct sampling, positioning her not as an imitator, but as an artist who transforms outside material into something recognisably her own.  
+Sailor Shift’s artistic development is defined by a combination of a highly stable genre identity and a broad creative appetite. She draws from a wide range of creators, with no single dominant mentor, absorbing widely but expressing selectively. Her borrowing is led primarily by stylistic adoption (InStyleOf) rather than direct sampling, positioning her not as an imitator, but as an artist who transforms outside material into something recognisably her own.
 
 Her collaborations appear to amplify this effect. Collaborators’ output shifts from roughly 55% mainstream Folk to approximately 90% Oceanus Folk after working with her. While this should not be taken as strict proof that Sailor alone caused that shift, the directional association is strong and consistent. Collaboration with Sailor Shift functions as a pull factor, drawing artists from adjacent genres into Oceanus Folk’s orbit.
 
@@ -19,44 +19,54 @@ Oceanus Folk’s spread appears to unfold through distinct surges of outward eng
 
 ### The Next Generation: Two Pathways to Stardom
 
-The analysis suggests that future Oceanus Folk breakout artists are unlikely to emerge through popularity alone. The strongest candidates combine recent notable works, outbound influence, active collaboration networks, and proximity to established Oceanus Folk artists.  
+The analysis suggests that future Oceanus Folk breakout artists are unlikely to emerge through popularity alone. The strongest candidates combine recent notable works, outbound influence, active collaboration networks, and proximity to established Oceanus Folk artists.
 
 Our three rising star predictions, Bea Azure, Kael Storm, and Ping Sun, all point to more than one possible path forward. Bea Azure and Kael Storm are Oceanus Folk natives, mirroring Sailor's early career structure. Ping Sun represents a contrasting pathway, a Blues Rock artist approaching Oceanus Folk from outside the community through outbound influence. This suggests that Oceanus Folk has matured enough to attract, shape, and potentially absorb artists from entirely outside its original tradition.
 
----
+------------------------------------------------------------------------
 
 ### Limitations
 
-- Inbound influence data lag:
-- The knowledge graph relies on downstream citations, hence newer works have had less time to accumulate connections, potentially causeing Sailor Shift herself to score near zero on inbound influence metrics, requiring the analysis to rely on outbound influence and collaboration as proxies. Findings about recent influence should be read as lower-bound estimates.  
+-   Inbound influence data lag:
 
-- Sudden drop in data post-2030:
-- The volume of songs, collaborations, and influence edges declines sharply after 2030, likely reflecting a data collection boundary rather than a genuine decrease in musical activity. The true scale of Sailor Shift’s recent impact is therefore likely larger than what the dataset currently captures.  
+    -   The knowledge graph relies on downstream citations, hence newer works have had less time to accumulate connections, potentially causeing Sailor Shift herself to score near zero on inbound influence metrics, requiring the analysis to rely on outbound influence and collaboration as proxies. Findings about recent influence should be read as lower-bound estimates.
 
-- Association, not causation, in the collaborator genre shift:
-- The finding that roughly 90% of post-collaboration works by Sailor’s collaborators are Oceanus Folk is strong evidence of directional change, but it is not definitive proof that Sailor caused that shift. Other genre-level trends may also be contributing.  
+-   Sudden drop in data post-2030:
 
-- Synthetic data and operational definitions:
-- Influence" and "collaboration" are restricted to defined edge types (e.g., InStyleOf, ComposerOf). While analytically useful, these definitions simplify more ambiguous forms of creative exchange.  
+    -   The volume of songs, collaborations, and influence edges declines sharply after 2030, likely reflecting a data collection boundary rather than a genuine decrease in musical activity. The true scale of Sailor Shift’s recent impact is therefore likely larger than what the dataset currently captures.
 
-- Analyst-defined parameter weights:
-- The Rising Star framework depends on defined parameter weights (e.g., a 0.22 weight on recent notable works) rather than a validated training set. Different weighting decisions could produce different candidate rankings.
+-   Association, not causation, in the collaborator genre shift:
 
----
+    -   The finding that roughly 90% of post-collaboration works by Sailor’s collaborators are Oceanus Folk is strong evidence of directional change, but it is not definitive proof that Sailor caused that shift. Other genre-level trends may also be contributing.
+
+-   Synthetic data and operational definitions:
+
+    -   Influence" and "collaboration" are restricted to defined edge types (e.g., InStyleOf, ComposerOf). While analytically useful, these definitions simplify more ambiguous forms of creative exchange.
+
+-   Analyst-defined parameter weights:
+
+    -   The Rising Star framework depends on defined parameter weights (e.g., a 0.22 weight on recent notable works) rather than a validated training set. Different weighting decisions could produce different candidate rankings.
+
+------------------------------------------------------------------------
 
 ### Future Works
 
-- Extend to multi-step influence paths:
--  Rather than focusing only on direct influence, future work could trace second- and third-order diffusion to show how Oceanus Folk spreads through chains of collaborators, moving from a one-degree network to a fuller propagation map.  
+-   Extend to multi-step influence paths:
 
-- Compare Sailor’s bandmates’ post-Ivy Echoes trajectories:
-- Maya Jensen, Lila Hartman, Jade Thompson, and Sophie Ramirez each continued in the industry. Mapping their trajectories alongside Sailor’s would clarify how the same formative experience produced divergent outcomes, and whether their contributions to the genre's spread are proportionally reflected in the data.  
+    -   Rather than focusing only on direct influence, future work could trace second- and third-order diffusion to show how Oceanus Folk spreads through chains of collaborators, moving from a one-degree network to a fuller propagation map.
 
-- Test whether the band-to-solo pathway accelerates breakthrough:
-- We noticed that both Sailor, and the artists found to be potential breakout artists all followed the band-to-solo pathway, leading us to pose the question: do artists who move from group membership to solo careers break through faster than those who begin solo? This would yield a generalisable framework for identifying pre-breakthrough artists.  
+-   Compare Sailor’s bandmates’ post-Ivy Echoes trajectories:
 
-- Strengthen the causal interpretation of collaboration effects:
--  Comparing Sailor’s collaborators against a matched control group of similar non-collaborators would help isolate general genre trends from changes specifically associated with working with Sailor.  
+    -   Maya Jensen, Lila Hartman, Jade Thompson, and Sophie Ramirez each continued in the industry. Mapping their trajectories alongside Sailor’s would clarify how the same formative experience produced divergent outcomes, and whether their contributions to the genre's spread are proportionally reflected in the data.
 
-- Variable parameter weights:
-- The weights for the Rising star framework were hardcoded, however an interactive variable weightage could be implemented to view and compare how the outcomes change with tweaks to the importance of different parameters.
+-   Test whether the band-to-solo pathway accelerates breakthrough:
+
+    -   We noticed that both Sailor, and the artists found to be potential breakout artists all followed the band-to-solo pathway, leading us to pose the question: do artists who move from group membership to solo careers break through faster than those who begin solo? This would yield a generalisable framework for identifying pre-breakthrough artists.
+
+-   Strengthen the causal interpretation of collaboration effects:
+
+    -   Comparing Sailor’s collaborators against a matched control group of similar non-collaborators would help isolate general genre trends from changes specifically associated with working with Sailor.
+
+-   Variable parameter weights:
+
+    -   The weights for the Rising star framework were hardcoded, however an interactive variable weightage could be implemented to view and compare how the outcomes change with tweaks to the importance of different parameters.
